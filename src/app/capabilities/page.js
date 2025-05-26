@@ -16,6 +16,7 @@ import Capa2 from './../../../public/images/capa-2.png';
 import Capa3 from './../../../public/images/capa-3.png'; 
 import styles from './capabilities.module.css';
 import stylesAbout from '../about/about.module.css'
+
 const CapabilitiesSection = () => {
   const [activeTab, setActiveTab] = useState('1');
 
@@ -23,7 +24,7 @@ const CapabilitiesSection = () => {
     <div className={`${styles.capaSection} container-fluid  py-5`}>
       <h2 className="text-center">
         <span className={`${styles.capaHeading}`}>OUR</span> 
-        <span className={`${styles.textOutline}`}>CAPABILITIES</span>
+        <span className={`${styles.textOutline} ms-3`}>CAPABILITIES</span>
       </h2>
 
       <Nav tabs className="justify-content-center mt-4 border-bottom">
@@ -54,7 +55,7 @@ const CapabilitiesSection = () => {
       </Nav>
 
       <TabContent activeTab={activeTab} className="mt-4">
-       <TabPane tabId="1" fade={false}>
+       <TabPane tabId="1">
         <Row className="align-items-center">
             <Col md={6} className="d-flex justify-content-center align-items-center">
             <Image
@@ -84,7 +85,7 @@ const CapabilitiesSection = () => {
         </Row>
         </TabPane>
 
-        <TabPane tabId="2" fade={false}>
+        <TabPane tabId="2">
         <Row className="align-items-center">
             <Col md={6} className="d-flex justify-content-center align-items-center">
             <Image
@@ -110,7 +111,7 @@ const CapabilitiesSection = () => {
         </Row>
         </TabPane>
 
-        <TabPane tabId="3" fade={false}>
+        <TabPane tabId="3">
         <Row className="align-items-center">
             <Col md={6} className="d-flex justify-content-center align-items-center">
             <Image
