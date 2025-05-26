@@ -1,0 +1,81 @@
+
+    .container-fluid {
+    background-color: rgb(0 0 0 / 71%);
+    }
+    .logo-design{
+    width: 100%;
+   }
+   .logo-image{
+       width: 100%;
+       cursor: pointer; 
+   }
+   .logo-image-bg{
+    background-color: #ffffff;
+   }
+   .header-fluid{
+    animation: sticky 1.2s;
+   }
+   .nabar-section{
+       display: flex;
+       justify-content: space-around;
+       list-style: none;
+       padding: 20px;
+       border-radius: 35px;
+       text-decoration: unset !important;
+   }
+   
+   .nav-item {
+       text-decoration: none !important;
+       color: #ffffff;
+       font-size: 16px;
+       font-weight: 600;
+       cursor: pointer;
+       text-decoration: unset !important;
+   }
+   .nav-item:hover {
+       text-decoration: none !important;
+       color: #fcd202 !important;
+       font-size: 13px;
+       font-weight: 600;
+       padding: 10px;
+       border-radius: 20px;
+   }
+   .navbar-area{
+       padding-left: 5%;
+       padding-right: 5%;
+   }
+   .contact-btn{
+          color: #000000;
+          padding: 12px 38px;
+          background: unset;
+          border-radius: 15px;
+          color: white;
+          border: 1px solid #fcd202;
+          
+   }
+   .contact-btn:hover{
+       background-color: #fcd202;
+   }
+   .contact-area{
+       display: flex;
+       justify-content: center;
+   }
+   .mobile-view-button{
+       background: none !important;
+       border: none !important;
+       padding: 0 !important;
+       margin: 0 !important;
+       font-size: 35px;
+   }
+   
+   .m-right{
+       display: flex;
+       justify-content: end;
+   }
+   .background-design-mobile{
+       background-color: #fcd202 !important;
+   }
+   .nabar-mobile-section{
+       list-style: none !important;
+       line-height: 4;
+   }
