@@ -18,12 +18,52 @@ overflow: hidden;
     font-family: "Anton", Sans-serif;
 
 }
-
-
+.rightContentHeading {
+  font-size: 54px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: #252525;
+  font-family: 'Anton', sans-serif !important;
+}
 .characterImage {
  max-width: 100%;
   height: auto;
   object-fit: contain;
 }
 
+.tabsContainer {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+  margin-top: 1rem;
+  gap: 2rem;
+}
 
+.tabButton {
+  border: none;
+  padding: 16px 22px;
+  font-weight: 700;
+  font-size:16px;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+  letter-spacing: 2.8px;
+  font-family: 'Plus Jakarta Sans' !important;
+  background-color: #ffffff !important;
+}
+
+.tabButton:hover {
+  background: #252525 !important; 
+  color: #fff;
+}
+
+.activeTab {
+  background: #fcd202 !important; 
+  font-weight: 700;
+  color: #fff;
+}
+.activeTab:hover{
+background: #fcd202 !important; 
+  font-weight: 700;
+  color: #fff;
+}
