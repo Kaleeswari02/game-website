@@ -28,62 +28,64 @@ export default function Portfolio(){
                     </div>
                 </div>
             </div>
-            {visible && (<div className="image-gallary-section">
-                <div className="row">
-                <div className="col-xl-3 col-over">
-                    <div className='port-image'>
-                        <img src="/images/bg-5.png" alt="Banner" className="image-hover-scale" />
-                        <h5 className="hover-heading">2D/3D Animation</h5>
+            {visible && (
+                <div className="image-gallary-section">
+                    <div className="row">
+                    <div className="col-xl-3 col-over">
+                        <div className='port-image'>
+                            <img src="/images/bg-5.png" alt="Banner" className="image-hover-scale" />
+                            <h5 className="hover-heading">2D/3D Animation</h5>
+                        </div>
+                    </div>
+                    <div className="col-xl-3 col-over">
+                        <div className='port-image'>
+                            <img src="/images/port1.png" alt="Banner" className="image-hover-scale" />
+                            <h5 className="hover-heading">Video Editing</h5>
+                        </div>
+                    </div>
+                    <div className="col-xl-3 col-over">
+                        <div className='port-image'>
+                            <img src="/images/port2.png" alt="Banner" className="image-hover-scale" />
+                            <h5 className="hover-heading">AI & Automation</h5>
+                        </div>
+                    </div>
+                    <div className="col-xl-3 col-over mb-xl-5">
+                        <div className='port-image'>
+                            <img src="/images/port3.png" alt="Banner" className="image-hover-scale" />
+                            <h5 className="hover-heading">Game Development</h5>
+                        </div>
+                    </div>
                     </div>
                 </div>
-                <div className="col-xl-3 col-over">
-                    <div className='port-image'>
-                        <img src="/images/bg-5.png" alt="Banner" className="image-hover-scale" />
-                        <h5 className="hover-heading">Video Editing</h5>
+             )}
+                <div className="image-gallary-section">
+                    <div className="row">
+                    <div className="col-xl-3 col-over">
+                        <div className='port-image'>
+                            <img src="/images/bg-5.png" alt="Banner" className="image-hover-scale" />
+                            <h5 className="hover-heading">2D/3D Animation</h5>
+                        </div>
+                    </div>
+                    <div className="col-xl-3 col-over">
+                        <div className='port-image'>
+                            <img src="/images/port1.png" alt="Banner" className="image-hover-scale" />
+                            <h5 className="hover-heading">Video Editing</h5>
+                        </div>
+                    </div>
+                    <div className="col-xl-3 col-over">
+                        <div className='port-image'>
+                            <img src="/images/port2.png" alt="Banner" className="image-hover-scale" />
+                            <h5 className="hover-heading">AI & Automation</h5>
+                        </div>
+                    </div>
+                    <div className="col-xl-3 col-over mb-xl-5">
+                        <div className='port-image'>
+                            <img src="/images/port3.png" alt="Banner" className="image-hover-scale" />
+                            <h5 className="hover-heading">Game Development</h5>
+                        </div>
+                    </div>
                     </div>
                 </div>
-                <div className="col-xl-3 col-over">
-                    <div className='port-image'>
-                        <img src="/images/bg-5.png" alt="Banner" className="image-hover-scale" />
-                        <h5 className="hover-heading">AI & Automation</h5>
-                    </div>
-                </div>
-                <div className="col-xl-3 col-over mb-xl-5">
-                    <div className='port-image'>
-                        <img src="/images/bg-5.png" alt="Banner" className="image-hover-scale" />
-                        <h5 className="hover-heading">Game Development</h5>
-                    </div>
-                </div>
-            </div>
-            </div>)}
-            <div className="image-gallary-section">
-                <div className="row">
-                <div className="col-xl-3 col-over">
-                    <div className='port-image'>
-                        <img src="/images/bg-5.png" alt="Banner" className="image-hover-scale" />
-                        <h5 className="hover-heading">2D/3D Animation</h5>
-                    </div>
-                </div>
-                <div className="col-xl-3 col-over">
-                    <div className='port-image'>
-                        <img src="/images/bg-5.png" alt="Banner" className="image-hover-scale" />
-                        <h5 className="hover-heading">Video Editing</h5>
-                    </div>
-                </div>
-                <div className="col-xl-3 col-over">
-                    <div className='port-image'>
-                        <img src="/images/bg-5.png" alt="Banner" className="image-hover-scale" />
-                        <h5 className="hover-heading">AI & Automation</h5>
-                    </div>
-                </div>
-                <div className="col-xl-3 col-over mb-xl-5">
-                    <div className='port-image'>
-                        <img src="/images/bg-5.png" alt="Banner" className="image-hover-scale" />
-                        <h5 className="hover-heading">Game Development</h5>
-                    </div>
-                </div>
-            </div>
-            </div>
         </div>
         
         </>

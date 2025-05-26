@@ -32,16 +32,16 @@ export default function About() {
   }, { scope: sectionRef }); 
   return (
     <>
-    <div className={`container-fluid  pt-5 ${styles.aboutBgcolor}`} id='about'>
+    <div className={`container-fluid pt-5 ${styles.aboutBgcolor}`} id='about'>
       <div ref={sectionRef} className={`container-fluid  pt-5 ${styles.aboutSection}`}>
          <div className={`container`}>
 
         <div className="row align-items-center">
-          <div className="col-md-3 text-center mb-4 mb-md-0">
+          <div className="col-md-3 text-center mb-4 mb-md-0 ">
             <Image src={girlImg} alt="Girl Character" className={styles.characterImg} />
           </div>
 
-          <div className="col-md-6 text-center text-md-start">
+          <div className="col-md-6 text-center text-md-start mt-xl-5 mt-lg-5">
             
             <h2 className={`${styles.aboutHeading} text-center`}>
               Casino Slot Game Development<br/> Company

@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     width: 100%;
   }
-  
+
   .background-section::before {
     content: '';
     position: absolute;
@@ -45,6 +45,9 @@
 .banner-image-sec{
    width: 600px;
    transition: all 0.8s ease-in-out;
+   position: absolute;
+    right: 0%;
+
    
 }
 .banner-content{

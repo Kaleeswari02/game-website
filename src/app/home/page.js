@@ -12,9 +12,9 @@ export default function HomeSection(){
       useGSAP(() => {
     gsap.fromTo(
       tigerRef.current,
-      { x: '-120px' },
+      { x: '-100px' },
       {
-        x: '120px',
+        x: '100px',
         ease: 'none',
         scrollTrigger: {
           trigger: sectionRef.current,
@@ -39,12 +39,12 @@ export default function HomeSection(){
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-4 col-lg-4 col-md-4 mt-xl-5 mt-lg-5 mt-md-5 mb-xl-5 mb-lg-5">
+                        <div className="col-xl-5 col-lg-5 col-md-5 mt-xl-5 mt-lg-5 mt-md-5 mb-xl-5 mb-lg-5">
                             <div className="banner-image mt-xl-5 mt-lg-5 mt-md-5 p-xl-5" ref={tigerRef}>
                                  <img className='banner-image-sec' src='/images/banner.png' alt="Description of image" />
                             </div>
                         </div>
-                        <div className='col-xl-1 col-lg-1 col-md-1 mb-xl-5 mb-lg-5'></div>
+                        {/* <div className='col-xl-1 col-lg-1 col-md-1 mb-xl-5 mb-lg-5'></div> */}
                     </div>
                 </div>
             </div>
