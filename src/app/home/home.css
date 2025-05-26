@@ -1,0 +1,30 @@
+
+/* styles/globals.css */
+.background-section {
+    position: relative;
+    background-image: url('/images/banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  
+  .background-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000d7; /* black with 50% opacity */
+    z-index: 1;
+  }
+  
+  .background-content {
+    position: relative;
+    z-index: 2;
+  }
+  .banner-h1{
+
+  }
+  

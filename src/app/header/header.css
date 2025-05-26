@@ -1,72 +1,71 @@
 
-    .container-fluid {
+    .header-fluid{
     background-color: rgb(0 0 0 / 71%);
     }
-    .logo-design{
-    width: 100%;
-   }
    .logo-image{
        width: 100%;
        cursor: pointer; 
+       margin-left: 6%;
    }
    .logo-image-bg{
     background-color: #ffffff;
+    padding: 2%;
    }
    .header-fluid{
     animation: sticky 1.2s;
+   }
+   ul{
+    margin: 0 !important;
    }
    .nabar-section{
        display: flex;
        justify-content: space-around;
        list-style: none;
-       padding: 20px;
+       padding: unset !important;
        border-radius: 35px;
        text-decoration: unset !important;
+       font-family: "Plus Jakarta Sans", sans-serif;
    }
    
    .nav-item {
        text-decoration: none !important;
        color: #ffffff;
        font-size: 16px;
-       font-weight: 600;
+       /* font-weight: 600; */
        cursor: pointer;
        text-decoration: unset !important;
    }
    .nav-item:hover {
        text-decoration: none !important;
        color: #fcd202 !important;
-       font-size: 13px;
-       font-weight: 600;
+       font-size: 16px;
+       /* font-weight: 600; */
        padding: 10px;
        border-radius: 20px;
    }
    .navbar-area{
-       padding-left: 5%;
-       padding-right: 5%;
+       padding-left: 7%;
+       padding-right: 7%;
    }
    .contact-btn{
-          color: #000000;
-          padding: 12px 38px;
-          background: unset;
-          border-radius: 15px;
-          color: white;
-          border: 1px solid #fcd202;
+    padding: 10px 30px;
+    background: #f0cb11;
+    border-radius: 29px;
+    color: white;
+    font-weight: 600;
+    border: 1px solid #fcd202 !important;
+    font-family: "Plus Jakarta Sans", sans-serif;
           
    }
    .contact-btn:hover{
-       background-color: #fcd202;
+    background-color: #252525;
+    border: 1px solid #252525 !important;
    }
-   .contact-area{
-       display: flex;
-       justify-content: center;
+   .button-space{
+    text-align: right;
+    margin-right: 7%;
    }
-   .mobile-view-button{
-       background: none !important;
-       border: none !important;
-       padding: 0 !important;
-       margin: 0 !important;
-       font-size: 35px;
-   }
+  
    
    .m-right{
        display: flex;
