@@ -1,0 +1,29 @@
+.capaSection{
+    background-color: #fff !important;
+overflow: hidden;
+}
+.capaHeading{
+    color: #252525;
+    font-family: "Anton", Sans-serif;
+    font-size: 120px;
+
+}
+.textOutline{
+     color: #02010100;
+    -webkit-text-stroke-width: 2px;
+    stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    stroke: #000;
+    font-size: 120px;
+    font-family: "Anton", Sans-serif;
+
+}
+
+
+.characterImage {
+ max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
