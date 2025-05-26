@@ -1,10 +1,34 @@
+'use client'
 import './home.css';
 import { FiArrowUpRight } from 'react-icons/fi'; // import arrow icon
+import { useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
+gsap.registerPlugin(ScrollTrigger);
 export default function HomeSection(){
+    const tigerRef = useRef(null);
+    const sectionRef = useRef(null);
+      useGSAP(() => {
+    gsap.fromTo(
+      tigerRef.current,
+      { x: '-120px' },
+      {
+        x: '120px',
+        ease: 'none',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true,
+        },
+      }
+    );
+  }, { scope: sectionRef }); 
     return(
         <>
             <div className="container-fluid background-section">
-                <div className="container background-content mb-xl-5 mb-lg-5">
+                <div ref={sectionRef} className="container background-content mb-xl-5 mb-lg-5">
                     <div className="row ">
                         <div className="col-xl-7 col-lg-7 col-md-7 mt-xl-7 mt-lg-7 mt-md-7 mb-xl-5 mb-lg-5">
                             <div className="banner-content mt-xl-5 mt-lg-5 mt-md-5 ">
@@ -16,7 +40,7 @@ export default function HomeSection(){
                             </div>
                         </div>
                         <div className="col-xl-4 col-lg-4 col-md-4 mt-xl-5 mt-lg-5 mt-md-5 mb-xl-5 mb-lg-5">
-                            <div className="banner-image mt-xl-5 mt-lg-5 mt-md-5 p-xl-5">
+                            <div className="banner-image mt-xl-5 mt-lg-5 mt-md-5 p-xl-5" ref={tigerRef}>
                                  <img className='banner-image-sec' src='/images/banner.png' alt="Description of image" />
                             </div>
                         </div>
