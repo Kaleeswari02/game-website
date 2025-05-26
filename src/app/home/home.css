@@ -25,6 +25,60 @@
     z-index: 2;
   }
   .banner-h1{
-
+    text-align: left;
+    font-size: 195px;
+    text-transform: uppercase;
+    line-height: 0.95em;
+    font-family: 'Anton', sans-serif !important;
+    color: #ffffff;
   }
-  
+  .banner-h2{
+    color: #02010100;
+    font-family: "Anton", Sans-serif;
+    -webkit-text-stroke-width: 2px;
+    stroke-width: 2px;
+    -webkit-text-stroke-color: #FFFFFF;
+    stroke: #FFFFFF;
+    font-family: 'Anton', sans-serif !important;
+    font-size: 195px;
+  }
+.banner-image-sec{
+   width: 600px;
+   transition: all 0.8s ease-in-out;
+   
+}
+.banner-content{
+    margin-top: 30% !important;
+}
+.banner-para{
+    font-size: 16px;
+    color: #ffffffc4 !important;
+    font-family: 'Plus Jakarta Sans' !important;
+    line-height: 1.6;
+    padding: 0% 13% 0% 0% !important;
+}
+.banner-btn{
+    font-family: "Tahoma", Sans-serif;
+    font-weight: 400;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    background-color: #f0cb11;
+    border-radius: 30px 30px 30px 30px;
+    padding: 16px 46px 16px 46px;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.banner-btn-arrow{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+}
+.banner-btn:hover {
+    background-color: #252525;
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+  }
+  .banner-btn-arrow :hover{
+    transform: rotate(45deg);
+}
