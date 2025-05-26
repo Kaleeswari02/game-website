@@ -4,7 +4,9 @@
   border-radius: 80px 80px 0px 0px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   padding: 60px 30px;
-  margin-top: 100px !important;
+}
+.about-sec{
+  background-color: #000000;
 }
 .characterImg {
   max-width: 100%;
