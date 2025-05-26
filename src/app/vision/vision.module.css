@@ -1,0 +1,58 @@
+.visionSection {
+  position: relative;
+}
+.visionHeading{
+    color: #252525;
+    font-family: "Anton", Sans-serif;
+    font-size: 120px;
+
+}
+.textOutline{
+     color: #02010100;
+    -webkit-text-stroke-width: 2px;
+    stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    stroke: #000;
+    font-size: 120px;
+      display: block;
+    font-family: "Anton", Sans-serif;
+
+}
+
+.consultBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.icon {
+  font-size: 1.25rem;
+}
+
+.imageStackWrapper {
+  position: relative;
+  text-align: center;
+}
+
+.imageStack {
+  position: relative;
+  display: inline-block;
+}
+
+.backgroundImg {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.foregroundImg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 90%;
+  max-width: 70%;
+  z-index: 2;
+}

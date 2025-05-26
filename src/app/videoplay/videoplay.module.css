@@ -102,3 +102,96 @@
     height: 0;
     overflow: hidden;
 }
+/* responsive */
+/* Responsive tweaks */
+@media (max-width: 1200px) {
+  .videoHeading, .outlineText {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 992px) {
+  .videoHeading, .outlineText {
+    font-size: 60px;
+    line-height: 1.1;
+  }
+
+  .subText {
+    font-size: 16px;
+  }
+
+  .playCircle {
+    width: 90px;
+    height: 90px;
+  }
+
+  .rotatingText {
+    width: 90px;
+    height: 90px;
+  }
+
+  .rotatingText text {
+    font-size: 7px;
+  }
+
+  .playIcon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .videoHeading, .outlineText {
+    font-size: 40px;
+  }
+
+  .subText {
+    font-size: 14px;
+  }
+
+  .playCircle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .rotatingText {
+    width: 70px;
+    height: 70px;
+  }
+
+  .rotatingText text {
+    font-size: 6px;
+  }
+
+  .playIcon {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .videoHeading, .outlineText {
+    font-size: 30px;
+  }
+
+  .subText {
+    font-size: 13px;
+    padding: 0 1rem;
+  }
+
+  .playCircle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .rotatingText {
+    width: 60px;
+    height: 60px;
+  }
+
+  .rotatingText text {
+    font-size: 5px;
+  }
+
+  .playIcon {
+    font-size: 1rem;
+  }
+}

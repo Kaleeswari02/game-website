@@ -22,7 +22,7 @@ export default function Header() {
           <div className="col-xl-2 col-lg-2 col-md-2">
             <div className='logo-image p-xl-1'> 
             <Link href="/">
-            <img className='logo-image-bg' src='/images/logo.png' alt="Description of image" width={150} height={60}/>
+            <img className='logo-image-bg' src='/images/logo-white.svg' alt="Description of image" width={150} height={60}/>
             </Link></div>
           </div>
           <div className="col-xl-8 col-lg-8 col-md-8">

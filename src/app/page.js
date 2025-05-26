@@ -5,6 +5,7 @@ import About from "./about/page";
 import HomeSection from "./home/page";
 import Portfolio from "./portfolio/page";
 import VideoPlay from "./videoplay/page";
+import Vision from "./vision/page";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <About/>
       <Portfolio/>
       <VideoPlay/>
+      <Vision/>
     </>
   );
 }
