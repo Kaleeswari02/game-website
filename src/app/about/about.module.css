@@ -7,8 +7,8 @@
   margin-top: 100px !important;
   overflow: hidden !important;
 }
-.about-sec{
-  background-color: #000000;
+.aboutBgcolor{
+  background-color: #000000 !important;
 }
 .characterImg {
   max-width: 100%;

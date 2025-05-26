@@ -1,0 +1,41 @@
+.port-headone{
+    text-align: left;
+    font-size: 110px;
+    text-transform: uppercase;
+    line-height: 0.95em;
+    font-family: 'Anton', sans-serif !important;
+    color: #000000;
+  }
+  .port-headtwo{
+    color: #02010100;
+    font-family: "Anton", Sans-serif;
+    -webkit-text-stroke-width: 2px;
+    stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+    stroke: #000000;
+    font-family: 'Anton', sans-serif !important;
+    font-size: 110px;
+  }
+  .portfolio-btn {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+   font-size: 16px;
+   font-weight: 600;
+   text-transform: uppercase;
+   line-height: 1.5;
+   background-color: #fcd202;
+   color: #000;
+   border: none;
+   border-radius: 30px 30px 30px 30px !important;
+   padding: 16px 100px 16px 100px  !important;
+   cursor: pointer;
+   /* box-shadow: 0 5px 15px rgba(252, 210, 2, 0.5); */
+   transition: all 0.3s ease-in-out;
+   letter-spacing: 0.3px;
+ }
+ 
+ .portfolio-btn:hover {
+   background-color: #252525;
+   color: #ffffff;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+   transform: translateY(-2px);
+ }

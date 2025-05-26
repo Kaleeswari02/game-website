@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Header from "./header/page";
 import About from "./about/page";
 import HomeSection from "./home/page";
+import Portfolio from "./portfolio/page";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header/>
       <HomeSection/>
       <About/>
+      <Portfolio/>
     </>
   );
 }

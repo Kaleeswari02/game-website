@@ -36,7 +36,7 @@ const CapabilitiesSection = () => {
   const [activeTab, setActiveTab] = useState('1');
 
   return (
-    <div className={`${styles.capaSection} container-fluid py-5`}>
+    <div className={`${styles.capaSection} container-fluid  py-5`} id='Services'>
       <h2 className="text-center">
         <span className={styles.capaHeading}>OUR</span>
         <span className={`${styles.textOutline} ms-3`}>CAPABILITIES</span>
