@@ -17,9 +17,9 @@ export default function About() {
       useGSAP(() => {
     gsap.fromTo(
       tigerRef.current,
-      { x: '-150px' },
+      { x: '-100px' },
       {
-        x: '150px',
+        x: '100px',
         ease: 'none',
         scrollTrigger: {
           trigger: sectionRef.current,
