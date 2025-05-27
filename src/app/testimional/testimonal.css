@@ -58,3 +58,11 @@
     letter-spacing: 1px;
     word-spacing: 1px;
 }
+.carousel-indicat-des button{
+    width:10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: #fcd202 !important;
+    /* border: 1px solid #fff !important; */
+    z-index: 1;
+}

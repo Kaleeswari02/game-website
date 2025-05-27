@@ -12,14 +12,14 @@ export default function Testimonal(){
     
     return(
         <>
-        <div className='container-fluid testi-background p-5'>
+        <div className='container-fluid testi-background p-5 mb-xl-5 mb-md-5 mb-lg-5' id='testimonal'>
             <div
         id="carouselExampleIndicators"
         className="carousel slide"
         data-bs-ride="carousel"
         data-bs-interval="3000" // slide every 3 seconds
         >
-        <div className="carousel-indicators">
+        <div className="carousel-indicators carousel-indicat-des">
             <button
             type="button"
             data-bs-target="#carouselExampleIndicators"

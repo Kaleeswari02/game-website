@@ -1,0 +1,85 @@
+.small-image-sec1{
+    display: flex;
+    justify-content: space-around;
+}
+.small-image-sec2{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: 50vh;
+}
+.career-main-img{
+    text-align: center;
+    padding: 5%;
+    position: relative;
+    bottom: 10vh;
+    left: 2vw;
+}
+.image-style-1{
+    position: relative;
+    top: 5vh;
+    width: 12%;
+    height: 10%;
+    animation: rotate duration timing-function delay iteration-count direction fill-mode;
+}
+.image-style-2{
+    width: 11%;
+    height: 10%;
+}
+.image-style-3{
+    position: relative;
+    bottom: 9vh;
+    right: 5vw;
+    width: 12%;
+    height: 12%;
+}
+.image-style-4{
+    position: relative;
+    left: 8vw;
+    top: 5vh;
+    width: 20%;
+    height: 20%;
+}
+.career-head{
+    color: #000000;
+    font-size: 35px;
+    font-family: 'Anton', sans-serif !important;
+    padding: 5%;
+
+}
+.career-para{
+    font-size: 16px;
+    color: #5A5A5A;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    text-align: justify;
+    padding: 2% 5%;
+}
+.career-button{
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #fcd202;
+    color: #000;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-style: none;
+    border-radius: 30px 30px 30px 30px !important;
+    padding: 16px 46px 16px 46px !important;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    letter-spacing: 0.3px;
+}
+.career-btn-area{
+    padding: 2% 5%;
+}
+.career-button:hover{
+    background-color: #252525;
+    color: #ffffff;
+    transition: all 1s ease;
+}
+
+  /* testing */
+  

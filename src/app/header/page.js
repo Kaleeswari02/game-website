@@ -70,7 +70,7 @@ export default function Header() {
                   <li><Link className="nav-item" href="#about">About us</Link></li>
                   <li><Link className="nav-item" href="#Services">Services</Link></li>
                   <li><Link className="nav-item" href="#portfolio">Portfolio</Link></li>
-                  <li><Link className="nav-item" href="#">Testimonials</Link></li>
+                  <li><Link className="nav-item" href="#testimonal">Testimonials</Link></li>
                   <li><Link className="nav-item" href="#">Careers</Link></li>
                 </ul>
               </nav>
