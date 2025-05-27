@@ -32,8 +32,8 @@ export default function About() {
   }, { scope: sectionRef }); 
   return (
     <>
-    <div className={`container-fluid pt-5 ${styles.aboutBgcolor}`} id='about'>
-      <div ref={sectionRef} className={`container-fluid  pt-5 ${styles.aboutSection}`}>
+    <div className={`container-fluid ${styles.aboutBg}`}>
+      <div ref={sectionRef} className={`container-fluid ${styles.aboutSection}`}  id='about'>
          <div className={`container`}>
 
         <div className="row align-items-center">
