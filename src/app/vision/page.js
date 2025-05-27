@@ -40,8 +40,8 @@ useGSAP(() => {
       trigger: sectionRef.current,
       pin: true,
       scrub: true,
-      start: 'top top',
-      end: `+=${window.innerHeight * (total - 1)}`, 
+     start: 'top top', // start animation earlier
+      end: `+=${window.innerHeight * (total - 1)}`,
     },
   });
 
@@ -110,11 +110,10 @@ useGSAP(() => {
 
 
   return (
-    <section ref={sectionRef} className={styles.scrollSection}>
-
-      <div className={styles.sliderWrapper}>
+    <section  className={styles.scrollSection}>
+      <div ref={sectionRef} className={styles.sliderWrapper}>
         {slides.map((s, i) => (
-          <div
+          <div  
             key={i}
             className={`${styles.slide} slide-${i} ${s.reverse ? styles.reverse : ''}`}
           >
@@ -141,6 +140,7 @@ useGSAP(() => {
           </div>
         ))}
       </div>
+     
     </section>
   );
 }

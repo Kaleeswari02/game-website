@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { Anton, Plus_Jakarta_Sans  } from 'next/font/google';
 
@@ -31,11 +33,23 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}  ${anton.variable}  ${plusJakarta.variable} `}>
         {children}
-
+        <ToastContainer 
+        position="top-center" 
+        autoClose={3000} 
+        hideProgressBar={false} 
+        newestOnTop={false} 
+        closeOnClick 
+        rtl={false} 
+        pauseOnFocusLoss 
+        draggable 
+        pauseOnHover 
+        theme="light"
+      />
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         
       </body>
