@@ -55,12 +55,16 @@ overflow: hidden;
 .tabButton:hover {
   background: #252525 !important; 
   color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .activeTab {
   background: #fcd202 !important; 
   font-weight: 700;
   color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .activeTab:hover{
 background: #fcd202 !important; 

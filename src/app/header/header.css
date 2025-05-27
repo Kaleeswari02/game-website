@@ -3,7 +3,7 @@
         background-color: rgb(0 0 0 / 45%);
     }
    .logo-image{
-       width: 100%;
+       /* width: 100%; */
        cursor: pointer; 
        margin-left: 6%;
    }

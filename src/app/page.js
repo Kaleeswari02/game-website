@@ -6,6 +6,7 @@ import HomeSection from "./home/page";
 import Portfolio from "./portfolio/page";
 import VideoPlay from "./videoplay/page";
 import VisionMission from "./vision/page";
+import Testimonal from "./testimional/page";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Portfolio/>
       <VideoPlay/>
       <VisionMission/>
+      <Testimonal/>
     </>
   );
 }

@@ -1,0 +1,60 @@
+
+.testi-background {
+    position: relative;
+    background-image: url('/images/Testimonials-BG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius: 80px 80px 0px 0px;
+  }
+
+  .testi-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)); */
+    background-color: #000000ba;
+    z-index: 0;
+    border-radius: 80px 80px 0px 0px;
+  }
+.icon-style-quote{
+    color: #fcd202;
+    font-size: 150px;
+
+}
+.icon-section{
+    text-align: center;
+}
+.start-align{
+    display: flex;
+    color: #fcd202;
+    justify-content: center;
+    list-style: none !important;
+    z-index: 1;
+    font-size: 15px;
+    gap: 10px;
+}
+.content-section p {
+    color: #ffff;
+    line-height: 1.5;
+    font-size: 30px;
+    font-family: 'Plus Jakarta Sans', sans-serif ;
+    z-index: 1;
+    text-align: center;
+    padding: 0% 5%;
+}
+.thumbnail-section{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    font-family: 'Anton', sans-serif !important;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}

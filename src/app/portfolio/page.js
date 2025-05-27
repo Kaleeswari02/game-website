@@ -10,7 +10,8 @@ export default function Portfolio(){
   };
     return(
         <>
-        <div className="container-fluid mt-xl-5">
+
+        <div className="container-fluid mt-xl-5 mb-xl-5" id='portfolio'>
             <div className="container">
                 <div className="row">
                     <div className="col-xl-8 col-lg-8 col-md-8">
@@ -29,61 +30,59 @@ export default function Portfolio(){
                 </div>
             </div>
             {visible && (
-                <div className="image-gallary-section">
-                    <div className="row">
-                    <div className="col-xl-3 col-over">
-                        <div className='port-image'>
-                            <img src="/images/bg-5.png" alt="Banner" className="image-hover-scale" />
-                            <h5 className="hover-heading">2D/3D Animation</h5>
-                        </div>
+                    <div className="image-row row ">
+                    <div className="image-col col-xl-2">
+                        <img src="/images/port1.png" alt="" />
+                        <h5 className="hover-heading">2D/3D Animation</h5>
                     </div>
-                    <div className="col-xl-3 col-over">
-                        <div className='port-image'>
-                            <img src="/images/port1.png" alt="Banner" className="image-hover-scale" />
-                            <h5 className="hover-heading">Video Editing</h5>
-                        </div>
+                    <div className="image-col col-xl-2">
+                        <img src="/images/port2.png" alt="" />
+                        <h5 className="hover-heading">Video Editing</h5>
                     </div>
-                    <div className="col-xl-3 col-over">
-                        <div className='port-image'>
-                            <img src="/images/port2.png" alt="Banner" className="image-hover-scale" />
-                            <h5 className="hover-heading">AI & Automation</h5>
-                        </div>
+                    <div className="image-col col-xl-2">
+                        <img src="/images/port3.png" alt="" />
+                        <h5 className="hover-heading">AI & Automation</h5>
                     </div>
-                    <div className="col-xl-3 col-over mb-xl-5">
-                        <div className='port-image'>
-                            <img src="/images/port3.png" alt="Banner" className="image-hover-scale" />
-                            <h5 className="hover-heading">Game Development</h5>
-                        </div>
+                    <div className="image-col col-xl-2">
+                        <img src="/images/port1.png" alt="" />
+                        <h5 className="hover-heading">Game Development</h5>
                     </div>
+                    <div className="image-col col-xl-2">
+                        <img src="/images/port1.png" alt="" />
+                        <h5 className="hover-heading">2D/3D Animation</h5>
+                    </div>
+                    <div className="image-col col-xl-2">
+                        <img src="/images/port2.png" alt="" />
+                        <h5 className="hover-heading">Video Editing</h5>
                     </div>
                 </div>
              )}
-                <div className="image-gallary-section">
-                    <div className="row">
-                    <div className="col-xl-3 col-over">
-                        <div className='port-image'>
-                            <img src="/images/bg-5.png" alt="Banner" className="image-hover-scale" />
+                <div className="image-gallary-section mb-xl-5">
+                    <div className="image-row row ">
+                        <div className="image-col col-xl-2">
+                            <img src="/images/port1.png" alt="" />
                             <h5 className="hover-heading">2D/3D Animation</h5>
                         </div>
-                    </div>
-                    <div className="col-xl-3 col-over">
-                        <div className='port-image'>
-                            <img src="/images/port1.png" alt="Banner" className="image-hover-scale" />
+                        <div className="image-col col-xl-2">
+                            <img src="/images/port2.png" alt="" />
                             <h5 className="hover-heading">Video Editing</h5>
                         </div>
-                    </div>
-                    <div className="col-xl-3 col-over">
-                        <div className='port-image'>
-                            <img src="/images/port2.png" alt="Banner" className="image-hover-scale" />
+                        <div className="image-col col-xl-2">
+                            <img src="/images/port3.png" alt="" />
                             <h5 className="hover-heading">AI & Automation</h5>
                         </div>
-                    </div>
-                    <div className="col-xl-3 col-over mb-xl-5">
-                        <div className='port-image'>
-                            <img src="/images/port3.png" alt="Banner" className="image-hover-scale" />
+                        <div className="image-col col-xl-2">
+                            <img src="/images/port1.png" alt="" />
                             <h5 className="hover-heading">Game Development</h5>
                         </div>
-                    </div>
+                        <div className="image-col col-xl-2">
+                            <img src="/images/port1.png" alt="" />
+                            <h5 className="hover-heading">2D/3D Animation</h5>
+                        </div>
+                        <div className="image-col col-xl-2">
+                            <img src="/images/port2.png" alt="" />
+                            <h5 className="hover-heading">Video Editing</h5>
+                        </div>
                     </div>
                 </div>
         </div>

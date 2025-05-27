@@ -21,61 +21,78 @@
    font-size: 16px;
    font-weight: 600;
    text-transform: uppercase;
-   line-height: 1.5;
    background-color: #fcd202;
    color: #000;
-   border: none;
+   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+   border-style: none;
    border-radius: 30px 30px 30px 30px !important;
    padding: 16px 100px 16px 100px  !important;
    cursor: pointer;
-   /* box-shadow: 0 5px 15px rgba(252, 210, 2, 0.5); */
-   transition: all 0.3s ease-in-out;
+   transition: all 0.5s ease; /* slower transition */
+   -webkit-transition: all 0.5s ease;
    letter-spacing: 0.3px;
  }
  
  .portfolio-btn:hover {
    background-color: #252525;
    color: #ffffff;
-   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-   transform: translateY(-2px);
+   /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); */
+   /* transform: translateY(-2px); */
+   -webkit-transition: all 1s ease;
+    transition: all 1s ease;
  }
- .image-hover-scale {
-    transition: transform 1s ease;
-    transform-origin: center; 
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 20px;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .image-hover-scale:hover {
-    transition:  all 0.5s ease-in-out;
-    transform: scaleX(1.2); 
-    width: 100%;
-    border-radius: 20px;
-  }
-.image-gallary-section-hidden{
-    display: none;
+ .hover-heading{
+  padding: 6px 12px;
+  color: #000;
+  font-size: 25px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+ }
+ .image-col:hover .hover-heading {
+  opacity: 1;
+  transform: translateY(0);
 }
-  .col-over{
-    position: relative;
+  /* testing */
+  .image-row {
+    display: flex;
+    gap: 15px;
     overflow: hidden;
-  }
-  .hover-heading {
-    /* position: absolute;
-    bottom: 10px;
-    left: 10px;
-    margin: 0; */
-    color: #000;
-    padding: 5px 10px;
-    border-radius: 4px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    position: relative;
+    
   }
   
-  .col-over:hover .hover-heading {
-    opacity: 1;
+  .image-col {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    transition: flex 1s ease;
+    border-radius: 20px !important;
+  }
+  
+  .image-col img {
+    width: 190%; /* double the width to allow cropping */
+    object-fit: cover;
+    background-size: center;
+    transform: translateX(-25%); /* show center part */
+    transition: transform 1s ease;
+    height: 500px;
+    border-radius: 20px !important;
+  }
+  
+  /* On hover, show full image and push others */
+  .image-col:hover {
+    flex: 3; /* expand this column */
+    z-index: 2;
+  }
+  
+  .image-col:hover img {
+    transform: translateX(0); 
+    width: 100%;
+    border-radius: 20px;
+    
   }
   
