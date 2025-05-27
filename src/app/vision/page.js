@@ -32,110 +32,82 @@ const slides = [
 
 export default function VisionMission() {
   const sectionRef = useRef(null);
+useGSAP(() => {
+  const total = slides.length;
 
-  useGSAP(() => {
-
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          pin: true,
-          scrub: true,
-          start: 'top top',
-          end: `+=${slides.length * 100}%`,
-        },
-      });
-
-      slides.forEach((slide, i) => {
-        const base = `.slide-${i}`;
-        const content = `${base} .content`;
-        const image = `${base} .image`;
-
-        tl.fromTo(
-          content,
-          {
-            x: slide.reverse ? 150 : -150,
-            opacity: 0,
-            clipPath: 'inset(0 100% 0 0)',
-          },
-          {
-            x: 0,
-            opacity: 1,
-            clipPath: 'inset(0 0% 0 0)',
-            duration: 0.5,
-          },
-          i
-        );
-
-        tl.fromTo(
-          image,
-          {
-            x: slide.reverse ? -150 : 150,
-            opacity: 0,
-            clipPath: 'inset(0 0 0 100%)',
-          },
-          {
-            x: 0,
-            opacity: 1,
-            clipPath: 'inset(0 0 0 0%)',
-            duration: 0.5,
-          },
-          i
-        );
-
-        if (i !== slides.length - 1) {
-          tl.to([content, image], { opacity: 0, duration: 2 }, i + 0.9);
-        }
-      });
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: sectionRef.current,
+      pin: true,
+      scrub: true,
+      start: 'top top',
+      end: `+=${window.innerHeight * (total - 1)}`, 
     },
-    { scope: sectionRef }
-  );
+  });
 
-//   useGSAP(() => {
-//   const tl = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: sectionRef.current,
-//       pin: true,
-//       scrub: true,
-//       start: 'top top',
-//       end: `+=${slides.length * 100}%`,
-//     },
-//   });
+  slides.forEach((slide, i) => {
+    const base = `.slide-${i}`;
+    const content = `${base} .content`;
+    const image = `${base} .image`;
 
-//   slides.forEach((slide, i) => {
-//     const base = `.slide-${i}`;
-//     const content = `${base} .content`;
-//     const image = `${base} .image`;
+    gsap.set(base, {
+      zIndex: total - i,
+      opacity: i === 0 ? 1 : 0,
+      scale: i === 0 ? 1 : 0.95,
+    });
 
-//     tl.fromTo(
-//       [content, image],
-//       {
-//         x: (index) => (index === 0 ? (slide.reverse ? 150 : -150) : (slide.reverse ? -150 : 150)),
-//         opacity: 0,
-//         clipPath: index => index === 0 ? 'inset(0 100% 0 0)' : 'inset(0 0 0 100%)',
-//       },
-//       {
-//         x: 0,
-//         opacity: 1,
-//         clipPath: 'inset(0 0 0 0)',
-//         duration: 1,
-//         ease: 'power2.out',
-//       },
-//       i * 1.5 
-//     );
+    gsap.set(content, {
+      x: slide.reverse ? 150 : -150,
+      opacity: 0,
+      clipPath: 'inset(0 100% 0 0)',
+    });
 
-//     if (i !== slides.length - 1) {
-//       tl.to(
-//         [content, image],
-//         {
-//           opacity: 0,
-//           duration: 1,
-//           ease: 'power2.inOut',
-//         },
-//         (i + 1) * 1.5 - 0.1
-//       );
-//     }
-//   });
-// }, { scope: sectionRef });
+    gsap.set(image, {
+      x: slide.reverse ? -150 : 150,
+      opacity: 0,
+      clipPath: 'inset(0 0 0 100%)',
+    });
+  });
+
+  for (let i = 0; i < total; i++) {
+    const base = `.slide-${i}`;
+    const content = `${base} .content`;
+    const image = `${base} .image`;
+
+    tl.to(base, {
+      opacity: 1,
+      scale: 1,
+      duration: 0.5,
+      ease: 'power2.out',
+    }, i * 1.5);
+
+    tl.to(content, {
+      x: 0,
+      opacity: 1,
+      clipPath: 'inset(0 0% 0 0)',
+      duration: 0.6,
+      ease: 'power2.out',
+    }, i * 1.5);
+
+    tl.to(image, {
+      x: 0,
+      opacity: 1,
+      clipPath: 'inset(0 0 0 0%)',
+      duration: 0.6,
+      ease: 'power2.out',
+    }, i * 1.5 + 0.1);
+
+    if (i !== total - 1) {
+      tl.to(base, {
+        opacity: 0,
+        scale: 0.95,
+        duration: 0.6,
+        ease: 'power1.inOut',
+      }, (i + 1) * 1.5 - 0.3);
+    }
+  }
+}, { scope: sectionRef });
+
 
   return (
     <section ref={sectionRef} className={styles.scrollSection}>
