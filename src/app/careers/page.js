@@ -7,7 +7,8 @@ import Image from "next/image";
 import CareerBg from '../../../public/images/career-bg.jpg'
 import { FiArrowUpRight ,FiArrowRight} from 'react-icons/fi'; 
 import jobs from './jobs.json'
-
+import Header from "../header/page";
+import Footerarea from "../footer/page";
 
 
 export default function Careers() {
@@ -21,6 +22,7 @@ export default function Careers() {
 
   return (
     <>
+    <Header/>
       <section  className={`${styles.careerBanner} d-flex align-items-center`}>
               {/* <Image src={CareerBg} alt="Desert Background" fill className={styles.bgImage} /> */}
         <div className=" container text-center">
@@ -72,7 +74,7 @@ export default function Careers() {
        </div>
     </div>
 </div>
-
+<Footerarea/>
     
 
     </>
