@@ -8,6 +8,7 @@ import VideoPlay from "./videoplay/page";
 import VisionMission from "./vision/page";
 import Testimonal from "./testimional/page";
 import CareerSection from "./career/page";
+import Footerarea from "./footer/page";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <VisionMission/>
       <Testimonal/>
       <CareerSection/>
+      <Footerarea/>
     </>
   );
 }

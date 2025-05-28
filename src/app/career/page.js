@@ -3,7 +3,7 @@ import './career.css'
 export default function CareerSection(){
     return(
         <>
-            <div className="container-fluid p-xl-5" >
+            <div className="container-fluid career-area-height" >
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6">
@@ -21,7 +21,7 @@ export default function CareerSection(){
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-6 col-lg-6 col-md-6 p-xl-5 p-lg-5 p-md-5 mt-xl-5 mt-lg-5 mt-md-5">
+                        <div className="col-xl-6 col-lg-6 col-md-6 mt-xl-5 mt-lg-5 mt-md-5">
                             <div className="career-content p-xl-5 p-lg-5 p-md-5 mt-xl-5 mt-lg-5 mt-md-5">
                                 <h2 className="career-head">Power up your career</h2>
                                 <p className="career-para">Looking for a career at Gamecrio means stepping into a dynamic world where creativity, innovation, and passion collide to shape the future of gaming. Here, your career isn’t just a job—it’s an opportunity to show your potential, pursue your passions, and make a meaningful impact on the gaming industry.</p>

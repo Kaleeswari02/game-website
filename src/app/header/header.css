@@ -120,7 +120,7 @@ label::after {
 }
 
 .form-control:focus {
-  border-color: yellow;
+  border-color: #000;
   box-shadow: none;
   background-color: #fff;
   color: #000;

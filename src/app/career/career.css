@@ -80,6 +80,13 @@
     color: #ffffff;
     transition: all 1s ease;
 }
-
+.career-area-height{
+    height: 700px;
+}
   /* testing */
-  
+  .image-section{
+    animation: fadeInLeft 2.8s ease-in-out;
+  }
+  .career-content{
+    animation: fadeInRight 2.8s ease-in-out;
+  }

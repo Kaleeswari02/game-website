@@ -47,11 +47,13 @@
    transition: all 0.8s ease-in-out;
    position: absolute;
     right: 0%;
+    animation: fadeInRight 1.8s ease-in-out;
 
    
 }
 .banner-content{
     margin-top: 30% !important;
+    animation: fadeInLeft 1.8s ease-in-out;
 }
 .banner-para{
     font-size: 16px;
@@ -84,4 +86,29 @@
   }
   .banner-btn-arrow :hover{
     transform: rotate(45deg);
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-150px);
+    -ms-transform: translateY(-150px);
+    transform: translateY(-150px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

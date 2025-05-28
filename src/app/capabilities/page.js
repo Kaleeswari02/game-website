@@ -59,7 +59,7 @@ const CapabilitiesSection = () => {
           activeTab === tab.id ? (
             <div key={tab.id} className={styles.tabPane}>
               <div className="row align-items-center">
-                <div className="col-md-6 d-flex justify-content-center align-items-center">
+                <div className="col-md-6 d-flex justify-content-center align-items-center ">
                   <Image
                     src={tab.image}
                     alt={tab.heading}
