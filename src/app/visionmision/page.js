@@ -40,7 +40,7 @@ useGSAP(() => {
       trigger: sectionRef.current,
       pin: true,
       scrub: true,
-     start: 'top top', // start animation earlier
+     start: 'top top',
       end: `+=${window.innerHeight * (total - 1)}`,
     },
   });

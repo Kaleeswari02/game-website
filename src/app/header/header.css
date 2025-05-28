@@ -49,17 +49,18 @@
    }
    .contact-btn{
     padding: 10px 30px;
-    background: #f0cb11;
+    background: #fcd202;
     border-radius: 29px;
-    color: white;
+    color: #fff;
     font-weight: 600;
     border: 1px solid #fcd202 !important;
     font-family: "Plus Jakarta Sans", sans-serif;
           
    }
    .contact-btn:hover{
-    background-color: #252525;
-    border: 1px solid #252525 !important;
+    background-color: #fcd202;
+    border: 1px solid #fcd202 !important;
+    color: #000;
    }
    .button-space{
     text-align: right;

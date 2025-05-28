@@ -5,7 +5,7 @@ import About from "./about/page";
 import HomeSection from "./home/page";
 import Portfolio from "./portfolio/page";
 import VideoPlay from "./videoplay/page";
-import VisionMission from "./vision/page";
+import VisionMission from "./visionmision/page";
 import Testimonal from "./testimional/page";
 import CareerSection from "./career/page";
 import Footerarea from "./footer/page";

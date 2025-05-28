@@ -10,8 +10,11 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import CapabilitiesSection from '../capabilities/page';
 gsap.registerPlugin(ScrollTrigger);
+import { useModal } from '../context/ModalContext';
 
 export default function About() {
+    const { openModal } = useModal();
+
     const tigerRef = useRef(null);
     const sectionRef = useRef(null);
       useGSAP(() => {
@@ -54,7 +57,7 @@ export default function About() {
               As a leading <a href="#">Casino Slot Game Development Company in the USA</a>, our team of skilled engineers and programmers harness the latest tools and technologies to build seamless gaming experiences. Whether it’s crafting complex gameplay mechanics or optimizing performance across platforms, we are committed to delivering games that captivate and inspire.
             </p>
                     <div className="text-center">
-            <button className={`${styles.aboutButton} px-4 mt-3`}>
+            <button onClick={openModal} className={`${styles.aboutButton} px-4 mt-3`}>
                 GET ASSISTANCE
                 <span className={`${styles.aboutButtonArrow} ms-2`}>
                 <FiArrowUpRight className={styles.arrowDefault} />

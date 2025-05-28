@@ -8,11 +8,14 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { toast } from 'react-toastify';
+import { useModal } from '../context/ModalContext';
 
 export default function Header() {
   const formRef = useRef();
 
-  const [modal, setModal] = useState(false);
+  // const [modal, setModal] = useState(false);
+  const { isModalOpen, openModal, closeModal } = useModal();
+
 
   const schema = yup.object().shape({
     name: yup.string().required("Name is required"),
@@ -77,7 +80,7 @@ export default function Header() {
             </div>
             <div className="col-xl-2 col-lg-2 col-md-2 mt-xl-2">
               <div className='button-space'>
-                <button onClick={toggle}
+                <button onClick={openModal}
                   className='contact-btn'>
                   Contact Us
                 </button>
@@ -87,8 +90,10 @@ export default function Header() {
         </div>
       </div>
       {/* Contact Modal */}
-      <Modal isOpen={modal} toggle={toggle} centered backdrop="static" >
-        <ModalHeader toggle={toggle}>Contact Us</ModalHeader>
+      {/* <Modal isOpen={modal} toggle={toggle} centered backdrop="static" >
+        <ModalHeader toggle={toggle}>Contact Us</ModalHeader> */}
+     <Modal isOpen={isModalOpen} toggle={closeModal} centered backdrop="static">
+  <ModalHeader toggle={closeModal}>Contact Us</ModalHeader>
         <form ref={formRef} onSubmit={handleSubmit(sendEmail)}>
           <ModalBody>
             <FormGroup>
