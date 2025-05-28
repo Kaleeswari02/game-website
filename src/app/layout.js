@@ -3,14 +3,21 @@ import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Poppins } from 'next/font/google';
 
 import { Anton, Plus_Jakarta_Sans  } from 'next/font/google';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-});
+    weights: ['400', '500', '600', '700', '800'],
 
+});
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'], // add what you need
+  variable: '--font-poppins', // optional for using as a CSS variable
+});
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -36,7 +43,8 @@ export default function RootLayout({ children }) {
         
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}  ${anton.variable}  ${plusJakarta.variable} `}>
+      <body className={`${geistSans.variable} ${geistMono.variable} 
+       ${poppins.variable}  ${anton.variable}  ${plusJakarta.variable} `}>
         {children}
         <ToastContainer 
         position="top-center" 
