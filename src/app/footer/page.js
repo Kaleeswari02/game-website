@@ -14,7 +14,7 @@ export default function Footerarea(){
       tigerRef.current,
       { x: '-150px' },
       {
-        x: '250px',
+        x: '150px',
         ease: 'none',
         scrollTrigger: {
           trigger: sectionRef.current,
