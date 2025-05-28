@@ -69,7 +69,7 @@ export default function Header() {
             <div className="col-xl-8 col-lg-8 col-md-8">
               <nav className="navbar-area mt-xl-4">
                 <ul className="nabar-section">
-                  <li><Link className="nav-item" href="#home">Home</Link></li>
+                  <li><Link className="nav-item" href="/">Home</Link></li>
                   <li><Link className="nav-item" href="#about">About us</Link></li>
                   <li><Link className="nav-item" href="#Services">Services</Link></li>
                   <li><Link className="nav-item" href="#portfolio">Portfolio</Link></li>

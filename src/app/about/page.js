@@ -44,7 +44,7 @@ export default function About() {
             <Image src={girlImg} alt="Girl Character" className={styles.characterImg} />
           </div>
 
-          <div className="col-md-6 text-center text-md-start mt-xl-5 mt-lg-5">
+          <div className="col-md-6 text-center text-md-start mt-xl-5 mt-lg-5 about-space">
             
             <h2 className={`${styles.aboutHeading} text-center`}>
               Casino Slot Game Development<br/> Company

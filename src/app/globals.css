@@ -41,4 +41,155 @@ html{
   @media only screen and (min-width: 600px) and (max-width: 794px){}
   /* mobile-view portrait */
   @media only screen and (min-width: 450px) and (max-width: 600px){}
-  @media only screen and (min-width: 300px) and (max-width: 450px) {}
+  @media  screen and (min-width: 300px) and (max-width: 450px) {
+    .footer-icon-text {
+      font-size: 16px !important;
+      margin-left: unset !important;
+      color: #fcd202 !important;
+    }
+    .footer-icon {
+      font-size: 30px !important;
+    }
+    .footer-image-section {
+      display: flex;
+      flex-direction: row !important;
+    }
+    .footer-heading{
+      font-size: 25px !important;
+    }
+    .footer-img-set {
+      width: 40% !important;
+      transform: translate(-20px, 0px) !important;
+      }
+      .footer-subhead {
+        font-size: 16px !important;
+        text-align: center !important;
+      }
+      .footer-para {
+        font-size: 12px !important;
+        text-align: center !important;
+    }
+    .copyrights {
+      font-size: 10px !important;
+    }
+    .carrer-img{
+      width: 90% !important;
+    }
+    .image-style-2 {
+      position: relative !important;
+      top: 5vh !important;
+  }
+    .image-style-3 {
+      position: relative;
+      bottom: 3vh !important;
+      right: 18vw !important;
+    }
+    .image-section{
+      height: 400px !important;
+    }
+    .career-head {
+      font-size: 25px !important;
+      padding: 0% !important;
+      text-align: center !important;
+    }
+    .career-para {
+      font-size: 12px !important;
+      padding: 2% 0% !important;
+  }
+  .footer-bg::before {
+    font-size: 35px !important;
+    position: absolute !important;
+    left: 22vw !important;
+    letter-spacing: 14px !important;
+    margin-top: 7vh !important;
+  }
+  .career-btn-area {
+    text-align: center !important;
+  }
+  .icon-style-quote {
+    font-size: 50px !important;
+      }
+      .start-align{
+        font-size: 12px !important;
+      }
+      .content-section p {
+        font-size: 12px !important;
+        text-align: justify !important;
+        padding: unset !important;
+    }
+    .thumb-img{
+      width: 20% !important;
+    }
+    .thumbnail-section{
+      font-size: 12px !important;
+    }
+    .carousel-indicat-des{
+      position: absolute !important;
+      top: 40vh !important;
+    }
+    .testi-background::before{
+      border-radius: unset !important;
+    }
+    .testi-background{
+      border-radius: unset !important;
+    }
+    .image-row{
+      display: flex !important;
+      flex-direction: column !important;
+      margin: auto !important;
+    }
+
+    .image-col{
+      margin: auto !important;
+      width: 100%;
+    }
+    .port-headone {
+      font-size: 50px !important;
+    }
+    .port-headtwo {
+      font-size: 50px !important;
+    }
+    .portfolio-btn {
+      font-size: 12px !important;
+      border-radius: 30px 30px 30px 30px !important;
+      padding: 10px 50px 10px 50px !important;
+  }
+    .portfolio-sec{
+      display: flex;
+      justify-content: center !important;
+    }
+    .port-btn{
+      text-align: center !important;
+    }
+    .image-col:hover img{
+      transition: unset !important;
+    }
+    .aboutPara{
+      font-size: 13px !important;
+    }
+    .about-space{
+      text-align: center !important;
+    }
+    .banner-h1 {
+      font-size: 55px !important;
+    }
+    .banner-h2{
+      font-size: 55px !important;
+    }
+    .banner-para{
+      font-size: 13px !important;
+      padding: 0% 0% 0% 0% !important;
+      line-height: unset !important;
+      text-align: justify !important;
+    }
+    .banner-image-sec {
+      display: none !important;
+    }
+    .banner-btn{
+      padding: 10px 30px 10px 30px !important;
+      font-size: 13px !important;
+    }
+    .banner-sec-btn{
+      text-align: center !important;
+    }
+  }

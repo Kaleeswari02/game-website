@@ -72,6 +72,10 @@
     -webkit-transition: all 0.5s ease;
     letter-spacing: 0.3px;
 }
+.career-button a {
+    text-decoration: none !important;
+    color: #000;
+}
 .career-btn-area{
     padding: 2% 5%;
 }

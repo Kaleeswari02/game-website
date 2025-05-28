@@ -47,6 +47,7 @@
    transition: all 0.8s ease-in-out;
    position: absolute;
     right: 0%;
+    left: 5vw;
     animation: fadeInRight 1.8s ease-in-out;
 
    
@@ -60,7 +61,7 @@
     color: #ffffffc4 !important;
     font-family: 'Plus Jakarta Sans' !important;
     line-height: 1.6;
-    padding: 0% 13% 0% 0% !important;
+    padding: 0% 13% 0% 0% ;
 }
 .banner-btn{
     font-family: "Tahoma", Sans-serif;

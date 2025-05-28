@@ -42,11 +42,11 @@ const CapabilitiesSection = () => {
         <span className={`${styles.textOutline} ms-3`}>CAPABILITIES</span>
       </h2>
 
-      <div className={`${styles.tabsContainer} mt-5`}>
+      <div className={`${styles.tabsContainer} mt-xl-5 mt-lg-5 mt-md-5 mt-3`}>
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            className={`${styles.tabButton} mt-5 ${activeTab === tab.id ? styles.activeTab : ''}`}
+            className={`${styles.tabButton} mt-xl-5 mt-lg-5 mt-md-5 mt-3 ${activeTab === tab.id ? styles.activeTab : ''}`}
             onClick={() => setActiveTab(tab.id)}
           >
             {tab.label}
@@ -54,30 +54,32 @@ const CapabilitiesSection = () => {
         ))}
       </div>
 
-      <div className={`${styles.tabContent} mt-5`}>
+      <div className={`${styles.tabContent} mt-xl-5 mt-lg-5 mt-md-5 mt-3`}>
         {tabs.map((tab) =>
           activeTab === tab.id ? (
             <div key={tab.id} className={styles.tabPane}>
               <div className="row align-items-center">
-                <div className="col-md-6 d-flex justify-content-center align-items-center ">
+                <div className="col-md-6 col-xl-6 col-lg-6 col-12 d-flex justify-content-center align-items-center ">
                   <Image
                     src={tab.image}
                     alt={tab.heading}
                     className={styles.characterImage}
                   />
                 </div>
-                <div className="col-md-6 p-5">
+                <div className="col-md-6 col-md-6 col-xl-6 col-lg-6 col-12 p-5 ">
                   <h3 className={styles.rightContentHeading}>{tab.heading}</h3>
                   <p className={`${stylesAbout.aboutPara} mt-4`}>
                     {tab.description}
                   </p>
-                  <button className={`${stylesAbout.aboutButton} px-4 mt-3`}>
-                     {tab.buttonText}
-                    <span className={`${stylesAbout.aboutButtonArrow} ms-2`}>
-                      <FiArrowUpRight className={stylesAbout.arrowDefault} />
-                      <FiArrowRight className={stylesAbout.arrowHover} />
-                    </span>
-                  </button>
+                  <div className="about-space">
+                      <button className={`${stylesAbout.aboutButton} px-4 mt-3`}>
+                        {tab.buttonText}
+                        <span className={`${stylesAbout.aboutButtonArrow} ms-2`}>
+                          <FiArrowUpRight className={stylesAbout.arrowDefault} />
+                          <FiArrowRight className={stylesAbout.arrowHover} />
+                        </span>
+                      </button>
+                  </div>
                 </div>
               </div>
             </div>

@@ -102,3 +102,27 @@
   opacity: 1;
   transform: translateX(5px);
 }
+@media  screen and (min-width: 300px) and (max-width: 450px) {
+  .aboutPara{
+    font-size: 13px !important;
+  }
+  .aboutButton {
+   font-size: 13px;
+   padding: 10px 30px 10px 30px !important;
+   cursor: pointer;
+   /* box-shadow: 0 5px 15px 3px rgba(252, 210, 2, 0.5); */
+   transition: all 0.3s ease-in-out;
+   letter-spacing: 0.3px;
+   
+ }
+ .about-space{
+  text-align: center !important;
+}
+.aboutHeading {
+  font-size: 30px !important;
+  line-height: unset !important;
+}
+.characterImg{
+  width: 80%;
+}
+}

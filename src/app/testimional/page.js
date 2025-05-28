@@ -60,9 +60,9 @@ export default function Testimonal(){
                                 <p>“Gamecrio has been a superstar, very helpful.The experience of working with Gamecrio has been outstanding. Their professionalism, expertise, and commitment to our project's success have made a significant impact.”</p>
                             </div>
                             <div className="thumbnail-section">
-                                <img src="/images/testi-thumb.png" alt=""/>
-                                <p className="name">Charlie Barnes</p>
-                                <p className="job">Godot engine animations</p>
+                                <img src="/images/testi-thumb.png" alt="" className='thumb-img'/>
+                                <span className="name">Charlie Barnes</span>
+                                <span className="job">Godot engine animations</span>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ export default function Testimonal(){
                                 <p>"Gamecrio did amazing work with our Unity project needs! They were proactive and came in with strong opinions to guide our project to success. Highly recommend !"</p>
                             </div>
                             <div className="thumbnail-section">
-                                <img src="/images/testi-thumb.png" alt=""/>
+                                <img src="/images/testi-thumb.png" alt="" className='thumb-img'/>
                                 <span className="name">Charlie Barnes</span>
                                 <span className="job">Godot engine animations</span>
                             </div>
@@ -104,7 +104,7 @@ export default function Testimonal(){
                                 <p>“Gamecrio has been a superstar, very helpful.The experience of working with Gamecrio has been outstanding. Their professionalism, expertise, and commitment to our project's success have made a significant impact.”</p>
                             </div>
                             <div className="thumbnail-section">
-                                <img src="/images/testi-thumb.png" alt=""/>
+                                <img src="/images/testi-thumb.png" alt="" className='thumb-img'/>
                                 <span className="name">Charlie Barnes</span>
                                 <span className="job">Godot engine animations</span>
                             </div>
