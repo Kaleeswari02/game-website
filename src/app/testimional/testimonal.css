@@ -41,7 +41,7 @@
 .content-section p {
     color: #ffff;
     line-height: 1.5;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Plus Jakarta Sans', sans-serif ;
     z-index: 1;
     text-align: center;
@@ -57,4 +57,12 @@
     font-family: 'Anton', sans-serif !important;
     letter-spacing: 1px;
     word-spacing: 1px;
+}
+.carousel-indicat-des button{
+    width:10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: #fcd202 !important;
+    /* border: 1px solid #fff !important; */
+    z-index: 1;
 }
