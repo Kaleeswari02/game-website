@@ -9,6 +9,7 @@ import VisionMission from "./visionmision/page";
 import Testimonal from "./testimional/page";
 import CareerSection from "./career/page";
 import Footerarea from "./footer/page";
+import OurGames from "./ourgames/page";
 
 export default function Home() {
   return (
@@ -16,8 +17,9 @@ export default function Home() {
       <Header/>
       <HomeSection/>
       <About/>
-      <Portfolio/>
+      <OurGames/>
       <VideoPlay/>
+      <Portfolio/>
       <VisionMission/>
       <Testimonal/>
       <CareerSection/>
