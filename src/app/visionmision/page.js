@@ -115,7 +115,7 @@ export default function VisionMission() {
 
 
   return (
-    <section className={`${styles.scrollSection} my-xl-3 mt-lg-3 my-md-3 mb-xl-3 my-5`}>
+    <section className={`${styles.scrollSection} my-xl-3 mt-lg-3  mb-xl-3`}>
       <div ref={sectionRef} className={styles.sliderWrapper}>
         {slides.map((s, i) => (
           <div

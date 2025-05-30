@@ -23,8 +23,8 @@ export default function Portfolio(){
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-4 col-12 mt-xl-5 mt-lg-5 mt-md-5">
-                        <div className="port-btn mt-xl-5 mt-lg-5 mt-md-5">
-                          <div><button className='mb-xl-5 portfolio-btn mt-xl-5 mt-lg-5 mt-md-5 mb-xl-0 mb-lg-0 mb-md-0 mb-5' onClick={showAll}>VIEW ALL <span className='banner-btn-arrow'><FiArrowUpRight /></span></button></div>
+                        <div className="port-btn mt-xl-5 mt-lg-5 mt-md-2">
+                          <div><button className='mb-xl-5 portfolio-btn mt-xl-5 mt-lg-5 mt-md-5 mb-xl-0 mb-lg-0 mb-md-5 mb-5' onClick={showAll}>VIEW ALL <span className='banner-btn-arrow'><FiArrowUpRight /></span></button></div>
                         </div>
                     </div>
                 </div>

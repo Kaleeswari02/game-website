@@ -177,19 +177,6 @@ export default function Header() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="col-6">
-            <div className="m-right">
-              <button
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight"
-                className="mobile-view-button"
-              >
-                <CgMenuRight style={{ color: '#000000' }} />
-              </button>
-            </div>
-
             {/* Mobile Menu Button */}
             <div className="col-6">
               <div className="m-right">
@@ -284,7 +271,6 @@ export default function Header() {
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>

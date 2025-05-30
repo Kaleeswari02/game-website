@@ -38,17 +38,17 @@ export default function Footerarea(){
                 </div>
             </div>
         </div>
-        <div className="container-fluid footer-bg-two">
-            <div className="conatiner" ref={sectionRef}>
+        <div className="container-fluid footer-bg-two ">
+            <div className="conatiner footer-pad" ref={sectionRef}>
                 <div className="row">
-                    <div className="col-xl-5 col-md-5 col-lg-5 col-12">
+                    <div className="col-xl-5 col-md-5 col-lg-5 col-12 footer-area-div">
                         <div className="footer-image-section ">
                             <img src="/images/footer-img.png" alt="footer-image" className="footer-img-set" ref={tigerRef}/>
                             <h2 className="footer-heading ml-xl-5">Let's create something cool?</h2>
                         </div>
                     </div>
-                    <div className="col-xl-2 col-md-2 col-lg-2 col-12">
-                        <div className="footer-service-section p-xl-5 p-lg-5 p-md-5 mt-xl-5">
+                    <div className="col-xl-2 col-md-2 col-lg-2 col-12 footer-area-divone">
+                        <div className="footer-service-section p-xl-5 p-lg-5 p-md-2 mt-xl-5">
                             <h2 className="footer-subhead mt-xl-5">Our Services</h2>
                             <p className="footer-para mt-xl-3">2D/3D Animation</p>
                             <p className="footer-para">Video Editing</p>
@@ -56,8 +56,8 @@ export default function Footerarea(){
                             <p className="footer-para">Game Development</p>
                         </div>
                     </div>
-                    <div className="col-xl-2 col-md-2 col-lg-2 col-12">
-                        <div className="footer-career-section p-xl-5 p-lg-5 p-md-5 mt-xl-5">
+                    <div className="col-xl-2 col-md-2 col-lg-2 col-12 footer-area-divone">
+                        <div className="footer-career-section p-xl-5 p-lg-5 p-md-2 mt-xl-5">
                             <h2 className="footer-subhead mt-xl-5">Others</h2>
                             <p className="footer-para mt-xl-3">About us</p>
                             <p className="footer-para">Portfolio</p>
@@ -66,8 +66,8 @@ export default function Footerarea(){
                             <p className="footer-para">Contact Us</p>
                         </div>
                     </div>
-                    <div className="col-xl-3 col-md-3 col-lg-3 col-12">
-                        <div className="footer-career-section p-xl-5 p-lg-5 p-md-5 mt-xl-5">
+                    <div className="col-xl-3 col-md-3 col-lg-3 col-12 footer-area-divone">
+                        <div className="footer-career-section p-xl-5 p-lg-5 p-md-2 mt-xl-5">
                             <h2 className="footer-subhead mt-xl-5">Address</h2>
                             <p className="footer-para mt-xl-3">Annai Therasa Street, Kalavasal, Madurai, Tamil Nadu 625016</p>
                         </div>

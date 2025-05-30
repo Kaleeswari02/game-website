@@ -143,8 +143,20 @@
   .playIcon {
     font-size: 1.5rem;
   }
+  .videoPlaySection{
+    height: unset !important;
+    border-radius: unset !important;
+  }
 }
-
+@media only screen and (min-width: 795px) and (max-width: 999px){
+  .playCircle {
+    margin: auto !important;
+  }
+  .videoPlaySection{
+    height: unset !important;
+    border-radius: unset !important;
+  }
+}
 @media (max-width: 768px) {
   .videoHeading, .outlineText {
     font-size: 40px;
