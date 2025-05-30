@@ -1,5 +1,7 @@
 'use client'
 import './career.css'
+import { FiArrowUpRight ,FiArrowRight} from 'react-icons/fi'; 
+
 export default function CareerSection(){
     return(
         <>
@@ -25,7 +27,11 @@ export default function CareerSection(){
                             <div className="career-content p-xl-5 p-lg-5 p-md-5 mt-xl-5 mt-lg-5 mt-md-5">
                                 <h2 className="career-head">Power up your career</h2>
                                 <p className="career-para">Looking for a career at Gamecrio means stepping into a dynamic world where creativity, innovation, and passion collide to shape the future of gaming. Here, your career isn’t just a job—it’s an opportunity to show your potential, pursue your passions, and make a meaningful impact on the gaming industry.</p>
-                                <div className='career-btn-area'><button className="career-button" ><a href="/careers">Join with us</a></button></div>
+                                <div className='career-btn-area'><button className="career-button" ><a href="/careers">
+                                Join with us  <span className='careerButtonArrow ms-2'>
+                <FiArrowUpRight className="arrowDefault" />
+                <FiArrowRight className="arrowHover" />
+                </span></a></button></div>
                             </div>
                         </div>
                     </div>

@@ -71,6 +71,7 @@
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     letter-spacing: 0.3px;
+    gap: 8px;
 }
 .career-button a {
     text-decoration: none !important;
@@ -79,10 +80,18 @@
 .career-btn-area{
     padding: 2% 5%;
 }
-.career-button:hover{
+/* .career-button:hover{
     background-color: #252525;
     color: #ffffff;
     transition: all 1s ease;
+} */
+
+
+.career-button:hover {
+  background-color: #252525;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transform: translateZ(-2px);
 }
 .career-area-height{
     height: 700px;
@@ -94,3 +103,36 @@
   .career-content{
     animation: fadeInRight 2.8s ease-in-out;
   }
+
+  .career-button span{
+      transition: transform 0.3s ease;
+  display: inline-block;
+  }
+  
+.careerButtonArrow {
+    position: relative;
+  width: 24px;
+  height: 16px;
+  display: inline-block;
+}
+.arrowDefault,
+.arrowHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 20px;
+}
+
+.arrowDefault {
+  opacity: 1;
+}
+
+.arrowHover {
+  opacity: 0;
+  transform: translateX(-5px);
+}
+
+.career-button:hover .arrowDefault {
+  opacity: 0;
+}

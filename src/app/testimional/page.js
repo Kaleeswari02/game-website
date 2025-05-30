@@ -1,14 +1,10 @@
 'use client'
 import './testimonal.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import { useEffect } from 'react';
 import { LiaQuoteLeftSolid } from "react-icons/lia";
 
 import { GiRoundStar } from "react-icons/gi";
 export default function Testimonal(){
-    useEffect(() => {
-        // No need to manually initialize unless you're customizing further
-      }, []);
+ 
     
     return(
         <>

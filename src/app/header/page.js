@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import "./header.css";
 import Link from 'next/link';
 import { Modal, ModalHeader, ModalBody, ModalFooter, Button, FormGroup, Label, Input, FormFeedback } from "reactstrap";
@@ -10,17 +10,18 @@ import * as yup from "yup";
 import { toast } from 'react-toastify';
 import { useModal } from '../context/ModalContext';
 import { CgMenuRight } from "react-icons/cg";
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 export default function Header() {
+  const formRef = useRef();
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => setMenuOpen(!isMenuOpen);
+  const closeMenu = () => setMenuOpen(false);
+  const { isModalOpen, openModal, closeModal } = useModal();
+  const toggle = () => setModal(!modal);
+
   const scrollToAndClose = (e, id) => {
     e.preventDefault();
-  
-    // Trigger a click on the close button
-    const closeBtn = document.querySelector('#offcanvasRight .btn-close');
-    if (closeBtn) closeBtn.click();
-  
-    // Scroll after a slight delay (to let canvas close)
+    closeMenu();
     setTimeout(() => {
       const target = document.querySelector(id);
       if (target) {
@@ -28,12 +29,6 @@ export default function Header() {
       }
     }, 300);
   };
-  
-  const formRef = useRef();
-
-  // const [modal, setModal] = useState(false);
-  const { isModalOpen, openModal, closeModal } = useModal();
-
 
   const schema = yup.object().shape({
     name: yup.string().required("Name is required"),
@@ -51,23 +46,22 @@ export default function Header() {
     formState: { errors, isValid },
   } = useForm({
     resolver: yupResolver(schema),
-    mode: "onChange", 
+    mode: "onChange",
   });
 
-  const toggle = () => setModal(!modal);
 
   const sendEmail = (data) => {
     emailjs
       .send("service_am2sw1d", "template_h7n0uvo", data, "aH6tkRSl3LIesgTSP")
       .then(
         () => {
-        toast.success("Message sent successfully!");         
-         reset(); 
-          toggle(); 
+          toast.success("Message sent successfully!");
+          reset();
+          toggle();
         },
         (error) => {
           console.error(error.text);
-          toast.danger("Failed to send message.");         
+          toast.danger("Failed to send message.");
         }
       );
   };
@@ -75,8 +69,8 @@ export default function Header() {
 
   return (
     <>
-    <div className='desktop-view'>
-      <div className={`container-fluid header-fluid fixed-top transition-all desktop-view`} >
+      <div className='desktop-view'>
+        <div className={`container-fluid header-fluid fixed-top transition-all desktop-view`} >
           <div className="header-area p-xl-1 p-lg-1 p-md-2">
             <div className="row">
               <div className="col-xl-2 col-lg-2 col-md-2">
@@ -111,8 +105,8 @@ export default function Header() {
         {/* Contact Modal */}
         {/* <Modal isOpen={modal} toggle={toggle} centered backdrop="static" >
           <ModalHeader toggle={toggle}>Contact Us</ModalHeader> */}
-      <Modal isOpen={isModalOpen} toggle={closeModal} centered backdrop="static">
-    <ModalHeader toggle={closeModal}>Contact Us</ModalHeader>
+        <Modal isOpen={isModalOpen} toggle={closeModal} centered backdrop="static">
+          <ModalHeader toggle={closeModal}>Contact Us</ModalHeader>
           <form ref={formRef} onSubmit={handleSubmit(sendEmail)}>
             <ModalBody>
               <FormGroup>
@@ -162,69 +156,66 @@ export default function Header() {
               </Button> */}
             </ModalFooter>
           </form>
-      </Modal>
-    </div>
-    <div className="mobile-view">
-      <div className="container fixed-top mobile-view-bg">
-        <div className="row">
-          {/* Logo */}
-          <div className="col-6">
-            <div className="logo-sec m-2">
-              <Link href="/">
-                <img
-                  className="logo-image-bg"
-                  src="/images/logo.png"
-                  alt="Logo"
-                  width={150}
-                  height={60}
-                />
-              </Link>
-            </div>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <div className="col-6">
-            <div className="m-right">
-              <button
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight"
-                className="mobile-view-button"
-              >
-                <CgMenuRight style={{ color: '#000000' }} />
-              </button>
+        </Modal>
+      </div>
+      <div className="mobile-view">
+        <div className="container fixed-top mobile-view-bg">
+          <div className="row">
+            {/* Logo */}
+            <div className="col-6">
+              <div className="logo-sec m-2">
+                <Link href="/">
+                  <img
+                    className="logo-image-bg"
+                    src="/images/logo.png"
+                    alt="Logo"
+                    width={150}
+                    height={60}
+                  />
+                </Link>
+              </div>
             </div>
 
-            {/* Offcanvas Menu */}
-            <div
-              className="offcanvas offcanvas-end background-design-mobile"
-              tabIndex="-1"
-              id="offcanvasRight"
-              aria-labelledby="offcanvasRightLabel"
-            >
-              <div className="offcanvas-header">
-                <h5 className="offcanvas-title" id="offcanvasRightLabel">Beeyoond Gaming</h5>
+            {/* Mobile Menu Button */}
+            <div className="col-6">
+              <div className="m-right">
                 <button
                   type="button"
-                  className="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
+                  className="mobile-view-button"
+                  onClick={toggleMenu}
+                >
+                  <CgMenuRight style={{ color: '#000000' }} />
+                </button>
               </div>
-              <div className="offcanvas-body">
-                <nav className="navbar-mobile-area">
-                  <ul className="nabar-mobile-section">
-                    <li><a className="nav-item" href="/" >Home</a></li>
-                    <li><a className="nav-item" href="#about" onClick={(e) => scrollToAndClose(e, '#about')}>About us</a></li>
-                    <li><a className="nav-item" href="#Services" onClick={(e) => scrollToAndClose(e, '#Services')}>Services</a></li>
-                    <li><a className="nav-item" href="#portfolio" onClick={(e) => scrollToAndClose(e, '#portfolio')}>Portfolio</a></li>
-                    <li><a className="nav-item" href="#testimonal" onClick={(e) => scrollToAndClose(e, '#testimonal')}>Testimonials</a></li>
-                    <li><Link className="nav-item" href="/careers">Careers</Link></li>
-                  </ul>
-                </nav>
-                <button onClick={openModal} className='contact-btn'>Contact Us</button>
-                <Modal isOpen={isModalOpen} toggle={closeModal} centered backdrop="static">
+
+              {/* Offcanvas Menu */}
+              <div
+                className={`offcanvas offcanvas-end background-design-mobile ${isMenuOpen ? 'show' : ''}`}
+                tabIndex="-1"
+                id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div className="offcanvas-header">
+                  <h5 className="offcanvas-title" id="offcanvasRightLabel">Beeyoond Gaming</h5>
+                  <button
+                    type="button"
+                    className="btn-close"
+                    onClick={closeMenu}
+                  ></button>
+                </div>
+                <div className="offcanvas-body">
+                  <nav className="navbar-mobile-area">
+                    <ul className="nabar-mobile-section">
+                      <li><a className="nav-item" href="/">Home</a></li>
+                      <li><a className="nav-item" href="#about" onClick={(e) => scrollToAndClose(e, '#about')}>About us</a></li>
+                      <li><a className="nav-item" href="#Services" onClick={(e) => scrollToAndClose(e, '#Services')}>Services</a></li>
+                      <li><a className="nav-item" href="#portfolio" onClick={(e) => scrollToAndClose(e, '#portfolio')}>Portfolio</a></li>
+                      <li><a className="nav-item" href="#testimonal" onClick={(e) => scrollToAndClose(e, '#testimonal')}>Testimonials</a></li>
+                      <li><Link className="nav-item" href="/careers">Careers</Link></li>
+                    </ul>
+                  </nav>
+                  <button onClick={openModal} className='contact-btn'>Contact Us</button>
+                  <Modal isOpen={isModalOpen} toggle={closeModal} centered backdrop="static">
                     <ModalHeader toggle={closeModal}>Contact Us</ModalHeader>
                     <form ref={formRef} onSubmit={handleSubmit(sendEmail)}>
                       <ModalBody>
@@ -275,17 +266,17 @@ export default function Header() {
                         </Button> */}
                       </ModalFooter>
                     </form>
-                </Modal>
+                  </Modal>
+                </div>
               </div>
-            </div>   
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
     </>
 
-        
+
 
   );
 }

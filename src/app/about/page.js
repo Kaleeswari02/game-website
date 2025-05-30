@@ -1,7 +1,4 @@
 "use client"
-import Image from 'next/image';
-import girlImg from './../../../public/images/char-1.png'; 
-import tigerImg from './../../../public/images/char-2.png'; 
 import styles from './about.module.css';
 import { FiArrowUpRight ,FiArrowRight} from 'react-icons/fi'; 
 import { useRef } from 'react';
@@ -41,7 +38,7 @@ export default function About() {
 
         <div className="row align-items-center">
           <div className="col-md-3 text-center mb-4 mb-md-0 ">
-            <Image src={girlImg} alt="Girl Character" className={styles.characterImg} />
+            <img   src="/images/char-1.png" alt="Girl Character" className={styles.characterImg} />
           </div>
 
           <div className="col-md-6 text-center text-md-start mt-xl-5 mt-lg-5 about-space">
@@ -71,7 +68,7 @@ export default function About() {
 
           <div className="col-md-3 text-center mt-4 mt-md-0">
             <div ref={tigerRef}>
-              <Image src={tigerImg} alt="Tiger Character" className={styles.characterImg} />
+              <img src="/images/char-2.png"  alt="Tiger Character" className={styles.characterImg} />
             </div>
           </div>
         </div>

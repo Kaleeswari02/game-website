@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 80px 80px 0px 0px;
+
 }
 .videoPlaySection::before {
   content: "";
@@ -43,9 +44,14 @@
   letter-spacing: 0.3px;
 }
 .bgImage {
+  position: absolute;
+  inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0; */
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   z-index: 0;
 }
+
 .playCircle {
   width: 120px;
   height: 120px;

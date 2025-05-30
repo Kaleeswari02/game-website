@@ -6,8 +6,6 @@ import Image from 'next/image';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
-import characterImg from '../../../public/images/bee1.jpg';
-import labImg from '../../../public/images/bee2.jpg';
 import styles from './visionmission.module.css';
 import AboutStyles from '../about/about.module.css';
 import { FiArrowUpRight, FiArrowRight } from 'react-icons/fi';
@@ -19,13 +17,13 @@ const slides = [
   {
     title: 'Our Vision',
     text: 'At Gamecrio Studios, a leading Casino Slot Game Development Company in India, our vision is to revolutionize the gaming industry by seamlessly blending innovation, creativity, and inclusivity into every aspect of our work. We envision a future into every aspect of our work. We envision a future where gaming transcends entertainment and becomes a transformative medium for connection, expression, and empowerment. where gaming transcends entertainment and becomes a transformative medium for connection, expression, and empowerment.',
-    img: characterImg,
+    img: '/images/bee1.jpg',
     reverse: false,
   },
   {
     title: 'Our Mission',
     text: 'To create emotionally resonant and globally inclusive gaming experiences. At Gamecrio Studios, we aim to revolutionize the gaming industry by seamlessly blending innovation, creativity, and inclusivity into every aspect of our work To create emotionally resonant and globally inclusive gaming experiences. At Gamecrio Studios, we aim to revolutionize the gaming industry by seamlessly blending innovation, creativity, and inclusivity into every aspect of our work.',
-    img: labImg,
+    img: '/images/bee2.jpg',
     reverse: true,
   },
 ];
@@ -117,7 +115,7 @@ export default function VisionMission() {
 
 
   return (
-    <section className={`${styles.scrollSection} my-5`}>
+    <section className={`${styles.scrollSection} my-xl-3 mt-lg-3 my-md-3 mb-xl-3 my-5`}>
       <div ref={sectionRef} className={styles.sliderWrapper}>
         {slides.map((s, i) => (
           <div
@@ -130,7 +128,7 @@ export default function VisionMission() {
                 <span className={styles.textOutline}> {s.title.slice(3)}</span>
               </h2>
               <p className={styles.para}>{s.text}</p>
-              <div className="text-start">
+                <div className=" md:text-center lg:text-start xl:text-start text-start">
                 <button className={`${AboutStyles.aboutButton} px-4 mt-3`}>
                   GET ASSISTANCE
                   <span className={`${AboutStyles.aboutButtonArrow} ms-2`}>
@@ -142,7 +140,7 @@ export default function VisionMission() {
             </div>
 
             <div className={`${styles.image} image`}>
-              <Image src={s.img} alt={s.title} priority />
+              <img src={s.img} alt={s.title}  />
             </div>
           </div>
         ))}

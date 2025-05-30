@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import { Container, Modal, ModalBody } from 'reactstrap';
 import Image from 'next/image';
-import heroBg from '../../../public/images/video-play-bg.jpg'; // adjust path if needed
 import styles from './videoplay.module.css';
 import { FiPlay } from 'react-icons/fi';
 
@@ -11,7 +10,7 @@ const VideoPlay = () => {
 
   return (
     <div className={styles.videoPlaySection}>
-      <Image src={heroBg} alt="Desert Background" fill className={styles.bgImage} />
+      <img src='/images/video-play-bg.jpg' alt="Desert Background" className={styles.bgImage} />
 
       <Container className="text-center position-relative z-1">
          <div className={styles.playCircle} onClick={() => setModalOpen(true)}>
