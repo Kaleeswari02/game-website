@@ -50,9 +50,15 @@ html{
   @media only screen and (min-width: 1185px) and (max-width: 1300px){
 
   }
-  @media only screen and (min-width: 1000px) and (max-width: 1185px){}
+  @media only screen and (min-width: 1000px) and (max-width: 1185px){
+    .image-style-3 {
+       position: relative !important;
+        bottom: 0vh !important;
+        right: 7vw !important;
+    }
+  }
   /* tab view */
-  @media only screen and (min-width: 795px) and (max-width: 999px){
+  @media only screen and (min-width: 796px) and (max-width: 999px){
 
      .mobile-view-bg{
         background-color: #ffffff !important;
