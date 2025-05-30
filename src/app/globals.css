@@ -52,8 +52,166 @@ html{
   }
   @media only screen and (min-width: 1000px) and (max-width: 1185px){}
   /* tab view */
-  @media only screen and (min-width: 795px) and (max-width: 999px){}
-  @media only screen and (min-width: 600px) and (max-width: 794px){
+  @media only screen and (min-width: 795px) and (max-width: 999px){
+
+     .mobile-view-bg{
+        background-color: #ffffff !important;
+       }
+       .banner-h1 {
+        font-size: 60px !important;
+       }
+       .banner-h2{
+        font-size: 60px !important;
+       }
+       .banner-para {
+      font-size: 12px !important;
+      line-height: unset !important;
+      padding: unset !important;
+      }
+      .banner-content {
+        margin-top: 25% !important;
+      }
+      .banner-btn {
+        padding: 10px 35px 10px 35px !important;
+        font-size: 15px !important;
+    }
+    .contact-btn{
+      color: #ffffff !important;
+      border: 1px solid #000000 !important;
+      margin: 4%;
+      padding: 9px 20px !important;
+      background-color: #000000 !important;
+      font-size: 15px !important;
+     }
+     .banner-image-sec {
+      width: 100% !important;
+     }
+     .port-headone {
+      font-size: 60px !important;
+     }
+     .port-headtwo{
+      font-size: 60px !important;
+     }
+     .portfolio-btn{
+      padding: 11px 60px 11px 60px !important;
+      font-size: 13px !important;
+     }
+     .image-row{
+      width: 100% !important;
+     }
+     .image-col img{
+      height: unset !important;
+      border-radius: 0 !important;
+     }
+     .image-col{
+      border-radius: 0 !important;
+     }
+     .hover-heading{
+      font-size: 12px !important;
+     }
+     .testi-background {
+      margin-top: 12% !important;
+     }
+     .icon-style-quote {
+      font-size: 70px !important;
+     }
+  
+    .start-align {
+      font-size: 12px !important;
+      gap: 15px !important;
+    }
+    .content-section p{
+      font-size: 14px !important;
+    }
+    .thumb-img{
+      width: 10% !important;
+    }
+    .thumbnail-section{
+      font-size: 10px !important;
+    }
+    .carousel-indicat-des{
+      display: none !important;
+     }
+     .career-part1{
+      width: 50% !important;
+     }
+     .carrer-img{
+      width: 100% !important;
+     }
+     .image-style-4{
+      position: relative !important;
+      top: 0vh !important;
+     }
+     .career-head {
+      font-size: 25px !important;
+      padding: 10% 0% 0% 5% !important;
+     }
+     .image-style-1 {
+      position: relative !important;
+      top: 12vh !important;
+     }
+     .image-style-2 {
+      position: relative !important;
+      top: 14vh !important;
+    }
+  
+    .career-para {
+      font-size: 12px !important;
+      }
+      .career-button {
+        padding: 5% 13% 5% 13% !important;
+        font-size: 13px !important;
+    }
+      .career-area-height{
+        height: unset !important;
+      }
+  
+      .footer-space {
+        display: flex !important;
+        justify-content: space-between !important;
+        }
+        .footer-icon {
+          font-size: 50px !important;
+        }
+        .footer-icon-text {
+          font-size: 20px !important;
+          text-align: left !important;
+          margin-left:unset !important;
+        }
+        .footer-area-div{
+          width: 30% !important;
+        }
+        .footer-area-divone{
+          width: 23% !important;
+        }
+  
+        .footer-heading {
+          font-size: 30px !important;
+          margin: unset !important;
+          }
+          .footer-subhead {
+            font-size: 16px !important;
+          }
+  
+          .footer-para {
+            font-size: 12px !important;
+            line-height: 1 !important;
+          }
+          .copyrights {
+            font-size: 13px !important;
+          }
+          .footer-pad{
+            padding: 5% !important;
+          }
+          .footer-bg::before {
+            display: none !important;
+          }
+          .footer-img-set {
+            width: 50% !important;
+        }
+
+  }
+  @media only screen and (min-width: 690px) and (max-width: 794px){
     .mobile-view-bg{
       background-color: #ffffff !important;
      }
@@ -76,7 +234,7 @@ html{
       font-size: 15px !important;
   }
   .banner-image-sec{
-    display: none !important;
+   width: 100% !important;
   }
   .contact-btn{
     color: #ffffff !important;
@@ -110,7 +268,7 @@ html{
     font-size: 12px !important;
    }
    .testi-background {
-    margin-top: 5% !important;
+    margin-top: 12% !important;
    }
    .icon-style-quote {
     font-size: 70px !important;
@@ -173,13 +331,44 @@ html{
         font-size: 50px !important;
       }
       .footer-icon-text {
-
-      }
-      .footer-icon-text {
         font-size: 20px !important;
         text-align: left !important;
+        margin-left:unset !important;
       }
+      .footer-area-div{
+        width: 30% !important;
+      }
+      .footer-area-divone{
+        width: 23% !important;
+      }
+
+      .footer-heading {
+        font-size: 30px !important;
+        margin: unset !important;
+        }
+        .footer-subhead {
+          font-size: 16px !important;
+        }
+
+        .footer-para {
+          font-size: 12px !important;
+          line-height: 1 !important;
+        }
+        .copyrights {
+          font-size: 13px !important;
+        }
+        .footer-pad{
+          padding: 5% !important;
+        }
+        .footer-bg::before {
+          display: none !important;
+        }
+  }
+  @media only screen and (min-width: 600px) and (max-width: 750px){
+    .banner-image-sec{
+      display: none !important;
     }
+  }
   /* mobile-view portrait */
   @media only screen and (min-width: 450px) and (max-width: 600px){
     .carousel-indicat-des{

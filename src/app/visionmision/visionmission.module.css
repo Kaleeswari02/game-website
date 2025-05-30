@@ -153,8 +153,6 @@
 
   @media only screen and (min-width: 795px) and (max-width: 999px){
 
-  
-
 /* @media (max-width: 768px) { */
   .sliderWrapper {
     padding: 0 1rem;
@@ -181,8 +179,18 @@
   .image::after {
     border-radius: 24px;
   }
+  .scrollSection{
+    overflow: none !important;
+  }
+  .scrollSection{
+    overflow: unset !important;
+  }
 }
-
+@media only screen and (min-width: 600px) and (max-width: 794px){
+  .scrollSection{
+    overflow: unset !important;
+  }
+}
 @media (max-width: 480px) {
   .Heading,
   .textOutline {

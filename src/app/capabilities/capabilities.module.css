@@ -83,7 +83,23 @@ background: #fcd202 !important;
     transform: translateY(0);
   }
 }
-@media only screen and (min-width: 795px) and (max-width: 999px){}
+@media only screen and (min-width: 795px) and (max-width: 999px){
+  .capaHeading{
+    font-size: 80px !important;
+  }
+  .textOutline{
+    font-size: 80px !important;
+  }
+  .tabButton{
+    font-size: 13px !important;
+    padding: 10px 16px !important;
+    letter-spacing: unset !important;
+  }
+  .rightContentHeading {
+    font-size: 35px !important;
+  }
+}
+
 @media only screen and (min-width: 600px) and (max-width: 794px){
   .capaHeading{
     font-size: 80px !important;
