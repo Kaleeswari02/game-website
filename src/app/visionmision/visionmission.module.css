@@ -111,3 +111,96 @@
 .para a:hover {
   color: #0b37fc;
 }
+/* responsive */
+
+/* === RESPONSIVE STYLES === */
+
+@media (max-width: 1440px) {
+  .Heading,
+  .textOutline {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slide {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 4rem 1.5rem;
+  }
+
+  .content,
+  .image {
+    max-width: 100%;
+  }
+
+  .Heading,
+  .textOutline {
+    font-size: 60px;
+  }
+
+  .para {
+    font-size: 15px;
+  }
+
+  .image img {
+    border-radius: 40px;
+  }
+
+  .image::after {
+    border-radius: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sliderWrapper {
+    padding: 0 1rem;
+  }
+
+  .slide {
+    padding: 3rem 1rem;
+    gap: 2rem;
+  }
+
+  .Heading,
+  .textOutline {
+    font-size: 48px;
+  }
+
+  .para {
+    font-size: 14px;
+  }
+
+  .image img {
+    border-radius: 24px;
+  }
+
+  .image::after {
+    border-radius: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Heading,
+  .textOutline {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .para {
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .slide {
+    padding: 2rem 1rem;
+  }
+
+  .image img {
+    border-radius: 16px;
+  }
+
+  .image::after {
+    border-radius: 16px;
+  }
+}

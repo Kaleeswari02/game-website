@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useRef ,useEffect} from 'react';
+import { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -32,94 +32,101 @@ const slides = [
 
 export default function VisionMission() {
   const sectionRef = useRef(null);
-useGSAP(() => {
-  const total = slides.length;
+  useGSAP(() => {
+    const total = slides.length;
 
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: sectionRef.current,
-      pin: true,
-      scrub: true,
-     start: 'top top',
-      end: `+=${window.innerHeight * (total - 1)}`,
-    },
-  });
-
-  slides.forEach((slide, i) => {
-    const base = `.slide-${i}`;
-    const content = `${base} .content`;
-    const image = `${base} .image`;
-
-    gsap.set(base, {
-      zIndex: total - i,
-      opacity: i === 0 ? 1 : 0,
-      scale: i === 0 ? 1 : 0.95,
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        // pin: true,
+        scrub: true,
+        start: 'top bottom',
+        end: `+=${window.innerHeight * (total - 1)}`,
+      },
     });
 
-    gsap.set(content, {
-      x: slide.reverse ? 150 : -150,
-      opacity: 0,
-      clipPath: 'inset(0 100% 0 0)',
-    });
+    slides.forEach((slide, i) => {
+      const base = `.slide-${i}`;
+      const content = `${base} .content`;
+      const image = `${base} .image`;
 
-    gsap.set(image, {
-      x: slide.reverse ? -150 : 150,
-      opacity: 0,
-      clipPath: 'inset(0 0 0 100%)',
-    });
-  });
+      gsap.set(base, {
+        zIndex: total - i,
+        opacity: i === 0 ? 1 : 0,
+        scale: i === 0 ? 1 : 0.95,
+      });
 
-  for (let i = 0; i < total; i++) {
-    const base = `.slide-${i}`;
-    const content = `${base} .content`;
-    const image = `${base} .image`;
-
-    tl.to(base, {
-      opacity: 1,
-      scale: 1,
-      duration: 0.5,
-      ease: 'power2.out',
-    }, i * 1.5);
-
-    tl.to(content, {
-      x: 0,
-      opacity: 1,
-      clipPath: 'inset(0 0% 0 0)',
-      duration: 0.6,
-      ease: 'power2.out',
-    }, i * 1.5);
-
-    tl.to(image, {
-      x: 0,
-      opacity: 1,
-      clipPath: 'inset(0 0 0 0%)',
-      duration: 0.6,
-      ease: 'power2.out',
-    }, i * 1.5 + 0.1);
-
-    if (i !== total - 1) {
-      tl.to(base, {
+      gsap.set(content, {
+        x: slide.reverse ? 150 : -150,
         opacity: 0,
-        scale: 0.95,
+        clipPath: 'inset(0 100% 0 0)',
+      });
+
+      gsap.set(image, {
+        x: slide.reverse ? -150 : 150,
+        opacity: 0,
+        clipPath: 'inset(0 0 0 100%)',
+      });
+    });
+
+    for (let i = 0; i < total; i++) {
+      const base = `.slide-${i}`;
+      const content = `${base} .content`;
+      const image = `${base} .image`;
+      if (i == total + 1) {
+        tl.to(base, {
+          opacity: 0,
+          scale: 0.95,
+          duration: 0.6,
+          ease: 'power1.inOut',
+        }, (i + 1) * 1.5 - 0.3);
+      }
+      tl.to(base, {
+        opacity: 1,
+        scale: 1,
+        duration: 0.5,
+        ease: 'power2.out',
+      }, i * 1.5);
+
+      tl.to(content, {
+        x: 0,
+        opacity: 1,
+        clipPath: 'inset(0 0% 0 0)',
         duration: 0.6,
-        ease: 'power1.inOut',
-      }, (i + 1) * 1.5 - 0.3);
+        ease: 'power2.out',
+      }, i * 1.5);
+
+      tl.to(image, {
+        x: 0,
+        opacity: 1,
+        clipPath: 'inset(0 0 0 0%)',
+        duration: 0.6,
+        ease: 'power2.out',
+      }, i * 1.5 + 0.1);
+
+      if (i !== total - 1) {
+        tl.to(base, {
+          opacity: 0,
+          scale: 0.95,
+          duration: 0.6,
+          ease: 'power1.inOut',
+        }, (i + 1) * 1.5 - 0.3);
+      }
     }
-  }
-}, { scope: sectionRef });
+  }, { scope: sectionRef });
 
 
   return (
-    <section  className={styles.scrollSection}>
+    <section className={`${styles.scrollSection} my-5`}>
       <div ref={sectionRef} className={styles.sliderWrapper}>
         {slides.map((s, i) => (
-          <div  
+          <div
             key={i}
             className={`${styles.slide} slide-${i} ${s.reverse ? styles.reverse : ''}`}
           >
             <div className={`${styles.content} content`}>
               <h2 className={styles.Heading}>
-                OUR <br/>
+                OUR <br />
                 <span className={styles.textOutline}> {s.title.slice(3)}</span>
               </h2>
               <p className={styles.para}>{s.text}</p>
@@ -140,7 +147,7 @@ useGSAP(() => {
           </div>
         ))}
       </div>
-     
+
     </section>
   );
 }
