@@ -46,7 +46,7 @@ export default function About() {
             <h2 className={`${styles.aboutHeading} text-center`}>
               Casino Slot Game Development<br/> Company
             </h2>
-            <div className='p-3'>
+            <div className='p-xl-3 p-lg-3 p-md-0'>
             <p className={`${styles.aboutPara} mt-3`}>
              Our studio is a hub of creativity where every pixel tells a story. From concept art to character design, our talented artists breathe life into every aspect of our games. We believe in pushing the boundaries of visual storytelling, creating captivating environments that draw players into rich, immersive worlds.
             </p>

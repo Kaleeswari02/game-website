@@ -70,7 +70,7 @@
     overflow: hidden;
     position: relative;
     transition: flex 1s ease;
-    border-radius: 20px !important;
+    border-radius: 20px;
   }
   
   .image-col img {

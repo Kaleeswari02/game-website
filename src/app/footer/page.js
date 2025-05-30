@@ -31,9 +31,9 @@ export default function Footerarea(){
             <div className="container mt-xl-5" >
                 <div className="footer-socialmedia p-5">
                     <ul className="footer-space">
-                        <li><Link href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" target="_blank" className="footer-icon-text"><FaFacebook className="footer-icon"/>  Facebook </Link></li>
-                        <li><Link href="https://www.instagram.com/p/DJoxDdohR6f/?img_index=5&igsh=bjYxZHlpZzVibDB1" target="_blank" className="footer-icon-text"><FaInstagram className="footer-icon"/> Instagram</Link></li>
-                        <li><Link href="https://www.linkedin.com/company/beeyoondgaming/?originalSubdomain=in" target="_blank" className="footer-icon-text"><FaLinkedin className="footer-icon"/> LinkedIn</Link></li>
+                        <li><Link href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" target="_blank" ><FaFacebook className="footer-icon"/>  <span className="footer-icon-text">Facebook</span> </Link></li>
+                        <li><Link href="https://www.instagram.com/p/DJoxDdohR6f/?img_index=5&igsh=bjYxZHlpZzVibDB1" target="_blank" ><FaInstagram className="footer-icon"/><span className="footer-icon-text">Instagram</span> </Link></li>
+                        <li><Link href="https://www.linkedin.com/company/beeyoondgaming/?originalSubdomain=in" target="_blank" ><FaLinkedin className="footer-icon"/><span className="footer-icon-text">LinkedIn</span> </Link></li>
                     </ul>
                 </div>
             </div>

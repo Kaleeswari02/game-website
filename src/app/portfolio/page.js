@@ -31,27 +31,27 @@ export default function Portfolio(){
             </div>
             {visible && (
                     <div className="image-row row ">
-                    <div className="image-col col-xl-2 col-lg-2 col-md-3 col-12">
+                    <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
                         <img src="/images/port1.png" alt="" />
                         <h5 className="hover-heading">2D/3D Animation</h5>
                     </div>
-                    <div className="image-col col-xl-2 col-lg-2 col-md-3 col-12 column-width">
+                    <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12 column-width">
                         <img src="/images/port2.png" alt="" />
                         <h5 className="hover-heading">Video Editing</h5>
                     </div>
-                    <div className="image-col col-xl-2 col-lg-2 col-md-3 col-12">
+                    <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
                         <img src="/images/port3.png" alt="" />
                         <h5 className="hover-heading">AI & Automation</h5>
                     </div>
-                    <div className="image-col col-xl-2 col-lg-2 col-md-3 col-12">
+                    <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
                         <img src="/images/port1.png" alt="" />
                         <h5 className="hover-heading">Game Development</h5>
                     </div>
-                    <div className="image-col col-xl-2 col-lg-2 col-md-3 col-12">
+                    <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
                         <img src="/images/port1.png" alt="" />
                         <h5 className="hover-heading">2D/3D Animation</h5>
                     </div>
-                    <div className="image-col col-xl-2 col-lg-2 col-md-3 col-12">
+                    <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
                         <img src="/images/port2.png" alt="" />
                         <h5 className="hover-heading">Video Editing</h5>
                     </div>
@@ -59,27 +59,27 @@ export default function Portfolio(){
              )}
                 <div className="image-gallary-section mb-xl-5">
                     <div className="image-row row ">
-                        <div className="image-col col-xl-2 col-lg-2 col-md-3 col-12">
+                        <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
                             <img src="/images/port1.png" alt="" />
                             <h5 className="hover-heading">2D/3D Animation</h5>
                         </div>
-                        <div className="image-col col-xl-2 col-lg-2 col-md-3 col-12">
+                        <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
                             <img src="/images/port2.png" alt="" />
                             <h5 className="hover-heading">Video Editing</h5>
                         </div>
-                        <div className="image-col col-xl-2 col-lg-2 col-md-3 col-12">
+                        <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
                             <img src="/images/port3.png" alt="" />
                             <h5 className="hover-heading">AI & Automation</h5>
                         </div>
-                        <div className="image-col col-xl-2 col-lg-2 col-md-3 col-12">
+                        <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
                             <img src="/images/port1.png" alt="" />
                             <h5 className="hover-heading">Game Development</h5>
                         </div>
-                        <div className="image-col col-xl-2 col-lg-2 col-md-3 col-12">
+                        <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
                             <img src="/images/port1.png" alt="" />
                             <h5 className="hover-heading">2D/3D Animation</h5>
                         </div>
-                        <div className="image-col col-xl-2 col-lg-2 col-md-3 col-12">
+                        <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
                             <img src="/images/port2.png" alt="" />
                             <h5 className="hover-heading">Video Editing</h5>
                         </div>

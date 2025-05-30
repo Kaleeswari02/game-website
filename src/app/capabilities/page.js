@@ -63,7 +63,7 @@ const CapabilitiesSection = () => {
                     className={styles.characterImage}
                   />
                 </div>
-                <div className="col-md-6 col-md-6 col-xl-6 col-lg-6 col-12 p-5 ">
+                <div className="col-md-6 col-md-6 col-xl-6 col-lg-6 col-12 p-xl-5 p-lg-5 p-md-3 ">
                   <h3 className={styles.rightContentHeading}>{tab.heading}</h3>
                   <p className={`${stylesAbout.aboutPara} mt-4`}>
                     {tab.description}

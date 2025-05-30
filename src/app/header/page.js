@@ -156,24 +156,38 @@ export default function Header() {
               </Button> */}
             </ModalFooter>
           </form>
-        </Modal>
-      </div>
-      <div className="mobile-view">
-        <div className="container fixed-top mobile-view-bg">
-          <div className="row">
-            {/* Logo */}
-            <div className="col-6">
-              <div className="logo-sec m-2">
-                <Link href="/">
-                  <img
-                    className="logo-image-bg"
-                    src="/images/logo.png"
-                    alt="Logo"
-                    width={150}
-                    height={60}
-                  />
-                </Link>
-              </div>
+      </Modal>
+    </div>
+    <div className="mobile-view">
+      <div className="container-fluid fixed-top mobile-view-bg">
+        <div className="row">
+          {/* Logo */}
+          <div className="col-6">
+            <div className="logo-sec m-2">
+              <Link href="/">
+                <img
+                  className="logo-image-bg"
+                  src="/images/logo.png"
+                  alt="Logo"
+                  width={150}
+                  height={60}
+                />
+              </Link>
+            </div>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="col-6">
+            <div className="m-right">
+              <button
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+                className="mobile-view-button"
+              >
+                <CgMenuRight style={{ color: '#000000' }} />
+              </button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -273,7 +287,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-
+    </div>
     </>
 
 

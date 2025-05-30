@@ -53,7 +53,7 @@
    
 }
 .banner-content{
-    margin-top: 30% !important;
+    margin-top: 30% ;
     animation: fadeInLeft 1.8s ease-in-out;
 }
 .banner-para{
