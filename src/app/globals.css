@@ -33,6 +33,19 @@ html{
     }
   }
   /* Responsive designs */
+  @media only screen and (max-width: 999px) {
+    .desktop-view{
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 999px) {
+    .mobile-view{
+        display: none !important;
+    }
+    .desktop-view{
+      display: block !important;
+  }
+}
   /* desktop view */
   @media only screen and (min-width: 1185px) and (max-width: 1300px){}
   @media only screen and (min-width: 1000px) and (max-width: 1185px){}
@@ -40,7 +53,20 @@ html{
   @media only screen and (min-width: 795px) and (max-width: 999px){}
   @media only screen and (min-width: 600px) and (max-width: 794px){}
   /* mobile-view portrait */
-  @media only screen and (min-width: 450px) and (max-width: 600px){}
+  @media only screen and (min-width: 450px) and (max-width: 600px){
+    .carousel-indicat-des{
+     display: none !important;
+    }
+    .career-head {
+      margin-top: 10% !important;
+   }
+   .footer-bg::before {
+    display: none !important;
+}
+
+}
+    
+
   @media  screen and (min-width: 300px) and (max-width: 450px) {
     .footer-icon-text {
       font-size: 16px !important;
@@ -91,18 +117,16 @@ html{
       font-size: 25px !important;
       padding: 0% !important;
       text-align: center !important;
+      margin-top: 10% !important;
     }
     .career-para {
       font-size: 12px !important;
       padding: 2% 0% !important;
   }
   .footer-bg::before {
-    font-size: 35px !important;
-    position: absolute !important;
-    left: 22vw !important;
-    letter-spacing: 14px !important;
-    margin-top: 7vh !important;
-  }
+    display: none !important;
+}
+
   .career-btn-area {
     text-align: center !important;
   }
@@ -124,8 +148,7 @@ html{
       font-size: 12px !important;
     }
     .carousel-indicat-des{
-      position: absolute !important;
-      top: 40vh !important;
+      display: none !important;
     }
     .testi-background::before{
       border-radius: unset !important;
@@ -192,4 +215,25 @@ html{
     .banner-sec-btn{
       text-align: center !important;
     }
+    .logo-image-bg{
+      padding: 5% !important;
+     }
+     .mobile-view-bg{
+      background-color: #ffffff !important;
+     }
+     .offcanvas-body{
+      padding: 0 !important;
+     }
+     .contact-btn{
+      color: #ffffff !important;
+      border: 1px solid #000000 !important;
+      margin: 4%;
+      padding: 9px 20px !important;
+      background-color: #000000 !important;
+      font-size: 15px !important;
+     }
+     .footer-space{
+      display: flex;
+      justify-content: center !important;
+     }
   }

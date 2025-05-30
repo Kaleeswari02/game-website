@@ -60,7 +60,6 @@
  .card {
   background: #fff;
   border: unset!important;
-  /* border-radius: 16px; */
   box-shadow: unset !important;
   border: unset !important;
   transition: transform 0.3s ease;
