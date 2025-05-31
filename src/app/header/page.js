@@ -80,18 +80,18 @@ export default function Header() {
                   </Link></div>
               </div>
               <div className="col-xl-8 col-lg-8 col-md-8">
-                <nav className="navbar-area mt-xl-4">
+                <nav className="navbar-area mt-xl-4 mt-lg-4">
                   <ul className="nabar-section">
-                    <li><Link className="nav-item" href="/">Home</Link></li>
-                    <li><Link className="nav-item" href="#about">About us</Link></li>
-                    <li><Link className="nav-item" href="#Services">Services</Link></li>
-                    <li><Link className="nav-item" href="#portfolio">Portfolio</Link></li>
-                    <li><Link className="nav-item" href="#testimonal">Testimonials</Link></li>
-                    <li><Link className="nav-item" href="/careers">Careers</Link></li>
+                    <li><Link className="nav-item desk-nav" href="/">Home</Link></li>
+                    <li><Link className="nav-item desk-nav" href="#about">About us</Link></li>
+                    <li><Link className="nav-item desk-nav" href="#Services">Services</Link></li>
+                    <li><Link className="nav-item desk-nav" href="#portfolio">Portfolio</Link></li>
+                    <li><Link className="nav-item desk-nav" href="#testimonal">Testimonials</Link></li>
+                    <li><Link className="nav-item desk-nav" href="/careers">Careers</Link></li>
                   </ul>
                 </nav>
               </div>
-              <div className="col-xl-2 col-lg-2 col-md-2 mt-xl-2">
+              <div className="col-xl-2 col-lg-2 col-md-2 mt-xl-2 mt-lg-2">
                 <div className='button-space'>
                   <button onClick={openModal}
                     className='contact-btn'>

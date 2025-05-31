@@ -48,7 +48,7 @@ export default function Footerarea(){
                         </div>
                     </div>
                     <div className="col-xl-2 col-md-2 col-lg-2 col-12 footer-area-divone">
-                        <div className="footer-service-section p-xl-5 p-lg-5 p-md-2 mt-xl-5">
+                        <div className="footer-service-section p-xl-5 p-lg-3 p-md-2 mt-xl-5 mt-lg-5">
                             <h2 className="footer-subhead mt-xl-5">Our Services</h2>
                             <p className="footer-para mt-xl-3">2D/3D Animation</p>
                             <p className="footer-para">Video Editing</p>
@@ -57,7 +57,7 @@ export default function Footerarea(){
                         </div>
                     </div>
                     <div className="col-xl-2 col-md-2 col-lg-2 col-12 footer-area-divone">
-                        <div className="footer-career-section p-xl-5 p-lg-5 p-md-2 mt-xl-5">
+                        <div className="footer-career-section p-xl-5 p-lg-3 p-md-2 mt-xl-5  mt-lg-5">
                             <h2 className="footer-subhead mt-xl-5">Others</h2>
                             <p className="footer-para mt-xl-3">About us</p>
                             <p className="footer-para">Portfolio</p>
@@ -67,7 +67,7 @@ export default function Footerarea(){
                         </div>
                     </div>
                     <div className="col-xl-3 col-md-3 col-lg-3 col-12 footer-area-divone">
-                        <div className="footer-career-section p-xl-5 p-lg-5 p-md-2 mt-xl-5">
+                        <div className="footer-career-section p-xl-5 p-lg-3 p-md-2 mt-xl-5  mt-lg-5">
                             <h2 className="footer-subhead mt-xl-5">Address</h2>
                             <p className="footer-para mt-xl-3">Annai Therasa Street, Kalavasal, Madurai, Tamil Nadu 625016</p>
                         </div>

@@ -200,7 +200,7 @@ label::after {
  .nav-item, a{
      text-decoration: none !important;
      color: #ffffff;
-     font-size: 14px;
+     font-size: 13px;
      font-weight: 600;
  }
  .navbar-area{
@@ -248,4 +248,13 @@ label::after {
      transition: all 0.3s ease-in-out;
    }
  /* hover-effects */
- 
+ @media only screen and (min-width: 1024px) and (max-width: 1400){
+  .image-style-3 {
+     position: relative !important;
+      bottom: 0vh !important;
+      right: 7vw !important;
+  }
+  .desk-nav{
+    font-size: 12px !important;
+  }
+}
