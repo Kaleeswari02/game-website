@@ -50,12 +50,7 @@
   position: relative;
 }
 
-/* Responsive Heading */
-@media screen and (max-width: 768px) {
-  .careerHeading {
-    font-size: 48px;
-  }
-}
+
 /* Job Tabs Section */
  .card {
   background: #fff;
@@ -98,7 +93,7 @@
 .jobDetail h3 {
   font-family: 'Anton', sans-serif;
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem; 
 }
 
 .jobDetail p {
@@ -122,3 +117,31 @@
 .borderStyles{  border: 1px solid rgba(128, 128, 128, 0.666) !important;
   border-radius: 20px;
  }
+
+ @media (min-width: 576px) and (max-width: 767px) {
+  .careerBanner h1{
+    font-size: 50px;
+  font-weight: 400;
+  margin-top: 20%;
+}
+}
+@media only screen and (max-width: 575px) {
+   .careerBanner h1{
+    font-size: 50px;
+  font-weight: 400;
+    margin-top: 29%;
+}
+.heading{
+    font-size: 32px;
+  font-weight: 600;
+}
+.careerBanner p {
+  font-size: 14px;
+}
+.jobDetail p {
+ 
+  font-size: 14px;
+ 
+}
+}
+  

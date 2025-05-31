@@ -3,8 +3,6 @@
 import React from "react";
 import styles from './careers.module.css'
 import AboutStyles from '../about/about.module.css'
-import Image from "next/image";
-import CareerBg from '../../../public/images/career-bg.jpg'
 import { FiArrowUpRight ,FiArrowRight} from 'react-icons/fi'; 
 import jobs from './jobs.json'
 import Header from "../header/page";
@@ -24,7 +22,6 @@ export default function Careers() {
     <>
     <Header/>
       <section  className={`${styles.careerBanner} d-flex align-items-center`}>
-              {/* <Image src={CareerBg} alt="Desert Background" fill className={styles.bgImage} /> */}
         <div className=" container text-center">
           <h1>Join Our Hive</h1>
           <p className="lead">Explore exciting opportunities and build the future of gaming with Beeyoond.</p>
