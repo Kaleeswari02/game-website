@@ -140,53 +140,49 @@ const jobs = [
         </div>
       </section>
             <div className={`${styles.jobTabs} container mt-5 mb-5`}>
-           <h3 className={styles.heading}>Open Positions</h3>
+                <h3 className={styles.heading}>Open Positions</h3>
+                <div className={`${styles.borderStyles} mt-5 mb-5`}>
+                    <div className="row justify-content-center">
+                      <div className="col-md-4">
+                        <div className={`${styles.jobList}   mt-5 mb-5  p-4 rounded-4`}>
+                          <div  className={`${styles.listGroup}`} >
+                            {jobs.map((job) => (
+                            <button
+                              key={job.id}
+                              onClick={() => setOpen(job.id)}
+                              className={`list-group-item-action rounded-3 mb-2 ${styles.listGroupItem} ${open === job.id ? styles.listGroupItemActive : ''}`}
+                            >
+                              {job.title}
+                            </button>
 
-    <div className={`${styles.borderStyles} mt-5`}>
-        <div className="row justify-content-center">
-          <div className="col-md-4">
-            <div className={`${styles.jobList} mt-3  p-4 rounded-4`}>
-              <div  className={`${styles.listGroup}`} >
-                {jobs.map((job) => (
-                <button
-                  key={job.id}
-                  onClick={() => setOpen(job.id)}
-                  className={`list-group-item-action rounded-3 mb-2 ${styles.listGroupItem} ${open === job.id ? styles.listGroupItemActive : ''}`}
-                >
-                  {job.title}
-                </button>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
 
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-8">
-            <div  className={`${styles.jobDetail}  mt-3 mb-5  p-4 rounded-4`}>
-              {jobs.map((job) =>
-                open === job.id ? (
-                  <div key={job.id}>
-                    <h3 className="mb-3">{job.title}</h3>
-                    {/* <p dangerouslySetInnerHTML={{ __html: job.description }} /> */}
-                    <p>{job.description}</p>
-                      <button   onClick={() => handleApplyClick(job.title)} className={`${AboutStyles.aboutButton} px-4 mt-3`}>
-                      APPLY NOW
-                      <span className={`${AboutStyles.aboutButtonArrow} ms-2`}>
-                      <FiArrowUpRight className={AboutStyles.arrowDefault} />
-                      <FiArrowRight className={AboutStyles.arrowHover} />
-                      </span>
-                  </button>
+                      <div className="col-md-8">
+                        <div  className={`${styles.jobDetail}  mt-5 mb-5  p-5 rounded-4`}>
+                          {jobs.map((job) =>
+                            open === job.id ? (
+                              <div key={job.id}>
+                                <h3 className="mb-3">{job.title}</h3>
+                                <p dangerouslySetInnerHTML={{ __html: job.description }} />
+                                  <button   onClick={() => handleApplyClick(job.title)} className={`${AboutStyles.aboutButton} px-4 mt-3`}>
+                                  APPLY NOW
+                                  <span className={`${AboutStyles.aboutButtonArrow} ms-2`}>
+                                  <FiArrowUpRight className={AboutStyles.arrowDefault} />
+                                  <FiArrowRight className={AboutStyles.arrowHover} />
+                                  </span>
+                              </button>
+                              </div>
+                            ) : null
+                          )}
+                        </div>
+                      </div>
                   </div>
-                ) : null
-              )}
-            </div>
-          </div>
-       </div>
-    </div>
-</div>
-<Footerarea/>
-    
-
+                </div>
+             </div>
+    <Footerarea/>   
     </>
   );
 }
