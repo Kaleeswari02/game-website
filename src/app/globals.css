@@ -38,21 +38,63 @@ html{
         display: none !important;
     }
 }
-@media only screen and (min-width: 999px) {
+@media only screen and (min-width: 999px){
     .mobile-view{
         display: none !important;
     }
     .desktop-view{
       display: block !important;
   }
+  .banner-image-sec{
+    width: 100% !important;
+  }
+  /* .desk-nav{
+    font-size: 12px !important;
+  }
+  .contact-btn{
+    padding: 8% 24% !important;
+    font-size: 12px !important;
+  }
+  .banner-h1{
+      font-size: 150px !important;
+  }
+  .banner-h2 {
+    font-size: 150px !important;
+    }
+
+
+    .banner-para {
+      font-size: 13px !important;
+    }
+    .banner-btn {
+      font-size: 12px !important;
+      padding: 2% 9% !important;
+    }
+    .portfolio-btn{
+      font-size: 12px !important;
+      padding: 2% 9% !important;
+    }
+    .footer-heading {
+      margin: 10% 0% !important;
+      font-size: 50px !important;
+    }
+    .footer-subhead {
+      font-size: 18px !important;
+    }
+
+    .footer-para {
+        font-size: 14px !important;
+    }
+    .footer-bg::before {
+      position: absolute !important;
+      left: 20vw !important;
+
+  } */
 }
   /* desktop view */
-  @media only screen and (min-width: 1185px) and (max-width: 1300px){
 
-  }
-  @media only screen and (min-width: 1000px) and (max-width: 1185px){}
   /* tab view */
-  @media only screen and (min-width: 795px) and (max-width: 999px){
+  @media only screen and (min-width: 796px) and (max-width: 999px){
 
      .mobile-view-bg{
         background-color: #ffffff !important;

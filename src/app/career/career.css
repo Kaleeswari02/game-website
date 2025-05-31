@@ -136,3 +136,24 @@
 .career-button:hover .arrowDefault {
   opacity: 0;
 }
+@media only screen and (min-width: 600px) and (max-width: 795px){
+
+.image-style-3 {
+  position: relative !important;
+  bottom: 0vh !important;
+  right: 10vw !important;
+}
+.image-style-1{
+  position: relative !important;
+  top: unset !important;
+
+}
+.image-style-2 {
+  position: relative !important;
+  top: 3vh !important;
+}
+.image-style-4 {
+  position: relative !important;
+  top: 5vh !important;
+}
+}
