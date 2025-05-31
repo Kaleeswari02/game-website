@@ -30,10 +30,10 @@ export default function Careers() {
             <div className={`${styles.jobTabs} container mt-5 mb-5`}>
            <h3 className={styles.heading}>Open Positions</h3>
 
-    <div className={`${styles.borderStyles} mt-5 mb-5`}>
+    <div className={`${styles.borderStyles} mt-5`}>
         <div className="row justify-content-center">
           <div className="col-md-4">
-            <div className={`${styles.jobList}   mt-5 mb-5  p-4 rounded-4`}>
+            <div className={`${styles.jobList} mt-3  p-4 rounded-4`}>
               <div  className={`${styles.listGroup}`} >
                 {jobs.map((job) => (
                 <button
@@ -50,7 +50,7 @@ export default function Careers() {
           </div>
 
           <div className="col-md-8">
-            <div  className={`${styles.jobDetail}  mt-5 mb-5  p-5 rounded-4`}>
+            <div  className={`${styles.jobDetail}  mt-3 mb-5  p-4 rounded-4`}>
               {jobs.map((job) =>
                 open === job.id ? (
                   <div key={job.id}>
