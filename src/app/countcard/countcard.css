@@ -1,14 +1,30 @@
 .countSection {
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   display: flex;
   justify-content: center;
+  position: relative;
+  overflow: hidden; 
+  background-image: linear-gradient(
+      to bottom, 
+      rgba(30, 30, 30, 0.7), 
+      rgba(30, 30, 30, 0.7)   
+    ),
+    url('/images/count-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #eee; 
 }
+
 
 .honeycomb {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0;
+  max-width: 1000px; /* limit max width */
+  width: 100%;
 }
 
 .hexRow {
@@ -16,20 +32,51 @@
   justify-content: center;
   gap: 0;
   margin-top: 10px;
+  flex-wrap: wrap; /* allow wrapping on small screens */
 }
 
 .centerRow {
   transform: translateX(50px);
   margin-right: 80px;
-  margin-top: 10px; /* Adjusted for extra left hex */
+  margin-top: 10px;
+}
+
+/* Adjust .centerRow transform on smaller screens */
+@media (max-width: 768px) {
+  .centerRow {
+    transform: translateX(30px);
+    margin-right: 40px;
+  }
+}
+
+/* On very small screens stack hexes vertically */
+@media (min-width: 576px) and (max-width: 767px) {
+  .hexRow {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  .centerRow {
+    transform: translateX(0);
+    margin-right: 0;
+  }
 }
 
 .hexWrapper {
-  width: 200px;
-  height: 200px;
+  width: 160px; 
+  height: 160px; 
   position: relative;
-  margin: -20px 0;
-  
+  margin: -15px 5px; 
+  flex-shrink: 0;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+/* Larger hex on bigger screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hexWrapper {
+    width: 200px;
+    height: 200px;
+    margin: 12px 10px;
+  }
 }
 
 .countItem {
@@ -50,27 +97,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 1rem;
   position: relative;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
   transition: transform 0.3s ease;
-}
-
-.countItem::before {
-  content: '';
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  right: 4px;
-  bottom: 4px;
-  clip-path: inherit;
-  background: transparent;
-  border: 2px solid #ffc107;
-  z-index: 1;
-}
-
-.countItem > * {
-  z-index: 2;
+  letter-spacing: 1px;
 }
 
 .countItem:hover {
@@ -79,8 +111,21 @@
 }
 
 .icon {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-bottom: 6px;
+}
+
+/* Scale font sizes down on smaller screens */
+@media (max-width: 480px) {
+  .icon {
+    font-size: 1.6rem;
+  }
+  .number {
+    font-size: 1.1rem;
+  }
+  .label {
+    font-size: 0.7rem;
+  }
 }
 
 .number {

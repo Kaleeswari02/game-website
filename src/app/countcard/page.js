@@ -1,8 +1,12 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useRef } from 'react';
 import { FaGlobe, FaProjectDiagram, FaUsers, FaCalendarAlt, FaHandshake } from 'react-icons/fa';
 import './countcard.css';
-
+import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(useGSAP); // enables useGSAP
 const stats = [
   { label: 'Clients', value: 100, icon: <FaHandshake /> },
   { label: 'Countries', value: 12, icon: <FaGlobe /> },
@@ -13,6 +17,24 @@ const stats = [
 
 export default function CountCards() {
   const [counts, setCounts] = useState(stats.map(() => 0));
+ const sectionRef = useRef(null);
+  const hexRefs = useRef([]);
+ useGSAP(() => {
+  gsap.from(hexRefs.current, {
+    scrollTrigger: {
+      trigger: sectionRef.current,
+      start: 'top 80%',
+      toggleActions: 'restart none none none',
+      once: false,
+    },
+    opacity: 0,
+    x: -100,
+    stagger: 0.3,
+    duration: 1.2,
+    ease: 'power3.out',
+  });
+}, { scope: sectionRef });
+
 
   useEffect(() => {
     const duration = 1000;
@@ -33,49 +55,38 @@ export default function CountCards() {
   }, []);
 
   return (
-    <div className="countSection">
+     <div className="countSection" ref={sectionRef}>
       <div className="honeycomb">
-        {/* Top row with Clients and Countries */}
         <div className="hexRow centerRow">
-          <div className="hexWrapper">
-            <div className="countItem">
-              <div className="icon">{stats[0].icon}</div>
-              <div className="number">{counts[0]}</div>
-              <div className="label">{stats[0].label}</div>
+          {stats.slice(0, 2).map((stat, i) => (
+            <div
+              className="hexWrapper"
+              key={i}
+              ref={(el) => (hexRefs.current[i] = el)}
+            >
+              <div className="countItem">
+                <div className="icon">{stat.icon}</div>
+                <div className="number">{counts[i]}</div>
+                <div className="label">{stat.label}</div>
+              </div>
             </div>
-          </div>
-          <div className="hexWrapper">
-            <div className="countItem">
-              <div className="icon">{stats[1].icon}</div>
-              <div className="number">{counts[1]}</div>
-              <div className="label">{stats[1].label}</div>
-            </div>
-          </div>
+          ))}
         </div>
 
-        {/* Middle row */}
         <div className="hexRow">
-          <div className="hexWrapper">
-            <div className="countItem">
-              <div className="icon">{stats[2].icon}</div>
-              <div className="number">{counts[2]}</div>
-              <div className="label">{stats[2].label}</div>
+          {stats.slice(2).map((stat, i) => (
+            <div
+              className="hexWrapper"
+              key={i + 2}
+              ref={(el) => (hexRefs.current[i + 2] = el)}
+            >
+              <div className="countItem">
+                <div className="icon">{stat.icon}</div>
+                <div className="number">{counts[i + 2]}</div>
+                <div className="label">{stat.label}</div>
+              </div>
             </div>
-          </div>
-          <div className="hexWrapper">
-            <div className="countItem">
-              <div className="icon">{stats[3].icon}</div>
-              <div className="number">{counts[3]}</div>
-              <div className="label">{stats[3].label}</div>
-            </div>
-          </div>
-          <div className="hexWrapper">
-            <div className="countItem">
-              <div className="icon">{stats[4].icon}</div>
-              <div className="number">{counts[4]}</div>
-              <div className="label">{stats[4].label}</div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
