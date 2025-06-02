@@ -3,7 +3,7 @@ import './portfolio.css'
 import { FiArrowUpRight } from 'react-icons/fi'; // import arrow icon
 import { useState } from 'react';
 export default function Portfolio(){
-    const [visible, setVisible] = useState(false);
+const [visible, setVisible] = useState(false);
 
   const showAll = () => {
     setVisible(prev => !prev);
@@ -60,11 +60,15 @@ export default function Portfolio(){
                 <div className="image-gallary-section mb-xl-5">
                     <div className="image-row row ">
                         <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
-                            <img src="/images/port1.png" alt="" />
+                            {/* <img src="/images/port1.png" alt="" /> */}
+                                                    <img src="/images/project1.jpg" alt="" />
+
                             <h5 className="hover-heading">2D/3D Animation</h5>
                         </div>
                         <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
-                            <img src="/images/port2.png" alt="" />
+                            {/* <img src="/images/port2.png" alt="" /> */}
+                                                    <img src="/images/project2.jpg" alt="" />
+
                             <h5 className="hover-heading">Video Editing</h5>
                         </div>
                         <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">

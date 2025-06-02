@@ -6,24 +6,54 @@ import styles from './capabilities.module.css';
 import stylesAbout from '../about/about.module.css';
 
 const tabs = [
-  { id: '1', label: 'GAME ARTWORK', image: '/images/capa-1.png', heading: 'Game Artwork', buttonText:'Game Artwork' ,
+  { id: '1', label: '2D/3D ANIMATION', image: '/images/services-img1.png', heading: '2D/3D ANIMATION', buttonText:'KNOW MORE' ,
     description: (
       <>
-        Gamecrio Studios, a premier <a href="#" className={stylesAbout.link}>Casino Slot Game Artwork Company in the USA</a>, believes game artwork is more than just pixels on a screen—it’s a canvas for creativity, imagination, and storytelling. From concept art to final renders, every brushstroke and pixel is carefully crafted to evoke emotion, immerse players in new worlds, and bring our games to life.
+        We bring ideas to life through smooth, stunning motion.
+From characters to full scenes, our animations add energy and emotion.
+Perfect for games, videos, and immersive experiences.
+
+
       </>
     ) 
   },
-  { id: '2', label: 'GAME DEVELOPMENT', image: '/images/capa-2.png', heading: 'Game Development', buttonText:'Game Development',
+  { id: '2', label: 'GAME DEVELOPMENT', image: '/images/services-img2.png', heading: 'Game Development', buttonText:'KNOW MORE',
     description: (
       <>
-        At Gamecrio, a leading <a href="#" className="text-primary fw-bold">Casino Slot Game Development Company in USA</a>, designing and developing games is a team effort driven by creativity, enthusiasm, and knowledge. We carefully plan, create, and optimize every element of our games—from AI systems to gameplay mechanics—to provide fluid, amazing gameplay that appeals players to keep playing.
+      We build fun, engaging games with smart design and smooth performance.
+From concept to launch, we handle gameplay, visuals, and interactivity.
+Made for PC, mobile, VR — and even treadmill-powered play.
       </>
     )
   },
-  { id: '3', label: 'MULTIPLATFORM DEVELOPMENT', image: '/images/capa-3.png', heading: 'Multiplatform Development', buttonText:'Multiplatform Development',
+  { id: '3', label: 'VIDEO EDITING', image: '/images/services-img3.png', heading: 'Video Editing', buttonText:'KNOW MORE',
     description: (
       <>
-        Gamecrio Studios, a premier <a href="#" className="text-primary fw-bold">Casino Slot Game Artwork Company in the USA</a> we develop games for various platforms, including PC, console, mobile, and virtual reality. Our proficiency with several platforms enables us to optimize outreach and interaction while upholding a uniform and superior user experience across various devices.
+We craft dynamic videos with smooth cuts, effects, and motion.
+From trailers to promos, we make your content look sharp and professional.
+Perfect for games, social media, and storytelling.
+
+      </>
+    )
+  },
+   { id: '4', label: 'VIRTUAL REALITY (VR)', image: '/images/services-img4.png', heading: 'Virtual Reality', buttonText:'KNOW MORE',
+    description: (
+      <>
+       We create fully immersive virtual worlds you can explore and interact with.
+Perfect for games, training, and next-level digital experiences.
+Step inside — and experience the future of play.
+
+
+      </>
+    )
+  },
+    { id: '5', label: 'BLOCKCHAIN', image: '/images/services-img5.png', heading: 'Blockchain', buttonText:'KNOW MORE',
+    description: (
+      <>
+      We build secure and scalable blockchain solutions — from DeFi apps to centralized platforms.
+Our team handles smart contracts, tokens, wallets, and full-stack blockchain development.
+Whether it's a new ICO or a custom crypto project, we've got you covered.
+
       </>
     )
   }

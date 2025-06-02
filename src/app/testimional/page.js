@@ -54,12 +54,12 @@ export default function Testimonal(){
                                 </ul>
                             </div>
                             <div className="content-section">
-                                <p>“Gamecrio has been a superstar, very helpful.The experience of working with Gamecrio has been outstanding. Their professionalism, expertise, and commitment to our project's success have made a significant impact.”</p>
+                                <p>“Beeyoond Gaming took our ideas and turned them into a stunning virtual world. The animation and gameplay blew us away — truly next level!”</p>
                             </div>
                             <div className="thumbnail-section">
                                 <img src="/images/testi-thumb.png" alt="" className='thumb-img'/>
-                                <span className="name">Charlie Barnes</span>
-                                <span className="job">Godot engine animations</span>
+                                <span className="name">Sarah M</span>
+                                <span className="job">Game Producer</span>
                             </div>
                         </div>
                     </div>
@@ -76,12 +76,12 @@ export default function Testimonal(){
                                 </ul>
                             </div>
                             <div className="content-section">
-                                <p>"Gamecrio did amazing work with our Unity project needs! They were proactive and came in with strong opinions to guide our project to success. Highly recommend !"</p>
+                                <p>"The team’s creativity and tech skills made our treadmill gaming concept come alive. The experience is fun, immersive, and addictive!"</p>
                             </div>
                             <div className="thumbnail-section">
                                 <img src="/images/testi-thumb.png" alt="" className='thumb-img'/>
-                                <span className="name">Charlie Barnes</span>
-                                <span className="job">Godot engine animations</span>
+                                <span className="name">James K</span>
+                                <span className="job">Fitness App Developer</span>
                             </div>
                         </div>
                     </div>
@@ -98,12 +98,12 @@ export default function Testimonal(){
                                 </ul>
                             </div>
                             <div className="content-section">
-                                <p>“Gamecrio has been a superstar, very helpful.The experience of working with Gamecrio has been outstanding. Their professionalism, expertise, and commitment to our project's success have made a significant impact.”</p>
+                                <p>“From animation to blockchain integration, Beeyoond delivered fast and flawless. They’re the perfect partner for innovative digital projects.”</p>
                             </div>
                             <div className="thumbnail-section">
                                 <img src="/images/testi-thumb.png" alt="" className='thumb-img'/>
-                                <span className="name">Charlie Barnes</span>
-                                <span className="job">Godot engine animations</span>
+                                <span className="name">Lina T</span>
+                                <span className="job">Startup Founder</span>
                             </div>
                         </div>
                     </div>

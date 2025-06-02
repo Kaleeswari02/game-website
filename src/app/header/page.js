@@ -17,7 +17,6 @@ export default function Header() {
   const toggleMenu = () => setMenuOpen(!isMenuOpen);
   const closeMenu = () => setMenuOpen(false);
   const { isModalOpen, openModal, closeModal } = useModal();
-  const toggle = () => setModal(!modal);
 
   const scrollToAndClose = (e, id) => {
     e.preventDefault();
@@ -57,7 +56,8 @@ export default function Header() {
         () => {
           toast.success("Message sent successfully!");
           reset();
-          toggle();
+          closeModal();
+
         },
         (error) => {
           console.error(error.text);

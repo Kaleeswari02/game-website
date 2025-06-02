@@ -17,13 +17,13 @@ const slides = [
   {
     title: 'Our Vision',
     text: 'At Gamecrio Studios, a leading Casino Slot Game Development Company in India, our vision is to revolutionize the gaming industry by seamlessly blending innovation, creativity, and inclusivity into every aspect of our work. We envision a future into every aspect of our work. We envision a future where gaming transcends entertainment and becomes a transformative medium for connection, expression, and empowerment. where gaming transcends entertainment and becomes a transformative medium for connection, expression, and empowerment.',
-    img: '/images/bee1.jpg',
+    img: '/images/vision.png',
     reverse: false,
   },
   {
     title: 'Our Mission',
     text: 'To create emotionally resonant and globally inclusive gaming experiences. At Gamecrio Studios, we aim to revolutionize the gaming industry by seamlessly blending innovation, creativity, and inclusivity into every aspect of our work To create emotionally resonant and globally inclusive gaming experiences. At Gamecrio Studios, we aim to revolutionize the gaming industry by seamlessly blending innovation, creativity, and inclusivity into every aspect of our work.',
-    img: '/images/bee2.jpg',
+    img: '/images/mission.png',
     reverse: true,
   },
 ];
@@ -38,15 +38,15 @@ export default function VisionMission() {
         trigger: sectionRef.current,
         // pin: true,
         scrub: true,
-        start: 'top bottom',
+        start: 'top+=150 bottom',
         end: `+=${window.innerHeight * (total - 1)}`,
       },
     });
 
     slides.forEach((slide, i) => {
       const base = `.slide-${i}`;
-      const content = `${base} .content`;
-      const image = `${base} .image`;
+      const content =` ${base} .content`;
+      const image =` ${base} .image`;
 
       gsap.set(base, {
         zIndex: total - i,

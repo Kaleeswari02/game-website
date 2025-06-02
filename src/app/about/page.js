@@ -44,14 +44,15 @@ export default function About() {
           <div className="col-md-6 text-center text-md-start mt-xl-5 mt-lg-5 about-space">
             
             <h2 className={`${styles.aboutHeading} text-center`}>
-              Casino Slot Game Development<br/> Company
+              Who We Are<br/> 
             </h2>
             <div className='p-xl-3 p-lg-3 p-md-0'>
             <p className={`${styles.aboutPara} mt-3`}>
-             Our studio is a hub of creativity where every pixel tells a story. From concept art to character design, our talented artists breathe life into every aspect of our games. We believe in pushing the boundaries of visual storytelling, creating captivating environments that draw players into rich, immersive worlds.
+           At Beeyoond Gaming, we bring ideas to life through powerful 2D/3D animation, game development, and virtual experiences.
             </p>
             <p className={`${styles.aboutPara}`}>
-              As a leading <a href="#">Casino Slot Game Development Company in the USA</a>, our team of skilled engineers and programmers harness the latest tools and technologies to build seamless gaming experiences. Whether it’s crafting complex gameplay mechanics or optimizing performance across platforms, we are committed to delivering games that captivate and inspire.
+          From eye-catching visuals to treadmill-powered gameplay, we create fun, exciting, and unforgettable digital worlds. Whether it's a game, a video, or a virtual adventure — if it's creative and interactive, we make it real.
+          We’re not just a studio. We’re a team of dreamers turning imagination into action.
             </p>
                     <div className="text-center">
             <button onClick={openModal} className={`${styles.aboutButton} px-4 mt-3`}>
