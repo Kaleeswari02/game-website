@@ -8,6 +8,7 @@ import { useGSAP } from '@gsap/react';
 import CapabilitiesSection from '../capabilities/page';
 gsap.registerPlugin(ScrollTrigger);
 import { useModal } from '../context/ModalContext';
+import CountCards from '../countcard/page';
 
 export default function About() {
     const { openModal } = useModal();
@@ -75,6 +76,7 @@ export default function About() {
         </div>
         </div>
       </div>
+      <CountCards/>
       <CapabilitiesSection/>
     </div>
     

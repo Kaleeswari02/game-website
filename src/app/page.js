@@ -10,16 +10,14 @@ import Testimonal from "./testimional/page";
 import CareerSection from "./career/page";
 import Footerarea from "./footer/page";
 import OurGames from "./ourgames/page";
-import BeeCursor from "./curser/page";
 
 export default function Home() {
   return (
     <>
-    <BeeCursor/>
       <Header/>
       <HomeSection/>
       <About/>
-      {/* <OurGames/> */}
+      <OurGames/>
       <VideoPlay/>
       <Portfolio/>
       <VisionMission/>

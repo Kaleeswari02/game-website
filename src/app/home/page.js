@@ -5,7 +5,6 @@ import { useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
-import CountCards from '../countcard/page';
 gsap.registerPlugin(ScrollTrigger);
 export default function HomeSection(){
     const tigerRef = useRef(null);
@@ -42,14 +41,13 @@ export default function HomeSection(){
                         </div>
                         <div className="col-xl-5 col-lg-5 col-md-5 col-12 mt-xl-5 mt-lg-5 mt-md-5 mb-xl-5 mb-lg-5">
                             <div className="banner-image mt-xl-5 mt-lg-5 mt-md-5 p-xl-5" ref={tigerRef}>
-                                 <img className='banner-image-sec mt-xl-5 mt-lg-3' src='/images/banner-right.png' alt="Description of image" />
+                                 <img className='banner-image-sec' src='/images/banner.png' alt="Description of image" />
                             </div>
                         </div>
                         {/* <div className='col-xl-1 col-lg-1 col-md-1 mb-xl-5 mb-lg-5'></div> */}
                     </div>
                 </div>
             </div>
-            <CountCards/>
         </>
     )
 }

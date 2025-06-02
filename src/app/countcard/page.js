@@ -1,56 +1,83 @@
-// components/CountCards.js
+'use client';
 import React, { useEffect, useState } from 'react';
-import './countcard.module.css';
+import { FaGlobe, FaProjectDiagram, FaUsers, FaCalendarAlt, FaHandshake } from 'react-icons/fa';
+import './countcard.css';
 
 const stats = [
-  { label: 'Countries', value: 12, icon: '🌍' },
-  { label: 'Projects', value: 250, icon: '🏗️' },
-  { label: 'Employees', value: 45, icon: '👨‍💼' },
-  { label: 'Years', value: 6, icon: '📆' },
+  { label: 'Clients', value: 100, icon: <FaHandshake /> },
+  { label: 'Countries', value: 12, icon: <FaGlobe /> },
+  { label: 'Projects', value: 250, icon: <FaProjectDiagram /> },
+  { label: 'Employees', value: 45, icon: <FaUsers /> },
+  { label: 'Years', value: 6, icon: <FaCalendarAlt /> },
 ];
 
-const CountCard = ({ icon, value, label }) => {
-  const [count, setCount] = useState(0);
+export default function CountCards() {
+  const [counts, setCounts] = useState(stats.map(() => 0));
 
   useEffect(() => {
-    let start = 0;
     const duration = 1000;
-    const increment = value / (duration / 16);
+    const steps = 60;
+    const intervals = stats.map(stat => stat.value / steps);
+    let step = 0;
 
-    const animate = () => {
-      start += increment;
-      if (start < value) {
-        setCount(Math.floor(start));
-        requestAnimationFrame(animate);
-      } else {
-        setCount(value);
-      }
-    };
+    const interval = setInterval(() => {
+      step++;
+      const updated = stats.map((stat, i) =>
+        step < steps ? Math.floor(intervals[i] * step) : stat.value
+      );
+      setCounts(updated);
+      if (step >= steps) clearInterval(interval);
+    }, duration / steps);
 
-    animate();
-  }, [value]);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <div className="col-6 col-md-3 mb-4">
-      <div className="card count-card text-center shadow-sm h-100">
-        <div className="card-body">
-          <div className="count-icon mb-2">{icon}</div>
-          <h3 className="count-number">{count}</h3>
-          <p className="count-label">{label}</p>
+    <div className="countSection">
+      <div className="honeycomb">
+        {/* Top row with Clients and Countries */}
+        <div className="hexRow centerRow">
+          <div className="hexWrapper">
+            <div className="countItem">
+              <div className="icon">{stats[0].icon}</div>
+              <div className="number">{counts[0]}</div>
+              <div className="label">{stats[0].label}</div>
+            </div>
+          </div>
+          <div className="hexWrapper">
+            <div className="countItem">
+              <div className="icon">{stats[1].icon}</div>
+              <div className="number">{counts[1]}</div>
+              <div className="label">{stats[1].label}</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Middle row */}
+        <div className="hexRow">
+          <div className="hexWrapper">
+            <div className="countItem">
+              <div className="icon">{stats[2].icon}</div>
+              <div className="number">{counts[2]}</div>
+              <div className="label">{stats[2].label}</div>
+            </div>
+          </div>
+          <div className="hexWrapper">
+            <div className="countItem">
+              <div className="icon">{stats[3].icon}</div>
+              <div className="number">{counts[3]}</div>
+              <div className="label">{stats[3].label}</div>
+            </div>
+          </div>
+          <div className="hexWrapper">
+            <div className="countItem">
+              <div className="icon">{stats[4].icon}</div>
+              <div className="number">{counts[4]}</div>
+              <div className="label">{stats[4].label}</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  );
-};
-
-export default function CountCards() {
-  return (
-    <section className="container my-5">
-      <div className="row justify-content-center">
-        {stats.map((item, idx) => (
-          <CountCard key={idx} {...item} />
-        ))}
-      </div>
-    </section>
   );
 }
