@@ -2,6 +2,9 @@
 html{
     scroll-behavior: smooth;
 }
+body {
+  cursor: none;
+}
 @keyframes fadeInLeft {
     from {
       opacity: 0;
@@ -52,6 +55,7 @@ html{
   @media only screen and (min-width: 999px) and (max-width:1185px){
     .banner-image-sec{
       width: 100% !important;
+      height: 500px !important;
     }
     .desk-nav{
       font-size: 12px !important;
