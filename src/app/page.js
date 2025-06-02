@@ -12,6 +12,8 @@ import Testimonal from "./testimional/page";
 import CareerSection from "./career/page";
 import Footerarea from "./footer/page";
 import OurGames from "./ourgames/page";
+import BeeCursor from "./curser/page";
+import Preloader from './loader/page';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -21,16 +23,23 @@ export default function Home() {
   };
   return (
     <>
-      <Header/>
-      <HomeSection/>
-      <About/>
-      <OurGames/>
-      <VideoPlay/>
-      <Portfolio/>
-      <VisionMission/>
-      <Testimonal/>
-      <CareerSection/>
-      <Footerarea/>
-    </>
+              <BeeCursor />
+              {loading ? (
+        <Preloader onFinish={handleFinishLoading} />
+      ) : (
+        <>
+
+          <Header />
+          <HomeSection />
+          <About />
+          <VideoPlay />
+          <Portfolio />
+          <VisionMission />
+          <Testimonal />
+          <CareerSection />
+          <Footerarea />
+        </>
+      )}
+  </>
   );
 }
