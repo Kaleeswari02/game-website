@@ -1,7 +1,7 @@
 
 .testi-background {
     position: relative;
-    background-image: url('/images/Testimonials-BG.jpg');
+    background-image: url('/images/testimonial.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@
     bottom: 0;
     left: 0;
     /* background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)); */
-    background-color: #000000ba;
+    background-color: #00000078;
     z-index: 0;
     border-radius: 80px 80px 0px 0px;
   }
@@ -65,4 +65,11 @@
     background-color: #fcd202 !important;
     /* border: 1px solid #fff !important; */
     z-index: 1;
+}
+.slick-next:before{
+    color: #fcd202 !important;
+    padding: 10px;
+}
+.slick-prev:before{
+    color: #fcd202 !important;
 }

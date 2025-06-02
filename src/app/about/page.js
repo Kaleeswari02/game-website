@@ -33,12 +33,12 @@ export default function About() {
   return (
     <>
     <div className={`container-fluid ${styles.aboutBg}`}>
-      <div ref={sectionRef} className={`container-fluid ${styles.aboutSection}`}  id='about'>
+      <div ref={sectionRef} className={`container-fluid ${styles.aboutSection }`}  id='about'>
          <div className={`container`}>
 
         <div className="row align-items-center">
           <div className="col-md-3 text-center mb-4 mb-md-0 ">
-            <img   src="/images/char-1.png" alt="Girl Character" className={styles.characterImg} />
+            <img   src="/images/abouttwo.png" alt="Girl Character" className={styles.characterImg} />
           </div>
 
           <div className="col-md-6 text-center text-md-start mt-xl-5 mt-lg-5 about-space">
@@ -69,7 +69,7 @@ export default function About() {
 
           <div className="col-md-3 text-center mt-4 mt-md-0">
             <div ref={tigerRef}>
-              <img src="/images/char-2.png"  alt="Tiger Character" className={styles.characterImg} />
+              <img src="/images/aboutone.png"  alt="Tiger Character" className={styles.characterImg} />
             </div>
           </div>
         </div>

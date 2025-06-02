@@ -10,7 +10,7 @@ const VideoPlay = () => {
 
   return (
     <div className={styles.videoPlaySection}>
-      <img src='/images/video-play-bg.jpg' alt="Desert Background" className={styles.bgImage} />
+      <img src='/images/video.jpg' alt="Desert Background" className={styles.bgImage} />
 
       <Container className="text-center position-relative z-1">
          <div className={styles.playCircle} onClick={() => setModalOpen(true)}>
