@@ -1,3 +1,5 @@
+'use client';
+import { useState } from 'react';
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./header/page";
@@ -12,6 +14,11 @@ import Footerarea from "./footer/page";
 import OurGames from "./ourgames/page";
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+  const handleFinishLoading = () => {
+    setLoading(false);
+  };
   return (
     <>
       <Header/>

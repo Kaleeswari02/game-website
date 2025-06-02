@@ -7,6 +7,7 @@ import { Poppins } from 'next/font/google';
 import { ModalProvider } from "./context/ModalContext";
 
 import { Anton, Plus_Jakarta_Sans  } from 'next/font/google';
+import BeeCursor from "./curser/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -64,6 +65,7 @@ export default function RootLayout({ children }) {
         pauseOnHover 
         theme="light"
       />
+        <BeeCursor />
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         
       </body>

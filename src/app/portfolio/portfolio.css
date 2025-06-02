@@ -32,7 +32,12 @@
    -webkit-transition: all 0.5s ease;
    letter-spacing: 0.3px;
  }
- 
+ .portfolio-btn::before{
+  background-image: url('/images/honeydrip.png'); /* Replace with your image path */
+  background-size: cover; /* or 'contain' depending on your design */
+  background-repeat: no-repeat;
+  background-position: center;
+ }
  .portfolio-btn:hover {
    background-color: #252525;
    color: #ffffff;

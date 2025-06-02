@@ -26,7 +26,9 @@ export default function HomeSection(){
     );
   }, { scope: sectionRef }); 
     return(
+      
         <>
+            
             <div className="container-fluid background-section" id='home'>
                 <div ref={sectionRef} className="container background-content">
                     <div className="row ">

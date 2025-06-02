@@ -1,0 +1,36 @@
+/* loader.css */
+.preloader {
+    position: fixed;
+    inset: 0;
+    background: #000; /* Or any bg */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url('/images/curser.png'), auto !important;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .preloader.fade-out {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .nest-container {
+    position: relative;
+  }
+  
+  .loader-area {
+    pointer-events: none;
+  }
+  
+  .hover-hole {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 150px; /* Adjust depending on nest */
+    left: 150px;
+    cursor: url('/images/curser.png'), auto !important;
+  }
+  

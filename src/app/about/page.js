@@ -68,7 +68,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="col-md-3 text-center mt-4 mt-md-0">
+          <div className="col-md-3 text-center  mt-4 mt-md-0">
             <div ref={tigerRef}>
               <img src="/images/aboutone.png"  alt="Tiger Character" className={styles.characterImg} />
             </div>
