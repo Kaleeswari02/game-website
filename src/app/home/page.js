@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
+import CountCards from '../countcard/page';
 gsap.registerPlugin(ScrollTrigger);
 export default function HomeSection(){
     const tigerRef = useRef(null);
@@ -48,6 +49,7 @@ export default function HomeSection(){
                     </div>
                 </div>
             </div>
+            <CountCards/>
         </>
     )
 }
