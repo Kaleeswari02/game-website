@@ -11,7 +11,7 @@ const [visible, setVisible] = useState(false);
     return(
         <>
 
-        <div className="container-fluid mt-xl-5 mb-xl-5" id='portfolio'>
+        <div className="container-fluid mt-xl-5" id='portfolio'>
             <div className="container">
                 <div className="row">
                     <div className="col-xl-8 col-lg-8 col-md-8 col-12">
