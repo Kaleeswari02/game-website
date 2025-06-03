@@ -81,46 +81,46 @@ export default function About() {
     <div className={`container-fluid ${styles.aboutBg}`}>
       <div ref={sectionRef} className={`container-fluid ${styles.aboutSection }`}  id='about'>
         <div className="row align-items-center justify-content-center">
-          <div className="col-md-4 text-center mb-md-0 ">
+          <div className="col-md-4 col-xl-4 col-lg-4 text-center mb-md-0 ">
               <div className="countSection" ref={sectionRef}>
-      <div className="honeycomb">
-        <div className="hexRow centerRow">
-          {stats.slice(0, 2).map((stat, i) => (
-            <div
-              className="hexWrapper"
-              key={i}
-              ref={(el) => (hexRefs.current[i] = el)}
-            >
-              <div className="countItem">
-                <div className="icon">{stat.icon}</div>
-                <div className="number">{counts[i]}</div>
-                <div className="label">{stat.label}</div>
-              </div>
-            </div>
-          ))}
-        </div>
+              <div className="honeycomb">
+                <div className="hexRow centerRow">
+                  {stats.slice(0, 2).map((stat, i) => (
+                    <div
+                      className="hexWrapper"
+                      key={i}
+                      ref={(el) => (hexRefs.current[i] = el)}
+                    >
+                      <div className="countItem">
+                        <div className="icon">{stat.icon}</div>
+                        <div className="number">{counts[i]}</div>
+                        <div className="label">{stat.label}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
 
-        <div className="hexRow">
-          {stats.slice(2).map((stat, i) => (
-            <div
-              className="hexWrapper"
-              key={i + 2}
-              ref={(el) => (hexRefs.current[i + 2] = el)}
-            >
-              <div className="countItem">
-                <div className="icon">{stat.icon}</div>
-                <div className="number">{counts[i + 2]}</div>
-                <div className="label">{stat.label}</div>
+                <div className="hexRow">
+                  {stats.slice(2).map((stat, i) => (
+                    <div
+                      className="hexWrapper"
+                      key={i + 2}
+                      ref={(el) => (hexRefs.current[i + 2] = el)}
+                    >
+                      <div className="countItem">
+                        <div className="icon">{stat.icon}</div>
+                        <div className="number">{counts[i + 2]}</div>
+                        <div className="label">{stat.label}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
     </div>
             {/* <img   src="/images/abouttwo.png" alt="Girl Character" className={styles.characterImg} /> */}
           </div>
 
-          <div className="col-md-5 text-center text-md-start mt-xl-5 mt-lg-5 about-space">
+          <div className="col-md-5 col-xl-5 col-lg-5 text-center text-md-start mt-xl-5 mt-lg-5 about-space">
             
             <h2 className={`${styles.aboutHeading} text-center`}>
               Who We Are<br/> 
@@ -146,7 +146,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="col-md-3 text-center  mt-4 mt-md-0">
+          <div className="col-md-3 col-xl-3 col-lg-3 text-center  mt-4 mt-md-0">
             <div ref={tigerRef}>
               <img src="/images/aboutone.png"  alt="Tiger Character" className={styles.characterImg} />
             </div>
