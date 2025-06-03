@@ -43,7 +43,7 @@ export default function HomeSection(){
                         </div>
                         <div className="col-xl-5 col-lg-5 col-md-5 col-12 mt-xl-5 mt-lg-5 mt-md-5 mb-xl-5 mb-lg-5">
                             <div className="banner-image mt-xl-5 mt-lg-5 mt-md-5 p-xl-5" ref={tigerRef}>
-                                 <img className='banner-image-sec' src='/images/bee_character_transparent.png' alt="Description of image" />
+                                 <img className='banner-image-sec' src='/images/bannersec01.png' alt="Description of image" />
                             </div>
                         </div>
                         {/* <div className='col-xl-1 col-lg-1 col-md-1 mb-xl-5 mb-lg-5'></div> */}

@@ -19,6 +19,7 @@
   
   .nest-container {
     position: relative;
+    display: flex;
   }
   
   .loader-area {
@@ -32,5 +33,22 @@
     top: 150px; /* Adjust depending on nest */
     left: 150px;
     cursor: url('/images/curser.png'), auto !important;
+   
   }
-  
+  .load-head {
+    color: #fcd202 !important;
+    font-size: 20px !important;
+    position: relative;
+    bottom: 9vh;
+    left: 4vw;
+}
+  .bee-area{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    bottom: 13vh;
+    right: 1vw;
+  }
+  .bee-arrow{
+    transform: rotate(90deg);
+  }

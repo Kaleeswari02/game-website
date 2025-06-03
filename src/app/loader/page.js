@@ -48,6 +48,11 @@ export default function Preloader({ onFinish }) {
         onMouseEnter={handleEnter}
         title="Enter the nest"
       />
+        <div className='bee-area'>
+            <h1 className='load-head'>Explore the hive</h1>
+            <div> <img src='/images/Animation - 1748868803047.gif' alt='arrow bee' className='bee-arrow'/></div>
+          </div>
+      
     </div>
   </div>
   );

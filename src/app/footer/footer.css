@@ -2,7 +2,9 @@
     background-image: url('/images/bg-footer.png');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 3%;
+    padding: 3% 0% 0% 0%;
+    transform: rotate(180deg);
+    
 }
 .footer-bg::before{
     content: 'Beeyoond';
@@ -16,23 +18,25 @@
     position: absolute;
     left: 32vw;
     letter-spacing: 30px;
+    transform: rotate(180deg);
 }
 .footer-space{
     display: flex;
     justify-content: space-between;
     list-style: none;
+    transform: rotate(180deg);
 }
 .footer-icon:hover{
     color: #000000 !important;
 }
 .footer-icon{
         font-size: 60px;
-        color: #fff;
+        color: #000000;
         cursor: pointer;
 }
 .footer-icon-text{
     font-size: 40px;
-    color: #ffffff;
+    color: #000000;
     margin-left: 20px;
     margin-top: 20px;
     position: relative;
@@ -45,7 +49,12 @@
     color: #000000 !important;
 }
 .footer-bg-two{
-    background-color: #000000;
+    background-color: #ffffff;
+    /* background-image: url('/images/Untitled design (7).png'); */
+    background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden !important;
+  width: 100% !important;
 }
 .footer-image-section{
     display: flex;
@@ -59,7 +68,7 @@
 .footer-heading{
     font-size: 70px;
     font-family: "Anton", Sans-serif;
-    color: #ffffff;
+    color: #000000;
     margin: 5%;
 }
 .footer-heading:hover{
@@ -67,13 +76,14 @@
 }
 .footer-subhead{
     font-size: 20px;
-    color: #ffffff;
+    color: #000000;
     font-family: 'Plus Jakarta Sans', sans-serif !important;
     text-align: justify;
+    font-weight: 900;
 }
 .footer-para{
-    font-size: 15px;
-    color: #ffffff65;
+    font-size: 16px;
+    color: #000000;
     font-family: 'Plus Jakarta Sans', sans-serif !important;
     line-height: 1.5;
     text-align: justify;
@@ -83,6 +93,7 @@
 }
 .copyrights{
     text-align: center;
-    color: #ffffffc3;
-    border-top: 1px solid #ffffff65;
+    color: #000000;
+    border-top: 1px solid #000000;
+    font-weight: 400;
 }
