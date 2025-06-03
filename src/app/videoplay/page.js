@@ -35,7 +35,7 @@ const VideoPlay = () => {
         </p>
       </Container>
         {/* Modal for YouTube Video */}
-      <Modal isOpen={modalOpen} toggle={() => setModalOpen(false)} centered size="lg">
+      {/* <Modal isOpen={modalOpen} toggle={() => setModalOpen(false)} centered size="lg">
         <ModalBody className={`${styles.modalBody}`} >
           <iframe
             src="https://www.youtube.com/embed/Rgj_r_Bu64o?autoplay=1"
@@ -47,7 +47,7 @@ const VideoPlay = () => {
          
           ></iframe>
         </ModalBody>
-      </Modal>
+      </Modal> */}
     </div>
   );
 };

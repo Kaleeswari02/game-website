@@ -160,3 +160,132 @@
   width: 80%;
 }
 }
+/* countcard css */
+.countSection {
+  padding: 48px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  color: #eee;
+  flex-direction: column;
+}
+
+.honeycomb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hexRow {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  margin-bottom: -30px;
+}
+
+
+.centerRow {
+  transform: translateX(90px); /* adjust as needed */
+}
+
+/* Hexagon Wrapper */
+.hexWrapper {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  flex-shrink: 0;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.countItem {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  background: #fcd202;
+  color: #000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  transition: transform 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.countItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(255, 193, 7, 0.4);
+}
+
+.icon {
+  font-size: 2.2rem;
+  margin-bottom: 6px;
+}
+
+.number {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: 'Anton', sans-serif !important;
+  letter-spacing: 3px;
+  width: 600;
+
+}
+
+.label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif !important;
+
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .hexWrapper {
+    width: 120px;
+    height: 120px;
+  }
+  .icon {
+    font-size: 1.6rem;
+  }
+
+  .number {
+    font-size: 1.2rem;
+  }
+
+  .label {
+    font-size: 0.7rem;
+  }
+
+  .centerRow {
+    transform: translateX(60px);
+  }
+}
+
+@media (max-width: 576px) {
+  .hexRow {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .centerRow {
+    transform: none;
+  }
+
+  .hexWrapper {
+    margin-bottom: 20px;
+  }
+}
