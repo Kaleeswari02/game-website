@@ -30,7 +30,7 @@
   display: flex;
   justify-content: center;
   gap: 0;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   flex-wrap: wrap; /* allow wrapping on small screens */
 }
 
@@ -39,9 +39,7 @@
   margin-left: 80px;
   margin-top: 10px; */
 
-   transform: translateX(-50px); /* shift LEFT instead of right */
-  margin-left: -50px; /* optional: add left margin for symmetry */
-  margin-right: 0;
+  
 }
 
 
@@ -95,7 +93,7 @@
     0% 75%,
     0% 25%
   );
-  background: #ffc107;
+  background: #fcd202;
   color: #000;
   text-align: center;
   display: flex;
