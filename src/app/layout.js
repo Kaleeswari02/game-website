@@ -65,7 +65,7 @@ export default function RootLayout({ children }) {
         pauseOnHover 
         theme="light"
       />
-        <BeeCursor />
+        {/* <BeeCursor /> */}
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         
       </body>
