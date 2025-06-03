@@ -22,12 +22,12 @@ export default function BeeCursor() {
   return (
     <img
       ref={beeRef}
-      src="/images/curser.png" // Update with your path
+      src="/images/curserbee.png" // Update with your path
       alt="Bee Cursor"
       style={{
         position: 'fixed',
-        width: '100px',
-        height: '100px',
+        width: '70px',
+        height: '70px',
         pointerEvents: 'none',
         zIndex: 9999,
         top: 0,

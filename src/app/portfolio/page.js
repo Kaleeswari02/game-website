@@ -32,61 +32,55 @@ const [visible, setVisible] = useState(false);
             {visible && (
                     <div className="image-row row ">
                     <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
-                        <img src="/images/port1.png" alt="" />
-                        <h5 className="hover-heading">2D/3D Animation</h5>
+                        <img src="/images/Skiing.jpg" alt="" />
+                        <h5 className="hover-heading">Skiing</h5>
                     </div>
                     <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12 column-width">
-                        <img src="/images/port2.png" alt="" />
-                        <h5 className="hover-heading">Video Editing</h5>
+                        <img src="/images/Temple Rush 1.jpg" alt="" />
+                        <h5 className="hover-heading">Temple Rush</h5>
                     </div>
                     <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
-                        <img src="/images/port3.png" alt="" />
-                        <h5 className="hover-heading">AI & Automation</h5>
+                        <img src="/images/Track Runner 2.jpg" alt="" />
+                        <h5 className="hover-heading">Track Runner</h5>
                     </div>
                     <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
-                        <img src="/images/port1.png" alt="" />
-                        <h5 className="hover-heading">Game Development</h5>
+                        <img src="/images/Astral Pursuit.jpg" alt="" />
+                        <h5 className="hover-heading">Astral Pursuit</h5>
                     </div>
                     <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
-                        <img src="/images/port1.png" alt="" />
-                        <h5 className="hover-heading">2D/3D Animation</h5>
+                        <img src="/images/Track Runner.jpg" alt="" />
+                        <h5 className="hover-heading">Track Runner</h5>
                     </div>
                     <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
-                        <img src="/images/port2.png" alt="" />
-                        <h5 className="hover-heading">Video Editing</h5>
+                        <img src="/images/Turbo Car In Game.jpg" alt="" />
+                        <h5 className="hover-heading">Turbo Car</h5>
                     </div>
                 </div>
              )}
-                <div className="image-gallary-section mb-xl-5">
-                    <div className="image-row row ">
-                        <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
-                            {/* <img src="/images/port1.png" alt="" /> */}
-                                                    <img src="/images/project1.jpg" alt="" />
-
-                            <h5 className="hover-heading">2D/3D Animation</h5>
-                        </div>
-                        <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
-                            {/* <img src="/images/port2.png" alt="" /> */}
-                                                    <img src="/images/project2.jpg" alt="" />
-
-                            <h5 className="hover-heading">Video Editing</h5>
-                        </div>
-                        <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
-                            <img src="/images/port3.png" alt="" />
-                            <h5 className="hover-heading">AI & Automation</h5>
-                        </div>
-                        <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
-                            <img src="/images/port1.png" alt="" />
-                            <h5 className="hover-heading">Game Development</h5>
-                        </div>
-                        <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
-                            <img src="/images/port1.png" alt="" />
-                            <h5 className="hover-heading">2D/3D Animation</h5>
-                        </div>
-                        <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
-                            <img src="/images/port2.png" alt="" />
-                            <h5 className="hover-heading">Video Editing</h5>
-                        </div>
+                   <div className="image-row row ">
+                    <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
+                        <img src="/images/Skiing.jpg" alt="" />
+                        <h5 className="hover-heading">Skiing</h5>
+                    </div>
+                    <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12 column-width">
+                        <img src="/images/Temple Rush 1.jpg" alt="" />
+                        <h5 className="hover-heading">Temple Rush</h5>
+                    </div>
+                    <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
+                        <img src="/images/Track Runner 2.jpg" alt="" />
+                        <h5 className="hover-heading">Track Runner</h5>
+                    </div>
+                    <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
+                        <img src="/images/Astral Pursuit.jpg" alt="" />
+                        <h5 className="hover-heading">Astral Pursuit</h5>
+                    </div>
+                    <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
+                        <img src="/images/Track Runner.jpg" alt="" />
+                        <h5 className="hover-heading">Track Runner</h5>
+                    </div>
+                    <div className="image-col col-xl-2 col-lg-2 col-md-4 col-12">
+                        <img src="/images/Turbo Car In Game.jpg" alt="" />
+                        <h5 className="hover-heading">Turbo Car</h5>
                     </div>
                 </div>
         </div>

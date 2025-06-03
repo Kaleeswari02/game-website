@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 
 import './loader.css'
+import BeeCursor from '../curser/page';
 export default function Preloader({ onFinish }) {
   const [isFadingOut, setIsFadingOut] = useState(false);
   const preloaderRef = useRef(null);
@@ -10,7 +11,6 @@ export default function Preloader({ onFinish }) {
     setIsFadingOut(true);
   };
 
-  // Trigger onFinish after transition ends
   useEffect(() => {
     const node = preloaderRef.current;
     if (!node) return;
@@ -24,8 +24,10 @@ export default function Preloader({ onFinish }) {
   }, [isFadingOut, onFinish]);
 
 
+
   return (
-    <div
+      <>
+          {/* <div
     ref={preloaderRef}
     className={`preloader ${isFadingOut ? 'fade-out' : ''}`}
   >
@@ -54,6 +56,31 @@ export default function Preloader({ onFinish }) {
           </div>
       
     </div>
+  </div> */}
+  <div
+  ref={preloaderRef}
+  className={`preloader ${isFadingOut ? 'fade-out' : ''}`}
+>
+  <BeeCursor/>
+  <div className="nest-container">
+    <img
+      src="/images/loader.png"
+      className="loader-area"
+      alt="Bee Nest"
+      width={400}
+      height={400}
+    />
+    <div
+      className="hover-hole"
+      onMouseEnter={handleEnter}
+      title="Enter the nest"
+    />
+     <div className='bee-area'>
+            <h1 className='load-head'>Explore the hive</h1>
+            <div> <img src='/images/Animation - 1748868803047.gif' alt='arrow bee' className='bee-arrow'/></div>
+          </div>
   </div>
+</div>
+      </>
   );
 }

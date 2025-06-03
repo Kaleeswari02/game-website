@@ -85,7 +85,7 @@ const CapabilitiesSection = () => {
         {tabs.map((tab) =>
           activeTab === tab.id ? (
             <div key={tab.id} className={styles.tabPane}>
-              <div className="row align-items-center">
+              <div className="row">
                 <div className="col-md-6 col-xl-6 col-lg-6 col-12 d-flex justify-content-center align-items-center ">
                   <img
                     src={tab.image}
@@ -99,13 +99,13 @@ const CapabilitiesSection = () => {
                     {tab.description}
                   </p>
                   <div className="about-space">
-                      <button className={`${stylesAbout.aboutButton} px-4 mt-3`}>
+                      {/* <button className={`${stylesAbout.aboutButton} px-4 mt-3`}>
                         {tab.buttonText}
                         <span className={`${stylesAbout.aboutButtonArrow} ms-2`}>
                           <FiArrowUpRight className={stylesAbout.arrowDefault} />
                           <FiArrowRight className={stylesAbout.arrowHover} />
                         </span>
-                      </button>
+                      </button> */}
                   </div>
                 </div>
               </div>
