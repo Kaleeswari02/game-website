@@ -1,12 +1,12 @@
 /* components/About.module.css */
 .aboutSection {
-  /* background: #fff !important; */
-  background-image: url('/images/Aboutsec.png');
+  background: #fff !important;
+  /* background-image: url('/images/Aboutsec.png'); */
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 80px 80px 0px 0px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  padding: 60px 30px;
+  /* padding: 60px 30px; */
   overflow: hidden !important;
   width: 100% !important;
 }
