@@ -48,10 +48,17 @@ html{
 
   
 }
+@media only screen and (max-width: 2560px) and (min-width: 585px) {
+  .banner-image-sec {
+    width: auto !important;
+    height: auto !important;
+  }
+}
+
   /* desktop view */
   @media only screen and (min-width: 999px) and (max-width:1185px){
     .banner-image-sec{
-      width: 100% !important;
+      width: 95% !important;
       height: 500px !important;
     }
     .desk-nav{
@@ -130,7 +137,7 @@ html{
       font-size: 15px !important;
      }
      .banner-image-sec {
-      width: 100% !important;
+      width: 92% !important;
      }
      .port-headone {
       font-size: 60px !important;
@@ -280,7 +287,7 @@ html{
       font-size: 15px !important;
   }
   .banner-image-sec{
-   width: 100% !important;
+   width: 92% !important;
   }
   .contact-btn{
     color: #ffffff !important;

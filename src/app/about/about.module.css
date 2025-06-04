@@ -193,8 +193,8 @@
 
 /* Hexagon Wrapper */
 .hexWrapper {
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   position: relative;
   flex-shrink: 0;
   transition: width 0.3s ease, height 0.3s ease;
