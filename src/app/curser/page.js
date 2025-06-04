@@ -1,39 +1,58 @@
-'use client'
+'use client';
 import { useEffect, useRef, useState } from 'react';
 import './curser.css';
+
 export default function BeeCursor() {
   const beeRef = useRef(null);
-  const [direction, setDirection] = useState('left');
   const prevX = useRef(0);
+  const [direction, setDirection] = useState('right');
 
   useEffect(() => {
-    const moveBee = (e) => {
-      const bee = beeRef.current;
+    const bee = beeRef.current;
+    if (!bee) return;
 
-      // Flip direction
+    let mouseX = 0;
+    let mouseY = 0;
+    let beeX = window.innerWidth / 2;
+    let beeY = window.innerHeight / 2;
+
+    const handleMouseMove = (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+
+      // Set direction for flipping
       if (e.clientX > prevX.current) {
         setDirection('right');
       } else if (e.clientX < prevX.current) {
         setDirection('left');
       }
       prevX.current = e.clientX;
-
-      // Move bee
-      bee.style.left = `${e.clientX}px`;
-      bee.style.top = `${e.clientY}px`;
     };
 
-    window.addEventListener('mousemove', moveBee);
-    return () => window.removeEventListener('mousemove', moveBee);
-  }, []);
+    const moveBee = () => {
+      if (!bee) return;
 
+      // Smoothly interpolate bee position toward mouse
+      beeX += (mouseX - beeX) * 0.1;
+      beeY += (mouseY - beeY) * 0.1;
+
+      bee.style.left = `${beeX - 30}px`; // Center the 60px wide bee
+      bee.style.top = `${beeY - 30}px`;
+
+      requestAnimationFrame(moveBee);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    moveBee(); // start animation loop
+
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
 
   return (
     <img
       ref={beeRef}
-      src="/images/curserbee.png" // Update with your path
+      src="/images/curserbee.png"
       alt="Bee Cursor"
-      className={`bee-cursor ${direction === 'right' ? 'bee-right' : 'bee-left'}`}
       style={{
         position: 'fixed',
         width: '60px',
@@ -42,8 +61,8 @@ export default function BeeCursor() {
         zIndex: 9999,
         top: 0,
         left: 0,
-        transition: 'transform 0.1s linear',
-        
+        transition: 'transform 0.1s ease-out',
+        transform: `scaleX(${direction === 'right' ? 1 : -1})`,
       }}
     />
   );
