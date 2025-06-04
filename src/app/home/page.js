@@ -5,8 +5,11 @@ import { useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
+import { useModal } from '../context/ModalContext';
 gsap.registerPlugin(ScrollTrigger);
 export default function HomeSection(){
+    const { openModal } = useModal();
+  
     const tigerRef = useRef(null);
     const sectionRef = useRef(null);
       useGSAP(() => {
@@ -37,7 +40,7 @@ export default function HomeSection(){
                                 <div className="mt-xl-5 mt-lg-5 mt-md-5">
                                 <h2><span className='banner-h1'>WE MAKE</span><br/><span className='banner-h2'>GAMES</span></h2>
                                 <div><p className='banner-para mb-xl-5'>An award-winning India-based Casino Slot Game Development Company pushing the boundaries of narrative and serious games. Our passion for innovation drives us to develop groundbreaking games across genres, seamlessly blending engaging gameplay with meaningful narratives. Whether it’s creating stunning visuals, intuitive mechanics, or emotionally resonant stories, Gamecrio is dedicated to delivering exceptional quality in every project. As a leading game development company in India, we take pride in crafting experiences that engage players worldwide.</p></div>
-                                <div className='banner-sec-btn mb-xl-0 mb-lg-0 mb-md-0 mb-5'><button className='mb-xl-5 banner-btn'>GET IN TOUCH <span className='banner-btn-arrow'><FiArrowUpRight /></span></button></div>
+                                <div className='banner-sec-btn mb-xl-0 mb-lg-0 mb-md-0 mb-5'><button onClick={openModal} className='mb-xl-5 banner-btn'>GET IN TOUCH <span className='banner-btn-arrow'><FiArrowUpRight /></span></button></div>
                                 </div>
                             </div>
                         </div>

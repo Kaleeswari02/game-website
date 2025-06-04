@@ -124,7 +124,7 @@
 
 @media (max-width: 1024px) {
   .slide {
-    flex-direction: column !important;
+    /* flex-direction: column !important; */
     text-align: center;
     padding: 4rem 1.5rem;
   }
@@ -132,7 +132,9 @@
   .image {
     max-width: 100%;
   }
-
+.visionmission_Heading__NRj3z{
+  font-size: 60px   !important;
+}
   .Heading,
   .textOutline {
     font-size: 60px;
