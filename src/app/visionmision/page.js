@@ -26,6 +26,8 @@ const slides = [
 ];
 
 export default function VisionMission() {
+  gsap.set(['.slide-0', '.slide-1'], { opacity: 0, scale: 0.95 });
+  gsap.set('.slide-X', { opacity: 1, scale: 1 }); 
   const sectionRef = useRef(null);
 
   useGSAP(() => {
@@ -53,7 +55,7 @@ export default function VisionMission() {
       });
   
       gsap.set(image, {
-        x: slide.reverse ? -100 : 100,
+        x: slide.reverse ? 100 : -100,
         opacity: 0,
         clipPath: 'inset(0 0 0 100%)',
       });
@@ -66,15 +68,8 @@ export default function VisionMission() {
         end: `+=${window.innerHeight * slides.length}`,
         scrub: true,
         pin: true,
-        onLeave: () => {
-          // keep last slide visible
-          gsap.set('.slide-1', { opacity: 1, scale: 1 });
-        },
-        onEnterBack: () => {
-          // if user scrolls back up, show first slide again
-          gsap.set('.slide-0', { opacity: 1, scale: 1 });
-        }
-      }
+        
+      },
     });
   
     slides.forEach((slide, i) => {
@@ -118,10 +113,11 @@ export default function VisionMission() {
     });
   }, { scope: sectionRef });
   
+  
 
   return (
-    <section className={`${styles.scrollSection}  mt-lg-3  mb-xl-3`}>
-      <div ref={sectionRef} className={styles.sliderWrapper}>
+    <section className={`${styles.scrollSection} my-xl-3 mt-lg-3 mb-xl-3`} ref={sectionRef}>
+      <div className={styles.sliderWrapper}>
         {slides.map((s, i) => (
           <div
             key={i}
