@@ -26,8 +26,8 @@ const slides = [
 ];
 
 export default function VisionMission() {
-  gsap.set(['.slide-0', '.slide-1'], { opacity: 0, scale: 0.95 });
-  gsap.set('.slide-X', { opacity: 1, scale: 1 }); 
+  // gsap.set(['.slide-0', '.slide-1'], { opacity: 0, scale: 0.95 });
+  // gsap.set('.slide-X', { opacity: 1, scale: 1 }); 
   const sectionRef = useRef(null);
 
   useGSAP(() => {
