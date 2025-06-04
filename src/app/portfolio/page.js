@@ -15,7 +15,7 @@ const [visible, setVisible] = useState(false);
             <div className="container">
                 <div className="row">
                     <div className="col-xl-8 col-lg-8 col-md-8 col-12">
-                        <div className="portfolio-sec mt-xl-0 mt-lg-0 mt-md-0 mt-5">
+                        <div className="portfolio-sec mt-xl-2 mt-lg-3 mt-md-0 mt-5">
                             <h2>
                                 <span className='port-headone'>Our</span><br/>
                                 <span className='port-headtwo'>Portfolio</span>

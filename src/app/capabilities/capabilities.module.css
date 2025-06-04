@@ -130,8 +130,8 @@ background: #fcd202 !important;
     font-size: 45px !important;
   }
   .tabButton{
-    padding: 2% 1% !important;
-    font-size: 10px !important;
+    padding: 2% 0% !important;
+    font-size: 9px !important;
     letter-spacing: unset !important;
     border-top-left-radius: 6px !important;
     border-top-right-radius: 6px !important;
@@ -145,5 +145,8 @@ background: #fcd202 !important;
   }
   .about-space{
     text-align: center !important;
+  }
+  .tabsContainer{
+    gap: 1 !important;
   }
 }

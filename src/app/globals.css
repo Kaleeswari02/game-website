@@ -52,10 +52,28 @@ html{
 
   
 }
-@media only screen and (max-width: 2560px) and (min-width: 585px) {
+@media only screen and (min-width: 1185px) and (max-width: 2560px){
   .banner-image-sec {
     width: auto !important;
     height: auto !important;
+  }
+  .banner-h1{
+    font-size: 180px !important;
+}
+.banner-h2 {
+  font-size: 180px !important;
+  }
+  .footer-heading {
+    font-size: 50px !important;
+  }
+  .contact-btn {
+    padding: 12px 35px !important;
+  }
+  .portfolio-btn{
+    padding: 16px 90px 16px 90px !important;
+  }
+  .carrer-img{
+    max-width: 100% !important;
   }
 }
 

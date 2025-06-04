@@ -155,6 +155,7 @@
   .videoPlaySection{
     height: unset !important;
     border-radius: unset !important;
+    padding: 3% !important;
   }
 }
 @media (max-width: 768px) {
