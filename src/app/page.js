@@ -23,7 +23,6 @@ export default function Home() {
   };
   return (
     <>
-              <BeeCursor />
               {loading ? (
         <Preloader onFinish={handleFinishLoading} />
       ) : (
