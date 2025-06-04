@@ -37,6 +37,9 @@ html{
     .desktop-view{
         display: none !important;
     }
+    .bee-area{
+      display: none !important;
+    }
 }
 @media only screen and (min-width: 999px){
     .mobile-view{
@@ -45,6 +48,7 @@ html{
     .desktop-view{
       display: block !important;
   }
+
 
   
 }
@@ -436,7 +440,9 @@ html{
   .mobile-view-bg{
   background-color: #ffffff !important;
  }
-
+ .career-area-height{
+  height: unset !important;
+ }
 }
     
 
@@ -445,7 +451,7 @@ html{
     .footer-icon-text {
       font-size: 16px !important;
       margin-left: unset !important;
-      color: #fcd202 !important;
+      color: #ffd836 !important;
     }
     .footer-icon {
       font-size: 30px !important;
@@ -485,13 +491,13 @@ html{
       right: 18vw !important;
     }
     .image-section{
-      height: 400px !important;
+      height: unset !important;
     }
     .career-head {
       font-size: 25px !important;
       padding: 0% !important;
       text-align: center !important;
-      margin-top: 10% !important;
+      margin-top: unset !important;
     }
     .career-para {
       font-size: 12px !important;
@@ -513,7 +519,6 @@ html{
       .content-section p {
         font-size: 12px !important;
         text-align: justify !important;
-        padding: unset !important;
     }
     .thumb-img{
       width: 20% !important;

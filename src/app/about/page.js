@@ -142,8 +142,8 @@ export default function About() {
           </div>
 
           {/* About Text */}
-  <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center tabView text-md-start mb-4 mb-md-0 about-space">
-            <h2 className={`${styles.aboutHeading} text-start`}>Who We Are</h2>
+  <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-start mb-4 mb-md-0 about-space">
+            <h2 className={`${styles.aboutHeading} `}>Who We Are</h2>
 
             <p className={`${styles.aboutPara} mt-3`}>
               At Beeyoond Gaming, we bring ideas to life through powerful 2D/3D

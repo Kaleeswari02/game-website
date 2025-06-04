@@ -67,8 +67,6 @@ export default function Preloader({ onFinish }) {
       src="/images/loader.png"
       className="loader-area"
       alt="Bee Nest"
-      width={400}
-      height={400}
     />
     <div
       className="hover-hole"

@@ -43,7 +43,7 @@ export default function Footerarea(){
                 <div className="row">
                     <div className="col-xl-5 col-md-5 col-lg-5 col-12 footer-area-div">
                         <div className="footer-image-section ">
-                            <img src="/images/footer-img1.png" alt="footer-image" className="footer-img-set p-xl-4 p-lg-4" ref={tigerRef}/>
+                            <img src="/images/footer-img1.png " alt="footer-image" className="footer-img-set p-xl-4 p-lg-4 mt-xl-0 mt-md-0 mt-lg-0 mt-3" ref={tigerRef}/>
                             <h2 className="footer-heading ml-xl-5">Let's create something cool?</h2>
                         </div>
                     </div>
@@ -70,6 +70,7 @@ export default function Footerarea(){
                         <div className="footer-career-section p-xl-5 p-lg-3 p-md-2">
                             <h2 className="footer-subhead mt-xl-5">Address</h2>
                             <p className="footer-para mt-xl-3">Annai Therasa Street, Kalavasal, Madurai, Tamil Nadu 625016</p>
+                            <p className="footer-para mt-xl-3">Contact : +91 99525 60396</p>
                         </div>
                     </div>
                 </div>

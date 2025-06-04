@@ -157,7 +157,7 @@
   line-height: unset !important;
 }
 .characterImg{
-  width: 80%;
+  display: none !important;
 }
 }
 /* countcard css */
@@ -252,8 +252,16 @@ font-weight: 600;
 }
 
 /* Responsive */
+@media (max-width: 991px) {
+  .hexWrapper {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .icon {
+    font-size: 1.6rem;
+  }
 
-
+}
 @media (max-width: 576px) {
   .hexRow {
     flex-direction: column;

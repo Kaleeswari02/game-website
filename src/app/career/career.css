@@ -80,16 +80,14 @@
 .career-btn-area{
     padding: 2% 5%;
 }
-/* .career-button:hover{
+.career-button:hover{
     background-color: #252525;
     color: #ffffff;
-    transition: all 1s ease;
-} */
+}
 
-
-.career-button:hover {
+.career-button a:hover {
   background-color: #252525;
-  color: #ffffff;
+  color: #ffffff !important;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   transform: translateZ(-2px);
 }
