@@ -96,11 +96,11 @@ export default function About() {
         className={`container-fluid ${styles.aboutSection}`}
         id="about"
       >
-        <div className="row align-items-center justify-content-center">
+        <div className="row align-items-center justify-content-center mt-5">
           {/* Counter Section */}
           <div
             ref={sectionRefhex}
-            className="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 text-center text-md-center mb-4 mb-md-0"
+            className="col-12 col-sm-12 col-md-5 tabView col-lg-5 col-xl-5 text-center text-md-center mb-4 mb-md-0"
           >
             <div className={`${styles.countSection}`}>
               <div className={`${styles.honeycomb}`}>
@@ -142,7 +142,7 @@ export default function About() {
           </div>
 
           {/* About Text */}
-  <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-start mb-4 mb-md-0 about-space">
+  <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center tabView text-md-start mb-4 mb-md-0 about-space">
             <h2 className={`${styles.aboutHeading} text-start`}>Who We Are</h2>
 
             <p className={`${styles.aboutPara} mt-3`}>
@@ -171,8 +171,8 @@ export default function About() {
           </div>
 
           {/* Character Image */}
-  <div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-end mt-4 mt-md-0">
-            <div ref={tigerRef}>
+  <div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 tabView text-center text-md-end mt-4 mt-md-0">
+            <div ref={tigerRef} className={`${styles.tigerImg}`}>
               <img
                 src="/images/aboutone.png"
                 alt="Tiger Character"
@@ -182,7 +182,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      {/* <CapabilitiesSection /> */}
+      <CapabilitiesSection />
     </div>
   );
 }

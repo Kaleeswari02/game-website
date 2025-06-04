@@ -23,11 +23,11 @@ export default function Home() {
   };
   return (
     <>
-              {/* <BeeCursor />
+              <BeeCursor />
               {loading ? (
         <Preloader onFinish={handleFinishLoading} />
       ) : (
-        <> */}
+        <>
 
           <Header />
           <HomeSection />
@@ -39,7 +39,7 @@ export default function Home() {
           <CareerSection />
           <Footerarea />
         </>
-  //     )}
-  // </>
+      )}
+  </>
   );
 }
