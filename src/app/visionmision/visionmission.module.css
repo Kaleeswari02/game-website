@@ -123,11 +123,7 @@
 }
 
 @media (max-width: 1024px) {
-  .slide {
-    /* flex-direction: column !important; */
-    text-align: center;
-    padding: 4rem 1.5rem;
-  }
+
   .content,
   .image {
     max-width: 100%;
@@ -154,7 +150,11 @@
 }
 
   @media only screen and (min-width: 795px) and (max-width: 999px){
-
+    .slide {
+      /* flex-direction: column !important; */
+      text-align: center;
+      padding: 4rem 1.5rem;
+    }
 /* @media (max-width: 768px) { */
   .sliderWrapper {
     padding: 0 1rem;
@@ -217,7 +217,11 @@
   .image::after {
     border-radius: 16px;
   }
-
+  .slide {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 4rem 1.5rem;
+  }
 
 }
 /* testing */
