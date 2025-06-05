@@ -122,7 +122,7 @@ export default function About() {
                 </div>
 
                 {/* Second Row - 3 Items, Offset to Center */}
-                <div className={`${styles.hexRow} ${styles.offsetRow}`}>
+                <div  className={`${styles.hexRow} ${styles.offsetRow}`}>
                   {stats.slice(2).map((stat, i) => (
                     <div
                       className={styles.hexWrapper}

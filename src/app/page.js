@@ -23,10 +23,10 @@ export default function Home() {
   };
   return (
     <>
-              {loading ? (
+              {/* {loading ? (
         <Preloader onFinish={handleFinishLoading} />
       ) : (
-        <>
+        <> */}
 
           <Header />
           <HomeSection />
@@ -37,8 +37,8 @@ export default function Home() {
           <Testimonal />
           <CareerSection />
           <Footerarea />
-        </>
-      )}
+        {/* </>
+      )} */}
   </>
   );
 }
