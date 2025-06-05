@@ -22,8 +22,8 @@ export default function About() {
     { label: "Clients", value: 100, icon: <FaHandshake /> },
     { label: "Countries", value: 12, icon: <FaGlobe /> },
     { label: "Projects", value: 250, icon: <FaProjectDiagram /> },
-    { label: "Employees", value: 45, icon: <FaUsers /> },
-    { label: "Years", value: 6, icon: <FaCalendarAlt /> },
+    { label: "Employees", value: 50, icon: <FaUsers /> },
+    { label: "Years", value: 3, icon: <FaCalendarAlt /> },
   ];
 
   const [counts, setCounts] = useState(stats.map(() => 0));
@@ -146,15 +146,10 @@ export default function About() {
             <h2 className={`${styles.aboutHeading} `}>Who We Are</h2>
 
             <p className={`${styles.aboutPara} mt-3`}>
-              At Beeyoond Gaming, we bring ideas to life through powerful 2D/3D
-              animation, game development, and virtual experiences.
+              At Beeyoond, we turn ideas into engaging digital experiences by combining creativity with advanced technology. We specialize in 2D/3D animation, video editing, AR/VR game development, and blockchain solutions to helping businesses connect with users through immersive visuals and interactive design. From animating real machines to building secure Web3 apps, we deliver smart, standout solutions that push boundaries.
             </p>
             <p className={`${styles.aboutPara}`}>
-              From eye-catching visuals to treadmill-powered gameplay, we create
-              fun, exciting, and unforgettable digital worlds. Whether it's a
-              game, a video, or a virtual adventure — if it's creative and
-              interactive, we make it real. We’re not just a studio. We’re a
-              team of dreamers turning imagination into action.
+            We focus on quality, clarity, and innovation in every project and we’re committed to delivering results that not only meet expectations but exceed them. With Beeyoond, you get a partner who listens, adapts, and delivers with precision ensuring your satisfaction at every step.
             </p>
             <div className="text-start">
               <button

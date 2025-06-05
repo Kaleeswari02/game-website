@@ -39,7 +39,8 @@ export default function HomeSection(){
                             <div className="banner-content mt-xl-5 mt-lg-5 mt-md-2 mb-md-3">
                                 <div className="mt-xl-5 mt-lg-5 mt-md-5">
                                 <h2><span className='banner-h1'>WE MAKE</span><br/><span className='banner-h2'>GAMES</span></h2>
-                                <div><p className='banner-para mb-xl-5'>An award-winning India-based Casino Slot Game Development Company pushing the boundaries of narrative and serious games. Our passion for innovation drives us to develop groundbreaking games across genres, seamlessly blending engaging gameplay with meaningful narratives. Whether it’s creating stunning visuals, intuitive mechanics, or emotionally resonant stories, Gamecrio is dedicated to delivering exceptional quality in every project. As a leading game development company in India, we take pride in crafting experiences that engage players worldwide.</p></div>
+                                <div><p className='banner-para mb-xl-5'>At Beeyoond, we create immersive AR/VR gaming experiences that connect with real world machines like treadmills, bikes, and rowing systems. We use powerful 2D and 3D animations to show natural movement and machine action, and we produce high quality videos that clearly explain how equipment works. Whether you're building an interactive game or showcasing a product, we help businesses create exciting digital experiences that feel real and keep users engaged.
+</p></div>
                                 <div className='banner-sec-btn mb-xl-0 mb-lg-0 mb-md-0 mb-5'><button onClick={openModal} className='mb-xl-5 banner-btn'>GET IN TOUCH <span className='banner-btn-arrow'><FiArrowUpRight /></span></button></div>
                                 </div>
                             </div>

@@ -125,7 +125,7 @@ const jobs = [
   const handleApplyClick = (role) => {
     const subject = encodeURIComponent(`Application for ${role} role at Beeyoond`);
     const body = encodeURIComponent(`Hi Beeyoond team,\n\nI'm interested in the ${role} position. Please find my resume attached.\n\nBest regards,\n[Your Name]`);
-    window.location.href = `mailto:hr@beeyoond.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@beeyoondgaming.com?subject=${subject}&body=${body}`;
   };
 
 

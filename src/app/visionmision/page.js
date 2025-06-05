@@ -13,13 +13,13 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 const slides = [
   {
     title: 'Our Vision',
-    text: 'At Gamecrio Studios, a leading Casino Slot Game Development Company in India, our vision is to revolutionize the gaming industry by seamlessly blending innovation, creativity, and inclusivity into every aspect of our work. We envision a future where gaming transcends entertainment and becomes a transformative medium for connection, expression, and empowerment.',
+    text: 'To be a global leader in creative technology solutions, pioneering immersive digital experiences that push boundaries, inspire innovation, and shape the future of interactive entertainment and decentralized applications.',
     img: '/images/vision.png',
     reverse: false,
   },
   {
     title: 'Our Mission',
-    text: 'To create emotionally resonant and globally inclusive gaming experiences. At Gamecrio Studios, we aim to revolutionize the gaming industry by seamlessly blending innovation, creativity, and inclusivity into every aspect of our work.',
+    text: 'To empower businesses by transforming innovative ideas into immersive digital experiences through cutting edge animation, AR/VR, game development, video production, and blockchain technologies delivering solutions that engage users, simplify complexity, and drive growth.',
     img: '/images/mission.png',
     reverse: true,
   },

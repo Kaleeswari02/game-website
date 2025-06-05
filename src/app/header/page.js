@@ -51,7 +51,9 @@ export default function Header() {
 
   const sendEmail = (data) => {
     emailjs
-      .send("service_am2sw1d", "template_h7n0uvo", data, "aH6tkRSl3LIesgTSP")
+      // .send("service_am2sw1d", "template_h7n0uvo", data, "aH6tkRSl3LIesgTSP")
+      .send("service_6pnuomn", "template_cnsdo3r", data, "YDvctNu4CoXENihrU")
+      
       .then(
         () => {
           toast.success("Message sent successfully!");
@@ -61,7 +63,7 @@ export default function Header() {
         },
         (error) => {
           console.error(error.text);
-          toast.danger("Failed to send message.");
+          toast.error("Failed to send message.");
         }
       );
   };

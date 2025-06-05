@@ -26,7 +26,9 @@ export default function CareerSection(){
                         <div className="col-xl-6 col-lg-6 col-md-6 mt-xl-5 mt-lg-5  col-12 career-part1">
                             <div className="career-content p-xl-5 p-lg-5  mt-xl-5 mt-lg-5">
                                 <h2 className="career-head">Power up your career</h2>
-                                <p className="career-para">Looking for a career at Gamecrio means stepping into a dynamic world where creativity, innovation, and passion collide to shape the future of gaming. Here, your career isn’t just a job—it’s an opportunity to show your potential, pursue your passions, and make a meaningful impact on the gaming industry.</p>
+                                <p className="career-para">At Beeyoond, we’re more than a tech company — we’re a team of creatives, developers, and innovators shaping the future of digital experiences. Whether you're an animator, game designer, video editor, blockchain developer, or AR/VR enthusiast, this is the place to bring your skills to life.
+
+                                    <br></br><br></br>We believe in collaboration, creativity, and continuous growth. Our projects span industries and technologies, giving you the chance to work on exciting, meaningful challenges that make an impact. If you're passionate about blending art with innovation, and you want to be part of a dynamic team pushing boundaries — we’d love to hear from you.</p>
                                 <div className='career-btn-area'><button className="career-button" ><a href="/careers">
                                 Join with us  <span className='careerButtonArrow ms-2'>
                 <FiArrowUpRight className="arrowDefault" />

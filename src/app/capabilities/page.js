@@ -9,29 +9,24 @@ const tabs = [
   { id: '1', label: '2D/3D ANIMATION', image: '/images/services-img1.png', heading: '2D/3D ANIMATION', buttonText:'KNOW MORE' ,
     description: (
       <>
-        We bring ideas to life through smooth, stunning motion.
-From characters to full scenes, our animations add energy and emotion.
-Perfect for games, videos, and immersive experiences.
-
-
+Bringing ideas to life through stunning visuals and smooth motion, our 2D and 3D animation services are designed to elevate digital content across industries. From stylized characters to realistic product simulations, we craft high quality assets for games, apps, explainer videos, and marketing campaigns. Whether it's dynamic environments, lifelike movement, or concept art for development, our expert team uses tools like Blender, Maya, and ZBrush to produce polished, production ready visuals.<br/><br/>Every animation we create tells a story, captures attention, and delivers impact. 
+We collaborate closely with clients throughout the creative process to ensure the final output aligns perfectly with their vision. Rigorous quality checks and iterative feedback loops guarantee animations meet the highest standards and perform seamlessly across platforms.
       </>
     ) 
   },
   { id: '2', label: 'GAME DEVELOPMENT', image: '/images/services-img2.png', heading: 'Game Development', buttonText:'KNOW MORE',
     description: (
       <>
-      We build fun, engaging games with smart design and smooth performance.
-From concept to launch, we handle gameplay, visuals, and interactivity.
-Made for PC, mobile, VR — and even treadmill-powered play.
+    We build immersive and engaging games that captivate players across platforms. From concept design and storyboarding to coding and deployment, our experienced developers and artists collaborate to create rich, interactive worlds with smooth gameplay and stunning visuals. Using powerful engines like Unity and Unreal, we develop 2D and 3D games tailored to your target audience whether it’s casual mobile games, AR/VR experiences, or full-scale PC and console titles.<br/><br/> Our focus is on seamless mechanics, compelling narratives, and optimized performance to deliver games that entertain, inspire, and drive engagement. We work closely with clients throughout the development process to ensure every detail aligns with their vision and goals. After launch, we offer ongoing support and updates to keep your game fresh and players engaged over time.
+
+
       </>
     )
   },
   { id: '3', label: 'VIDEO EDITING', image: '/images/services-img3.png', heading: 'Video Editing', buttonText:'KNOW MORE',
     description: (
       <>
-We craft dynamic videos with smooth cuts, effects, and motion.
-From trailers to promos, we make your content look sharp and professional.
-Perfect for games, social media, and storytelling.
+Our video editing services transform raw footage into polished, compelling stories that captivate audiences. Whether it’s promotional videos, product demos, or training content, we expertly craft smooth transitions, clear audio, dynamic effects, and engaging motion graphics to bring your vision to life. Using industry leading tools like Adobe Premiere Pro and After Effects, we ensure every video is visually striking and communicates your message effectively.<br/><br/> From color correction to sound design, we handle every detail to produce videos that inform, inspire, and leave a lasting impact. We collaborate closely with clients throughout the editing process to ensure the final cut perfectly matches their goals and expectations. Additionally, our efficient workflow and quick turnaround times mean you receive high quality videos exactly when you need them.
 
       </>
     )
@@ -39,10 +34,7 @@ Perfect for games, social media, and storytelling.
    { id: '4', label: 'VIRTUAL REALITY (VR)', image: '/images/services-img4.png', heading: 'Virtual Reality', buttonText:'KNOW MORE',
     description: (
       <>
-       We create fully immersive virtual worlds you can explore and interact with.
-Perfect for games, training, and next-level digital experiences.
-Step inside — and experience the future of play.
-
+   We create immersive AR and VR experiences that blend the digital and physical worlds to engage users like never before. From interactive training simulations and virtual product demos to AR games integrated with real world gym equipment, our team designs cutting edge applications that deliver realistic visuals and intuitive interactions. Using platforms like Unity and Unreal Engine, we develop scalable, high performance AR/VR solutions tailored to your business needs. <br/><br/> Whether enhancing user engagement or creating innovative marketing tools, our AR/VR services help you stand out in a rapidly evolving digital landscape. We collaborate closely with clients throughout development to ensure each experience aligns perfectly with their vision and goals. Post-launch, we provide continuous support and updates to keep your AR/VR applications fresh and fully optimized.
 
       </>
     )
@@ -50,9 +42,8 @@ Step inside — and experience the future of play.
     { id: '5', label: 'BLOCKCHAIN', image: '/images/services-img5.png', heading: 'Blockchain', buttonText:'KNOW MORE',
     description: (
       <>
-      We build secure and scalable blockchain solutions — from DeFi apps to centralized platforms.
-Our team handles smart contracts, tokens, wallets, and full-stack blockchain development.
-Whether it's a new ICO or a custom crypto project, we've got you covered.
+  We develop secure, scalable blockchain applications tailored to your business needs. From smart contracts and token creation to decentralized finance (DeFi) platforms and crypto wallets, our team builds robust Web3 solutions that drive transparency, trust, and efficiency. Whether launching a new ICO, creating custom crypto projects, or integrating blockchain into existing systems, we leverage the latest technologies to deliver reliable, high-performance products. <br/><br/> Our full stack blockchain development ensures seamless user experiences combined with strong security standards, helping your business innovate and stay ahead in the decentralized future.
+
 
       </>
     )
