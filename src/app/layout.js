@@ -34,7 +34,7 @@ export const plusJakarta = Plus_Jakarta_Sans({
   variable: '--font-plus-jakarta',
 });
 export const metadata = {
-   title: "Beeyoond Gaming | AR/VR, 2D/3D Animation, Blockchain & Video Editing",
+   title: "Beeyoond Gaming | 2D/3D Animation, AR/VR, Blockchain & Video Editing",
   description: "At Beeyoond, we create immersive AR/VR gaming experiences that connect with real world machines. We use powerful 2D and 3D animations to show natural movement and machine action, and we produce high quality videos that clearly explain how equipment works. Whether you're building an interactive game or showcasing a product, we help businesses create exciting digital experiences that feel real and keep users engaged.",
     keywords: [
     "Beeyoond",
@@ -51,12 +51,14 @@ export const metadata = {
     "motion tracking games",
     "animation"
   ],
-    authors: [{ name: "Beeyoond Gaming Team", url: "https://beeyoondgamingdemo.netlify.app" }],
-  metadataBase: new URL("https://beeyoondgamingdemo.netlify.app"),
+    authors: [{ name: "Beeyoond Gaming Team", 
+      // url: "https://beeyoondgamingdemo.netlify.app"
+     }],
+  // metadataBase: new URL("https://beeyoondgamingdemo.netlify.app"),
 openGraph: {
     title: "Beeyoond Gaming",
-    description: "Immersive 2D/3D animation , AR/VR gaming with real-world equipment, and blockchain tech.",
-    url: "https://beeyoondgamingdemo.netlify.app",
+    description: "Beeyoond Gaming | 2D/3D Animation, AR/VR, Blockchain & Video Editing",
+    // url: "https://beeyoondgamingdemo.netlify.app",
     siteName: "Beeyoond Gaming",
     images: [
       {

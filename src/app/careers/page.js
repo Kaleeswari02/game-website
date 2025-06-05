@@ -12,8 +12,48 @@ import Footerarea from "../footer/page";
 export default function Careers() {
 
 const jobs = [
-  {
+    {
     id: "1",
+    title: "2D Artist",
+    description: (
+      <>
+        We’re Hiring: 2D Artist (3+ Years Experience)<br /> <br/>
+        Company: BEEYOOND GAMING<br /> <br/>
+        Location: Madurai, Tamil Nadu.<br /> <br/>
+        Experience: 3+ Years<br /> <br/>
+        Employment Type: Full-Time<br /> <br/>
+
+        BEEYOOND GAMING is on the lookout for a skilled and imaginative 2D Artist to join our creative team in Madurai! If you have a passion for digital artistry, a sharp eye for visual design, and a knack for manipulating images into compelling visuals, we’d love to see your work.
+
+        Key Responsibilities:<br /> <br/>
+        - Create high-quality 2D assets such as characters, environments, props, and UI elements.<br /> <br/>
+        - Perform advanced image manipulation (photobashing, compositing, retouching).<br /> <br/>
+        - Enhance and modify existing assets while maintaining visual consistency.<br /> <br/>
+        - Collaborate closely with designers, animators, and developers to integrate artwork seamlessly.<br /> <br/>
+        - Follow established visual guidelines and contribute creatively to new visual directions.<br /> <br/>
+        - Prepare artwork for animation and production pipelines.<br /> <br/>
+        - Maintain organized file structures and asset libraries.<br /> <br/>
+
+        Required Skills & Qualifications:<br /> <br/>
+        - Bachelor’s degree in fine arts, Graphic Design, Animation, or related field (preferred).<br /> <br/>
+        - Minimum 3+ years of professional experience in 2D art and image manipulation.<br /> <br/>
+        - Proficiency in Adobe Photoshop, Illustrator, and related design tools.<br /> <br/>
+        - Expertise in photo manipulation, matte painting, and compositing.<br /> <br/>
+        - Strong understanding of color theory, lighting, composition, and visual storytelling.<br /> <br/>
+        - Ability to work in both realistic and stylized art styles.<br /> <br/>
+        - Great communication skills and an openness to feedback.<br /> <br/>
+         A strong portfolio is a must — show us your versatility and creativity!<br /> <br/>
+         Ready to bring visuals to life with BEEYOOND GAMING?<br /> <br/>
+        Apply now by sending your resume to <br/> <a href="mailto:info@beeyoondgaming.com" 
+        style={{color: 'blue',fontSize:'16px'}}>info@beeyoondgaming.com <span className="ms-2"></span></a> or 
+         <span className="ms-2"></span>
+         <a href="mailto:vignesh.hrbeeyoond@gmail.com" style={{color: 'blue',fontSize:'16px'}}>
+          vignesh.hrbeeyoond@gmail.com </a> <br /> <br/> Contact: +91 9952560396
+           </>
+            )
+  },
+  {
+    id: "2",
     title: "Android Developer (Native) – IoT Projects",
     description: (
       <>
@@ -47,7 +87,7 @@ const jobs = [
     )
   },
   {
-    id: "2",
+    id: "3",
     title: "Graphic Designer with Video Editing Expertise",
     description: (
     <>
@@ -81,7 +121,7 @@ const jobs = [
     )
   },
   {
-    id: "3",
+    id: "4",
     title: "2D Animator & 3D Artist",
     description: (
     <>
