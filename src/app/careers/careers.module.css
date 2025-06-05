@@ -145,3 +145,35 @@
  
 }
 }
+
+@media (min-width: 320px) and (max-width: 642px)  {
+  .careerBanner {
+    min-height: 29vh;
+  }
+}
+@media (min-width: 645px) and (max-width: 768px)  {
+  .careerBanner {
+    min-height: 49vh;
+  }
+  .careerBanner p {
+     font-size: 14px;
+
+  }
+   .careerBanner h1 {
+     font-size: 50px;
+
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px)  {
+  .careerBanner {
+    min-height: 29vh;
+  }
+  .careerBanner p {
+     font-size: 14px;
+
+  }
+   .careerBanner h1 {
+     font-size: 50px;
+
+  }
+}
