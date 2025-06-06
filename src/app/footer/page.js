@@ -70,7 +70,8 @@ export default function Footerarea(){
                         <div className="footer-career-section p-xl-3 p-lg-3 p-md-2">
                             <h2 className="footer-subhead mt-xl-5">Address</h2>
                             <p className="footer-para mt-xl-3">Annai Therasa Street, Kalavasal, Madurai, Tamil Nadu 625016</p>
-                            <p className="footer-para mt-xl-3">Contact : +91 99525 60396</p>
+                                <h2 className="footer-subhead mt-xl-5">Contact us</h2>
+                            <p className="footer-para mt-xl-3">+91 99525 60396 <br/>+91 86106 87239</p>
                         </div>
                     </div>
                 </div>
